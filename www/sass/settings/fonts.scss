@@ -1,0 +1,33 @@
+
+
+@font-face {
+    font-family: 'pacifico';
+    src: url('../fonts/pacifico/pacifico-webfont.woff2') format('woff2'),
+         url('../fonts/pacifico/pacifico-webfont.woff') format('woff'),
+         url('../fonts/pacifico/pacifico.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'old_standard';
+    src: url('../fonts/OldStandard/oldstandard-regular-webfont.woff2') format('woff2'),
+         url('../fonts/OldStandard/oldstandard-regular-webfont.woff') format('woff'),
+         url('../fonts/OldStandard/oldstandard.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway/raleway-regular-webfont.woff') format('woff'),
+         url('../fonts/raleway/raleway.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+$pacifico:"pacifico";
+$oldstandard:"old_standard";
+$raleway:"raleway","Helvetica",Arial,sans-serif;

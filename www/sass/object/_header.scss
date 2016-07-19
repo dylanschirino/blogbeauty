@@ -1,0 +1,55 @@
+/* BLOGBEAUTY
+*
+* /sass/object/header.scss - non design header stylesheet
+*
+* coded by Dylan Schirino
+* started at 19/07/2016
+*/
+
+.header{
+  &__banner{
+    height:24em;
+  }
+  &__subtitle{
+    text-align: center;
+    margin-top:2.1em;
+  }
+  &__menu{
+    height: 8.7em;
+  }
+}
+
+.menu{
+  &__link{
+    display:inline-block;
+    float: left;
+  }
+  &__container{
+    width: 65em;
+    margin: auto;
+    &::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+  &__form{
+    position: relative;
+  }
+}
+
+.form{
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__input{
+    margin-left: 3.6em;
+  }
+  &__submit{
+    float: right;
+    position: absolute;
+    top:1px;
+  }
+}

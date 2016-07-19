@@ -1,0 +1,177 @@
+/* BLOGBEAUTY
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 19/07/2016
+ */
+@font-face {
+  font-family: 'pacifico';
+  src: url("../fonts/pacifico/pacifico-webfont.woff2") format("woff2"), url("../fonts/pacifico/pacifico-webfont.woff") format("woff"), url("../fonts/pacifico/pacifico.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'old_standard';
+  src: url("../fonts/OldStandard/oldstandard-regular-webfont.woff2") format("woff2"), url("../fonts/OldStandard/oldstandard-regular-webfont.woff") format("woff"), url("../fonts/OldStandard/oldstandard.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/raleway-regular-webfont.woff2") format("woff2"), url("../fonts/raleway/raleway-regular-webfont.woff") format("woff"), url("../fonts/raleway/raleway.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*Fin du reset de meyer*/
+/* BLOGBEAUTY
+ *
+ * /sass/base/root.scss - ROOT stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 19/07/2016
+ */
+body {
+  font-size: 62.5%;
+  opacity: 0.7; }
+
+a {
+  text-decoration: none; }
+
+/* BLOGBEAUTY
+*
+* /sass/object/header.scss - non design header stylesheet
+*
+* coded by Dylan Schirino
+* started at 19/07/2016
+*/
+.header__banner {
+  height: 24em; }
+
+.header__subtitle {
+  text-align: center;
+  margin-top: 2.1em; }
+
+.header__menu {
+  height: 8.7em; }
+
+.menu__link {
+  display: inline-block;
+  float: left; }
+
+.menu__container {
+  width: 65em;
+  margin: auto; }
+  .menu__container::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.menu__form {
+  position: relative; }
+
+.form::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.form__input {
+  margin-left: 3.6em; }
+
+.form__submit {
+  float: right;
+  position: absolute;
+  top: 1px; }
+
+/* BLOGBEAUTY
+*
+* /sass/object/header.scss - non design header stylesheet
+*
+* coded by Dylan Schirino
+* started at 19/07/2016
+*/
+.header__banner {
+  background: url("../img/banner.jpg") no-repeat center center;
+  background-size: cover; }
+
+.header__title {
+  font-family: "pacifico";
+  font-size: 4.8em;
+  text-align: center;
+  padding-top: 1.29166em; }
+
+.header__subtitle {
+  font-family: "old_standard";
+  font-size: 2.4em;
+  color: white; }
+
+.header__menu {
+  background-color: #F3ECEB; }
+
+.menu__link {
+  font-family: "raleway", "Helvetica", Arial, sans-serif;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  color: #333333;
+  padding-right: 2.0625em; }
+
+.menu__container {
+  padding: 3.6em 0 3.2em 0; }
+
+.menu__form {
+  padding-left: 6.4em; }
+
+/*# sourceMappingURL=styles.css.map */
