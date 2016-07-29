@@ -201,6 +201,10 @@ a {
       float: left; }
     .aside__element--right {
       float: right; }
+  .aside svg {
+    position: absolute;
+    left: -113px;
+    bottom: 0; }
 
 /* BLOGBEAUTY
 *
@@ -241,6 +245,45 @@ a {
 
 .sublist__element {
   display: inline-block; }
+
+/* BLOGBEAUTY
+*
+* /sass/Object/discover.scss - Non design of the Discover section stylesheet
+*
+* coded by Dylan Schirino
+* started at 29/07/2016
+*/
+.moreArticle__title {
+  margin: 4em 0 2.04167em 11.1em; }
+
+.moreArticle__container {
+  width: 25.6em;
+  height: 20.2em; }
+
+.moreArticle__article {
+  position: relative;
+  width: 25.6em;
+  height: 24em;
+  overflow: hidden;
+  display: inline-block; }
+
+.moreArticle__container {
+  position: absolute;
+  top: 0;
+  left: -256px; }
+
+.moreArticle__theme {
+  display: block;
+  margin-top: 1.111em; }
+
+.moreArticle__text {
+  width: 14em;
+  margin: 0.8571428571em auto; }
+
+.moreArticle__button {
+  margin: 0;
+  display: block;
+  margin: 1em auto; }
 
 /* BLOGBEAUTY
 *
@@ -436,5 +479,43 @@ a {
 
 .sublist__element {
   color: #C77083; }
+
+/* BLOGBEAUTY
+*
+* /sass/components/discover.scss - design of the Discover section stylesheet
+*
+* coded by Dylan Schirino
+* started at 29/07/2016
+*/
+.moreArticle__title {
+  font: 2.4em "old_standard";
+  text-transform: uppercase; }
+
+.moreArticle__container {
+  background-color: #ECB7AC;
+  transition: all .35s ease-in;
+  display: inline-block; }
+
+.moreArticle__link {
+  display: block;
+  color: black;
+  z-index: 0; }
+  .moreArticle__link:hover ~ .moreArticle__container {
+    opacity: 0.9;
+    margin-left: 26em;
+    display: block; }
+
+.moreArticle__theme {
+  text-align: center;
+  font: 1.8em/1.4em "old_standard";
+  text-transform: uppercase;
+  color: white; }
+  .moreArticle__theme::before {
+    content: "\e901";
+    font: 1.4em "glyphs";
+    padding-right: 1em; }
+
+.moreArticle__text {
+  font-size: 1.4em; }
 
 /*# sourceMappingURL=styles.css.map */

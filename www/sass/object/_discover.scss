@@ -1,0 +1,42 @@
+/* BLOGBEAUTY
+*
+* /sass/Object/discover.scss - Non design of the Discover section stylesheet
+*
+* coded by Dylan Schirino
+* started at 29/07/2016
+*/
+
+.moreArticle{
+  &__title{
+    margin: 4em 0 2.04167em 11.1em;
+  }
+  &__container{
+    width: 25.6em;
+    height: 20.2em;
+  }
+  &__article{
+    position: relative;
+    width: 25.6em;
+    height: 24em;
+    overflow: hidden;
+    display: inline-block;
+  }
+  &__container{
+    position: absolute;
+    top:0;
+    left:-256px;
+  }
+  &__theme{
+    display: block;
+    margin-top:1.111em;
+  }
+  &__text{
+    width:14em;
+    margin:0.8571428571em auto;
+  }
+  &__button{
+    margin: 0;
+    display: block;
+    margin:1em auto;
+  }
+}
