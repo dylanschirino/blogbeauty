@@ -1,1 +1,38 @@
+/* BLOGBEAUTY
+*
+* /sass/object/aside.scss - non design Aside stylesheet
+*
+* coded by Dylan Schirino
+* started at 28/07/2016
+*/
 
+.aside{
+  width: 23.1em;
+  float: right;
+  margin-right: 4.2em;
+  margin-top: 5.1em;
+  position: relative;
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__title{
+    margin-top: 1.58333em;
+  }
+  &__sticker{
+    position: absolute;
+    top:-20px;
+    left: 35px;
+  }
+  &__text{
+    width: 11.7em;
+    margin: auto;
+  }
+  &__link{
+    &::before{
+      width:58px;
+      height:58px;
+    }
+  }
+}

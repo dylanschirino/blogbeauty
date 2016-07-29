@@ -23,6 +23,19 @@
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'raleway-light';
+  src: url("../fonts/raleway/Raleway-Light.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'glyphs';
+  src: url("../fonts/glyphs/icomoon.eot?7munut");
+  src: url("../fonts/glyphs/icomoon.eot?7munut#iefix") format("embedded-opentype"), url("../fonts/glyphs/icomoon.ttf?7munut") format("truetype"), url("../fonts/glyphs/icomoon.woff?7munut") format("woff"), url("../fonts/glyphs/icomoon.svg?7munut#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .hidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -86,7 +99,11 @@ table {
  */
 body {
   font-size: 62.5%;
+  background: url("../img/grid.png") repeat;
   opacity: 0.7; }
+
+p {
+  font-family: "raleway", "Helvetica", Arial, sans-serif; }
 
 a {
   text-decoration: none; }
@@ -129,12 +146,43 @@ a {
   clear: both; }
 
 .form__input {
-  margin-left: 3.6em; }
+  margin-left: 2.65em; }
 
 .form__submit {
   float: right;
   position: absolute;
+  right: 14px;
   top: 1px; }
+
+/* BLOGBEAUTY
+*
+* /sass/object/aside.scss - non design Aside stylesheet
+*
+* coded by Dylan Schirino
+* started at 28/07/2016
+*/
+.aside {
+  width: 23.1em;
+  float: right;
+  margin-right: 4.2em;
+  margin-top: 5.1em;
+  position: relative; }
+  .aside::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .aside__title {
+    margin-top: 1.58333em; }
+  .aside__sticker {
+    position: absolute;
+    top: -20px;
+    left: 35px; }
+  .aside__text {
+    width: 11.7em;
+    margin: auto; }
+  .aside__link::before {
+    width: 58px;
+    height: 58px; }
 
 /* BLOGBEAUTY
 *
@@ -173,5 +221,59 @@ a {
 
 .menu__form {
   padding-left: 6.4em; }
+
+.form__input {
+  border: none;
+  font: 1.4em "raleway", "Helvetica", Arial, sans-serif;
+  background: none;
+  color: black;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #333333; }
+
+.form__submit {
+  width: 1.7em;
+  height: 1.7em;
+  border: none;
+  background: none;
+  background: url("../img/search.svg") no-repeat;
+  transition: .2s ease-in-out; }
+  .form__submit:hover {
+    cursor: pointer;
+    transform: rotate(60deg); }
+
+/* BLOGBEAUTY
+*
+* /sass/components/aside.scss - design Aside stylesheet
+*
+* coded by Dylan Schirino
+* started at 28/07/2016
+*/
+.aside {
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); }
+  .aside__title {
+    font: 2.4em "old_standard";
+    text-align: center; }
+  .aside__photo {
+    display: block;
+    margin: 1em auto; }
+  .aside__text {
+    font-size: 1.4em;
+    padding-top: 0.6em; }
+  .aside__link {
+    font-size: 1.4em;
+    font-family: "raleway", "Helvetica", Arial, sans-serif;
+    font-weight: lighter;
+    color: #ECB7AC; }
+    .aside__link::before {
+      display: block;
+      font-family: "glyphs";
+      font-size: 1.7em;
+      text-align: center;
+      line-height: 2.4em;
+      border-radius: 50%;
+      border: 1px solid #ECB7AC; }
+    .aside__link--twitter::before {
+      content: "\e90a"; }
 
 /*# sourceMappingURL=styles.css.map */

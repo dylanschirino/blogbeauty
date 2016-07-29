@@ -1,1 +1,43 @@
+/* BLOGBEAUTY
+*
+* /sass/components/aside.scss - design Aside stylesheet
+*
+* coded by Dylan Schirino
+* started at 28/07/2016
+*/
+.aside{
+  background-color: $white;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+  &__title{
+    font:2.4em $oldstandard;
+    text-align: center;
+  }
+  &__photo{
+    display: block;
+    margin:1em auto;
+  }
+  &__text{
+    font-size: 1.4em;
+    padding-top:0.6em;
+  }
+  &__link{
+    font-size:1.4em;
+    font-family: $raleway;
+    font-weight:lighter;
+    color: $lightPink;
 
+    &::before{
+      display: block;
+      font-family: $glyphs;
+      font-size: 1.7em;
+      text-align: center;
+      line-height: 2.4em;
+      border-radius: 50%;
+      border: 1px solid $lightPink;
+    }
+    &--twitter::before{
+      content:"\e90a";
+    }
+  }
+
+}
