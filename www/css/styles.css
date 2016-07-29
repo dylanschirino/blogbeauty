@@ -100,7 +100,8 @@ table {
 body {
   font-size: 62.5%;
   background: url("../img/grid.png") repeat;
-  opacity: 0.7; }
+  opacity: 0.7;
+  background-color: #F6F6F6; }
 
 p {
   font-family: "raleway", "Helvetica", Arial, sans-serif;
@@ -165,7 +166,7 @@ a {
 .aside {
   width: 23.1em;
   float: right;
-  margin-right: 4.2em;
+  margin-right: 8em;
   margin-top: 5.1em;
   position: relative; }
   .aside::after {
@@ -200,6 +201,46 @@ a {
       float: left; }
     .aside__element--right {
       float: right; }
+
+/* BLOGBEAUTY
+*
+* /sass/Object/mainArticle.scss - Non design of the Main Article stylesheet
+*
+* coded by Dylan Schirino
+* started at 29/07/2016
+*/
+.article {
+  width: 65em;
+  margin: 5em 0 0 17em; }
+  .article__share {
+    position: relative;
+    left: -12px;
+    float: right; }
+
+.latest__container {
+  width: 53.1em; }
+
+.latest__element--like, .latest__element--time {
+  display: inline-block; }
+
+.latest__text {
+  margin: 2.1875em 4.5625em 2.1875em 0em;
+  width: 29.0625em; }
+
+.latest__button {
+  display: block;
+  width: 12.25em;
+  height: 2.5em;
+  margin: 3.25em 8.7em 0 8.7em; }
+
+.imgcontainer__img {
+  vertical-align: bottom; }
+
+.list__sublist {
+  display: inline-block; }
+
+.sublist__element {
+  display: inline-block; }
 
 /* BLOGBEAUTY
 *
@@ -317,5 +358,83 @@ a {
   .aside__bold {
     font-weight: bolder;
     color: #C77083; }
+
+/* BLOGBEAUTY
+*
+* /sass/components/mainArticle.scss - design of the Main Article stylesheet
+*
+* coded by Dylan Schirino
+* started at 29/07/2016
+*/
+.share__element {
+  width: 4.9em;
+  height: 4.2em; }
+  .share__element--twitter {
+    background-color: #4099FF; }
+  .share__element--facebook {
+    background-color: #3D5B93; }
+  .share__element--hellocoton {
+    background-color: #D30D66; }
+
+.share__link {
+  display: block;
+  transition: .2s ease-in; }
+  .share__link:hover {
+    transform: rotateZ(-15deg); }
+  .share__link::before {
+    display: block;
+    text-align: center;
+    font-family: "glyphs";
+    font-size: 2em;
+    line-height: 2em;
+    color: white; }
+  .share__link--twitter::before {
+    content: "\e90a"; }
+  .share__link--facebook::before {
+    content: "\e902"; }
+  .share__link--hellocoton::before {
+    content: "\e909"; }
+
+.latest__container {
+  background-color: white;
+  padding-left: 5.7em;
+  padding-bottom: 3.5em; }
+
+.latest__title {
+  padding-top: 0.833em;
+  font: 2.4em/1.5 "old_standard";
+  text-transform: uppercase; }
+
+.latest__list {
+  font: 1.4em "raleway", "Helvetica", Arial, sans-serif; }
+
+.latest__element {
+  padding-top: 1em; }
+  .latest__element--time {
+    color: #C77083;
+    padding-right: 2.4em; }
+  .latest__element--like {
+    font-size: 1.1428571429em; }
+    .latest__element--like::after {
+      content: "\e903";
+      font: 1em "glyphs";
+      color: #C77083; }
+
+.latest__button {
+  text-align: center;
+  font: 1.6em "old_standard";
+  line-height: 3em;
+  text-transform: uppercase;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  transition: .2s ease-in-out; }
+  .latest__button:hover {
+    background-color: white;
+    border: 1px inset black;
+    color: black; }
+
+.sublist__element {
+  color: #C77083; }
 
 /*# sourceMappingURL=styles.css.map */
