@@ -103,7 +103,8 @@ body {
   opacity: 0.7; }
 
 p {
-  font-family: "raleway", "Helvetica", Arial, sans-serif; }
+  font-family: "raleway", "Helvetica", Arial, sans-serif;
+  font-size: 1.6em; }
 
 a {
   text-decoration: none; }
@@ -180,9 +181,25 @@ a {
   .aside__text {
     width: 11.7em;
     margin: auto; }
-  .aside__link::before {
-    width: 58px;
-    height: 58px; }
+  .aside__link {
+    display: block; }
+    .aside__link::before {
+      width: 58px;
+      height: 58px; }
+  .aside__list {
+    width: 20em; }
+    .aside__list::after {
+      content: "";
+      display: block;
+      clear: both; }
+  .aside__element {
+    margin-top: 2em;
+    margin-left: 2.8em;
+    margin-bottom: 2.9em; }
+    .aside__element--left {
+      float: left; }
+    .aside__element--right {
+      float: right; }
 
 /* BLOGBEAUTY
 *
@@ -260,6 +277,12 @@ a {
   .aside__text {
     font-size: 1.4em;
     padding-top: 0.6em; }
+  .aside__element {
+    text-align: center; }
+    .aside__element:hover .aside__link::before {
+      background-color: #ECB7AC;
+      color: white;
+      cursor: pointer; }
   .aside__link {
     font-size: 1.4em;
     font-family: "raleway", "Helvetica", Arial, sans-serif;
@@ -270,10 +293,29 @@ a {
       font-family: "glyphs";
       font-size: 1.7em;
       text-align: center;
+      margin-bottom: 0.5882352941em;
       line-height: 2.4em;
       border-radius: 50%;
       border: 1px solid #ECB7AC; }
     .aside__link--twitter::before {
       content: "\e90a"; }
+    .aside__link--insta::before {
+      content: "\e904"; }
+    .aside__link--hellocoton::before {
+      content: "\e909"; }
+    .aside__link--facebook::before {
+      content: "\e902"; }
+    .aside__link--pinterest::before {
+      content: "\e908"; }
+  .aside__keyword {
+    font-size: 1.6em;
+    line-height: 2.0625em;
+    padding: 0 2.0625em 1.625em 1.99em; }
+  .aside__pointout {
+    font-size: 1.5em;
+    /*24px*/ }
+  .aside__bold {
+    font-weight: bolder;
+    color: #C77083; }
 
 /*# sourceMappingURL=styles.css.map */

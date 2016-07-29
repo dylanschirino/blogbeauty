@@ -30,9 +30,29 @@
     margin: auto;
   }
   &__link{
+    display: block;
     &::before{
       width:58px;
       height:58px;
+    }
+  }
+  &__list{
+    width: 20em;
+    &::after{
+      content:"";
+      display: block;
+      clear: both;
+    }
+  }
+  &__element{
+    margin-top: 2em;
+    margin-left:2.8em;
+    margin-bottom: 2.9em;
+    &--left{
+      float: left;
+    }
+    &--right{
+      float: right;
     }
   }
 }
