@@ -1,0 +1,42 @@
+/* BLOGBEAUTY
+*
+* /sass/object/about.scss - NON design of the About section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+
+.whoami{
+  &__title{
+    margin-left: 3em
+  }
+  &__img{
+    border-radius: 50%;
+    display: block;
+  }
+  &__svg{
+    display:inline-block;
+    margin-left: 11em;
+  }
+  &__imgContainer{
+    &::after{
+      content: "";
+      overflow: hidden;
+      clear: both;
+    }
+  }
+  &__img{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__col{
+    width: 104.8em;
+    margin:4em auto;
+    column-count:2;
+    column-gap: 2.5em;
+  }
+  &__signature{
+    display: block;
+    margin: 1.4722em 0;
+  }
+}

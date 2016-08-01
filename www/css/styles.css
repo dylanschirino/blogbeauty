@@ -123,7 +123,7 @@ a {
 
 .header__subtitle {
   text-align: center;
-  margin-top: 2.1em; }
+  margin-top: 1.9em; }
 
 .header__menu {
   height: 8.7em; }
@@ -397,6 +397,43 @@ a {
   height: 2.75em;
   float: right;
   margin-right: 6.1em; }
+
+/* BLOGBEAUTY
+*
+* /sass/object/about.scss - NON design of the About section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.whoami__title {
+  margin-left: 3em; }
+
+.whoami__img {
+  border-radius: 50%;
+  display: block; }
+
+.whoami__svg {
+  display: inline-block;
+  margin-left: 11em; }
+
+.whoami__imgContainer::after {
+  content: "";
+  overflow: hidden;
+  clear: both; }
+
+.whoami__img {
+  display: inline-block;
+  vertical-align: middle; }
+
+.whoami__col {
+  width: 104.8em;
+  margin: 4em auto;
+  column-count: 2;
+  column-gap: 2.5em; }
+
+.whoami__signature {
+  display: block;
+  margin: 1.4722em 0; }
 
 /* BLOGBEAUTY
 *
@@ -788,5 +825,21 @@ a {
     border-color: black;
     color: black;
     cursor: pointer; }
+
+/* BLOGBEAUTY
+*
+* /sass/components/about.scss - design of the About section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.whoami__title {
+  font: 3.6em/5.3 "old_standard";
+  text-transform: uppercase;
+  letter-spacing: 2.25px; }
+
+.whoami__signature {
+  text-align: center;
+  font: 3.6em "pacifico"; }
 
 /*# sourceMappingURL=styles.css.map */
