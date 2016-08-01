@@ -1,0 +1,43 @@
+/* BLOGBEAUTY
+*
+* /sass/object/footer.scss - NON design of the Footer section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.footer{
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  &__plan{
+    margin-left: 11em;
+    display: inline-block;
+    width: 19em;
+  }
+  &__contact{
+    float: right;
+  }
+}
+
+
+.plan{
+  &__gloss{
+    display: inline-block;
+    float: right;
+  }
+}
+
+.contact{
+  &__container{
+    margin-left: 10em;
+  }
+  &__link{
+    margin-right: 2.667em;
+    display: inline-block;
+  }
+  &__email{
+    margin-top: 2.1428571429em;
+  }
+}

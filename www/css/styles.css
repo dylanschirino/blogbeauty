@@ -304,6 +304,46 @@ a {
 * coded by Dylan Schirino
 * started at 01/08/2016
 */
+.instagram {
+  height: 20em;
+  margin-bottom: 5.4em; }
+  .instagram__title {
+    margin-left: 8.6em; }
+
+/* BLOGBEAUTY
+*
+* /sass/object/footer.scss - NON design of the Footer section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.footer::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.footer__plan {
+  margin-left: 11em;
+  display: inline-block;
+  width: 19em; }
+
+.footer__contact {
+  float: right; }
+
+.plan__gloss {
+  display: inline-block;
+  float: right; }
+
+.contact__container {
+  margin-left: 10em; }
+
+.contact__link {
+  margin-right: 2.667em;
+  display: inline-block; }
+
+.contact__email {
+  margin-top: 2.1428571429em; }
+
 /* BLOGBEAUTY
 *
 * /sass/object/header.scss - non design header stylesheet
@@ -581,5 +621,70 @@ a {
 * coded by Dylan Schirino
 * started at 01/08/2016
 */
+.instagram__title {
+  font: 2.4em "old_standard";
+  text-transform: uppercase; }
+
+/* BLOGBEAUTY
+*
+* /sass/components/footer.scss - Design of the Footer section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.footer {
+  background: url("../img/palette.svg") no-repeat center center;
+  background-color: #ECB7AC;
+  color: white;
+  padding-bottom: 2.6em; }
+  .footer__plan {
+    background: url("../img/gloss.svg") no-repeat 156px 130px; }
+
+.plan__title {
+  font: 2.4em/3 "old_standard";
+  padding-top: 2.1666em; }
+
+.plan__element {
+  font: 1.6em/2.4 "raleway", "Helvetica", Arial, sans-serif; }
+  .plan__element::before {
+    content: "\e903";
+    font: 1em "glyphs";
+    padding-right: 1.5em; }
+
+.plan__link {
+  color: #333333; }
+
+.contact__title {
+  font: 2.4em/3 "old_standard";
+  padding-top: 2.1666em; }
+
+.contact__link {
+  font: 1.2em "raleway", "Helvetica", Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  transition: .2s ease-in-out; }
+  .contact__link:hover {
+    color: black; }
+  .contact__link::before {
+    display: block;
+    font: 2.5em "glyphs";
+    padding-bottom: 0.64em; }
+  .contact__link--twitter::before {
+    content: "\e90a";
+    text-align: center; }
+  .contact__link--facebook::before {
+    content: "\e902";
+    text-align: center; }
+  .contact__link--insta::before {
+    content: "\e904";
+    text-align: center; }
+  .contact__link--mail {
+    text-transform: none; }
+    .contact__link--mail:hover {
+      text-decoration: underline; }
+
+.contact__email {
+  font-size: 1.2em;
+  text-transform: none; }
 
 /*# sourceMappingURL=styles.css.map */

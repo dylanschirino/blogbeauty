@@ -5,3 +5,10 @@
 * coded by Dylan Schirino
 * started at 01/08/2016
 */
+
+.instagram{
+  &__title{
+    font: 2.4em $oldstandard;
+    text-transform: uppercase;
+  }
+}
