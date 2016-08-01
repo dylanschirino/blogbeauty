@@ -1,0 +1,59 @@
+/* BLOGBEAUTY
+*
+* /sass/object/contact.scss - design of the Contact section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+
+.contact{
+  width: 58.9em;
+  margin:5em 0 0 16.8em;
+  &::after{
+    content: "";
+    overflow: hidden;
+    clear: both;
+  }
+  &__img{
+    float: left;
+    margin-right: 8.1em;
+  }
+  &__explain{
+    width:40em;
+  }
+}
+.formulaire{
+  &::after{
+    content: "";
+    overflow: hidden;
+    clear: both;
+  }
+  &__container{
+    width:92.7em;
+    margin:3.8em auto;
+  }
+  &__input{
+    display: block;
+    width: 15em;
+    height: 2.8125em;
+    margin-bottom:1.6875em;
+    &--textarea{
+      width: 20.625em;
+      min-height: 16em;
+      margin-right: 6.1em;
+    }
+  }
+  &__left{
+    float: left;
+  }
+  &__right{
+    float: right;
+    margin-left: -10em;
+  }
+  &__submit{
+    width: 9.5em;
+    height: 2.75em;
+    float: right;
+    margin-right:6.1em;
+  }
+}

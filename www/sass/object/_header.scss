@@ -22,7 +22,6 @@
 .menu{
   &__link{
     display:inline-block;
-    float: left;
   }
   &__container{
     width: 65em;
@@ -35,6 +34,7 @@
   }
   &__form{
     position: relative;
+    margin-top: -1.7em;
   }
 }
 
@@ -45,12 +45,12 @@
     clear: both;
   }
   &__input{
-    margin-left: 2.65em;
+    float:right;
+
   }
   &__submit{
-    float: right;
     position: absolute;
-    right:14px;
-    top:1px;
+    right:0px;
+    top:0px;
   }
 }

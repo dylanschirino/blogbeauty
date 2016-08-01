@@ -16,15 +16,15 @@
     font-size: 4.8em;
     text-align: center;
     padding-top: 1.29166em;
-    }
-    &__subtitle{
-      font-family:$oldstandard;
-      font-size: 2.4em;
-      color:$white;
-    }
-    &__menu{
-      background-color: $menuBckg;
-    }
+  }
+  &__subtitle{
+    font-family:$oldstandard;
+    font-size: 2.4em;
+    color:$white;
+  }
+  &__menu{
+    background-color: $menuBckg;
+  }
 }
 
 .menu{
@@ -34,6 +34,14 @@
     text-transform: uppercase;
     color:$lightDark;
     padding-right:2.0625em;
+    transition: .2s ease-in-out;
+    &:hover{
+      color: $pink;
+    }
+    &--active{
+      font-weight: bold;
+      color: $pink;
+    }
   }
   &__container{
     padding: 3.6em 0 3.2em 0;

@@ -14,17 +14,18 @@
 </head>
 <body id="haut">
   <header class="header">
-
+    <div class="header__banner">
     <h1 aria-level="1" class="header__title">
       ShowYourGlitters
     </h1>
     <p class="header__subtitle">
       Blog beauté,&nbsp;Mode et Lifestyle
     </p>
-
-    <nav class="menu">
-      <h2 aria-level="2" class="menu__title">Navigation Principale</h2>
-      <a class="menu__link" href="index.html" title="Vers la page d'accueil">Accueil</a>
+    </div>
+    <nav class="header__menu">
+      <h2 aria-level="2" class="menu__title hidden">Navigation Principale</h2>
+      <div class="menu__container">
+      <a class="menu__link menu__link--active" href="index.html" title="Vers la page d'accueil">Accueil</a>
 
       <a class="menu__link" href="categories.html" title="Vers la page des catégories">Catégories</a>
 
@@ -32,18 +33,20 @@
 
       <a class="menu__link" href="about.html" title="Vers la page à propos">À Propos</a>
 
+      <form class="menu__form" action="#" method="post">
+        <input class="form__input" type="text" placeholder="Recherche" value="">
+        <input class="form__submit" type="submit" value="">
+      </form>
+    </div>
     </nav>
-    <form class="header__form" action="#" method="post">
-      <input class="form__input" type="text" placeholder="Recherche" value="">
-      <input class="form__input" type="submit" value="Envoyer">
-    </form>
   </header>
 
   <aside class="aside">
-    <h2 aria-level="2" class="aside__title">
+    <h2 aria-level="2" class="hidden">
         Information Complémentaire
     </h2>
     <section class="aside__section">
+      <img src="img/Sticker.svg" class="aside__sticker" width="160" height="50" alt="Autocollant décoratif">
       <h3 aria-level="3" class="aside__title">
         Hello,&nbsp;it's me !
       </h3>
@@ -58,22 +61,22 @@
         Je suis sociale !
       </h3>
       <ul class="aside__list">
-        <li class="aside__element">
+        <li class="aside__element aside__element--left">
           <a class="aside__link aside__link--twitter" href="#" title="Accéder à mon twitter">Twitter</a>
         </li>
-        <li class="aside__element">
+        <li class="aside__element aside__element--right">
           <a class="aside__link aside__link--facebook" href="#" title="Accéder à mon">Facebook</a>
         </li>
-        <li class="aside__element">
+        <li class="aside__element aside__element--left">
           <a class="aside__link aside__link--insta" href="#" title="Accéder à mon Instagram">Instagram</a>
         </li>
-        <li class="aside__element">
+        <li class="aside__element aside__element--right">
           <a class="aside__link aside__link--pinterest" href="#" title="Accéder à mon Pinterest">Pinterest</a>
         </li>
-        <li class="aside__element">
+        <li class="aside__element aside__element--left">
           <a class="aside__link aside__link--hellocoton" href="#" title="Accéder à mon HelloCoton">HelloCoton</a>
         </li>
-        <li class="aside__element">
+        <li class="aside__element aside__element--right">
           <a class="aside__link aside__link--google" href="#" title="Accéder à mon Google +">Google +</a>
         </li>
       </ul>
@@ -83,13 +86,12 @@
       <h3 aria-level="3" class="aside__title">
         Pour vous aider
       </h3>
-      <p class="aside__text">
+      <p class="aside__keyword">
         MakeUp, Maquillage,
-        Ongles, Nailart, blush, palettes,
-        SteamPod, blush, palettes,
+        <span class="aside__pointout">Ongles</span>, Nailart, blush, palettes,
+        <span class="aside__bold">SteamPod</span>, blush, palettes,
       </p>
     </section>
-
   </aside>
   <main>
     <section class="contact">
@@ -108,36 +110,43 @@
     </section>
 
     <section class="form">
-      <h2 class="form__title" aria-level="2">
+      <h2 class="formulaire__title hidden" aria-level="2">
         Formulaire de Contact
       </h2>
 
-      <form class="form__container" action="#" method="post">
+      <form class="formulaire__container" action="#" method="post">
         <fieldset>
-          <legend class="form__legend">
+          <legend class="formulaire__legend hidden">
             Contact
           </legend>
-          <label for="name" class="form__label">
+
+          <div class="formulaire__left">
+          <label for="name" class="formulaire__label">
             Nom&nbsp;:&nbsp;
           </label>
-          <input class="form__input" id="name" type="text" name="nom" value="" placeholder="Nom">
+          <input class="formulaire__input" id="name" type="text" name="nom" value="" placeholder="Nom">
 
-          <label for="mail" class="form__label">
+          <label for="mail" class="formulaire__label">
             Email&nbsp;:&nbsp;
           </label>
-          <input class="form__input" id="mail" type="email" name="mail" value="" placeholder="Email">
+          <input class="formulaire__input" id="mail" type="email" name="mail" value="" placeholder="Email">
 
-          <label for="subject" class="form__label">
+          <label for="subject" class="formulaire__label">
             Sujet&nbsp;:&nbsp;
           </label>
-          <input class="form__input" id="subject" type="text" name="sujet" value="" placeholder="Sujet">
+          <input class="formulaire__input" id="subject" type="text" name="sujet" value="" placeholder="Sujet">
+        </div>
 
-          <label for="message" class="form__label">
+          <div class="formulaire__right">
+          <label for="message" class="formulaire__label formulaire__label--textarea">
             Message&nbsp;:&nbsp;
           </label>
-          <textarea class="form__input" id="message" name="message">
+          <textarea class="formulaire__input formulaire__input--textarea" id="message" name="message">
           </textarea>
-          <input class="form__submit" type="submit" value="Envoyer">
+
+            <input class="formulaire__submit" type="submit" value="Envoyer">
+        </div>
+
 
         </fieldset>
       </form>
@@ -174,17 +183,20 @@
     </section>
 
     <section class="footer__contact">
+      <div class="contact__container">
       <h3 class="contact__title">
         Me contacter
       </h3>
-    <div class="contact__container">
       <a class="contact__link contact__link--twitter" href="#" title="Accéder à mon twitter">Twitter</a>
 
       <a class="contact__link contact__link--facebook" href="#" title="Accéder à mon">Facebook</a>
 
       <a class="contact__link contact__link--insta" href="#" title="Accéder à mon Instagram">Instagram</a>
 
-      <a class="contact__link contact__link--mail" href="mailto:showyourglitters@gmail.com" title="M'envoyez un email avec votre gestionnaire de Mail">
+      <p class="contact__email">Mon email&nbsp;:&nbsp;
+      <a class="contact__link contact__link--mail" href="mailto:showyourglitters@gmail.com" title="M'envoyez un email avec votre gestionnaire de Mail">showyourglitters@gmail.com</a>
+      </p>
+
     </div>
     <a class="latest__button" href="#haut" title="Prendre l'ascenseur pour remonter en haut de la page">Haut de page</a>
     </section>
