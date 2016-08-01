@@ -30,6 +30,9 @@
   }
   &__link{
     color: $lightDark;
+    &:hover{
+      text-decoration: underline;
+    }
   }
 }
 
@@ -37,6 +40,7 @@
   &__title{
     font: 2.4em/3 $oldstandard;
     padding-top: 2.1666em;
+    text-transform: none;
   }
   &__link{
     font:1.2em $raleway;

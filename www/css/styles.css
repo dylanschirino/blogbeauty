@@ -111,6 +111,9 @@ p {
 a {
   text-decoration: none; }
 
+.margin {
+  max-width: 126.5em; }
+
 /* BLOGBEAUTY
 *
 * /sass/object/header.scss - non design header stylesheet
@@ -167,7 +170,6 @@ a {
   width: 23.1em;
   float: right;
   margin-right: 8em;
-  margin-top: 5.1em;
   position: relative; }
   .aside::after {
     content: "";
@@ -332,6 +334,10 @@ a {
 .footer__contact {
   float: right; }
 
+.footer__wrap {
+  max-width: 126.5em;
+  margin: auto; }
+
 .plan__gloss {
   display: inline-block;
   float: right; }
@@ -485,7 +491,8 @@ a {
   background: none;
   color: black;
   padding-bottom: 7px;
-  border-bottom: 1px solid #333333; }
+  border-bottom: 1px solid #333333;
+  outline: none; }
 
 .form__submit {
   width: 1.7em;
@@ -652,14 +659,14 @@ a {
   transition: all .35s ease-in;
   display: inline-block; }
 
+.moreArticle__article:hover > .moreArticle__container {
+  opacity: 0.9;
+  transform: translateX(256px);
+  display: block; }
+
 .moreArticle__link {
   display: block;
-  color: black;
-  z-index: 0; }
-  .moreArticle__link:hover ~ .moreArticle__container {
-    opacity: 0.9;
-    transform: translateX(256px);
-    display: block; }
+  color: black; }
 
 .moreArticle__theme {
   text-align: center;
@@ -751,10 +758,13 @@ a {
 
 .plan__link {
   color: #333333; }
+  .plan__link:hover {
+    text-decoration: underline; }
 
 .contact__title {
   font: 2.4em/3 "old_standard";
-  padding-top: 2.1666em; }
+  padding-top: 2.1666em;
+  text-transform: none; }
 
 .contact__link {
   font: 1.2em "raleway", "Helvetica", Arial, sans-serif;

@@ -16,15 +16,14 @@
     transition: all .35s ease-in;
     display: inline-block;
   }
+  &__article:hover > .moreArticle__container{
+    opacity: 0.9;
+    transform: translateX(256px);
+    display: block;
+  }
   &__link{
      display:block;
      color: $black;
-     z-index: 0;
-      &:hover ~ .moreArticle__container{
-        opacity: 0.9;
-        transform: translateX(256px);
-        display: block;
-      }
   }
   &__theme{
     text-align: center;
