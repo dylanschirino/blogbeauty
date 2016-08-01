@@ -22,7 +22,7 @@
      z-index: 0;
       &:hover ~ .moreArticle__container{
         opacity: 0.9;
-        margin-left: 26em;
+        transform: translateX(256px);
         display: block;
       }
   }
@@ -40,5 +40,49 @@
   }
   &__text{
     font-size: 1.4em;
+  }
+  &__titleCards{
+    padding: 1.125em 0 0.875em 0;
+    font:1.6em/1.5 $oldstandard;
+    text-transform: uppercase;
+  }
+  &__list{
+    font: 1.4em $raleway;
+  }
+  &__element{
+    &--comment{
+      font-size: 1.1428571429em;
+    }
+    &--comment::before{
+      content:"\e90b";
+      font:1.1em $glyphs;
+      color:$pink;
+      padding:0 0.2em 0 1.666em;
+    }
+  }
+}
+
+.pagination{
+  &__link{
+    font: 1.8em $raleway;
+    color: $pink;
+    text-decoration: underline;
+    padding-right: 1.8888em;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &__element{
+    font: 1.8em/2.3 $raleway;
+    border-radius: 50%;
+    background-color: $pink;
+    color: $white;
+    text-align: center;
+    transition: .2s ease-in;
+    &:hover{
+      background-color: $white;
+      color: $pink;
+      cursor: pointer;
+    }
   }
 }

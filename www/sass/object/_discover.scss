@@ -7,8 +7,10 @@
 */
 
 .moreArticle{
+  width:91em;
+  margin: auto;
   &__title{
-    margin: 4em 0 2.04167em 11.1em;
+    margin: 4em 0 2.04167em 1.2em;
   }
   &__container{
     width: 25.6em;
@@ -17,9 +19,10 @@
   &__article{
     position: relative;
     width: 25.6em;
-    height: 24em;
+    height: 30em;
     overflow: hidden;
     display: inline-block;
+    margin:4.9em 0 0 3em;
   }
   &__container{
     position: absolute;
@@ -38,5 +41,27 @@
     margin: 0;
     display: block;
     margin:1em auto;
+  }
+  &__element{
+    display: inline-block;
+  }
+  &__pagination{
+    width:60em;
+    margin:5em auto;
+  }
+}
+
+.pagination{
+  &__list{
+    display: inline-block;
+  }
+  &__element{
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    margin-left: 1.111em;
+    &:last-child{
+      margin-right:1.8888em;
+    }
   }
 }

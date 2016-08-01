@@ -31,8 +31,8 @@
 
 @font-face {
   font-family: 'glyphs';
-  src: url("../fonts/glyphs/icomoon.eot?7munut");
-  src: url("../fonts/glyphs/icomoon.eot?7munut#iefix") format("embedded-opentype"), url("../fonts/glyphs/icomoon.ttf?7munut") format("truetype"), url("../fonts/glyphs/icomoon.woff?7munut") format("woff"), url("../fonts/glyphs/icomoon.svg?7munut#icomoon") format("svg");
+  src: url("../fonts/glyphs/icomoon.eot?v65uyt");
+  src: url("../fonts/glyphs/icomoon.eot?v65uyt#iefix") format("embedded-opentype"), url("../fonts/glyphs/icomoon.ttf?v65uyt") format("truetype"), url("../fonts/glyphs/icomoon.woff?v65uyt") format("woff"), url("../fonts/glyphs/icomoon.svg?v65uyt#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -99,8 +99,6 @@ table {
  */
 body {
   font-size: 62.5%;
-  background: url("../img/grid.png") repeat;
-  opacity: 0.7;
   background-color: #F6F6F6; }
 
 p {
@@ -253,38 +251,59 @@ a {
 * coded by Dylan Schirino
 * started at 29/07/2016
 */
-.moreArticle__title {
-  margin: 4em 0 2.04167em 11.1em; }
+.moreArticle {
+  width: 91em;
+  margin: auto; }
+  .moreArticle__title {
+    margin: 4em 0 2.04167em 1.2em; }
+  .moreArticle__container {
+    width: 25.6em;
+    height: 20.2em; }
+  .moreArticle__article {
+    position: relative;
+    width: 25.6em;
+    height: 30em;
+    overflow: hidden;
+    display: inline-block;
+    margin: 4.9em 0 0 3em; }
+  .moreArticle__container {
+    position: absolute;
+    top: 0;
+    left: -256px; }
+  .moreArticle__theme {
+    display: block;
+    margin-top: 1.111em; }
+  .moreArticle__text {
+    width: 14em;
+    margin: 0.8571428571em auto; }
+  .moreArticle__button {
+    margin: 0;
+    display: block;
+    margin: 1em auto; }
+  .moreArticle__element {
+    display: inline-block; }
+  .moreArticle__pagination {
+    width: 60em;
+    margin: 5em auto; }
 
-.moreArticle__container {
-  width: 25.6em;
-  height: 20.2em; }
-
-.moreArticle__article {
-  position: relative;
-  width: 25.6em;
-  height: 24em;
-  overflow: hidden;
+.pagination__list {
   display: inline-block; }
 
-.moreArticle__container {
-  position: absolute;
-  top: 0;
-  left: -256px; }
+.pagination__element {
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: 1.111em; }
+  .pagination__element:last-child {
+    margin-right: 1.8888em; }
 
-.moreArticle__theme {
-  display: block;
-  margin-top: 1.111em; }
-
-.moreArticle__text {
-  width: 14em;
-  margin: 0.8571428571em auto; }
-
-.moreArticle__button {
-  margin: 0;
-  display: block;
-  margin: 1em auto; }
-
+/* BLOGBEAUTY
+*
+* /sass/object/instagram.scss - NON design of the Instagram section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
 /* BLOGBEAUTY
 *
 * /sass/object/header.scss - non design header stylesheet
@@ -502,7 +521,7 @@ a {
   z-index: 0; }
   .moreArticle__link:hover ~ .moreArticle__container {
     opacity: 0.9;
-    margin-left: 26em;
+    transform: translateX(256px);
     display: block; }
 
 .moreArticle__theme {
@@ -517,5 +536,50 @@ a {
 
 .moreArticle__text {
   font-size: 1.4em; }
+
+.moreArticle__titleCards {
+  padding: 1.125em 0 0.875em 0;
+  font: 1.6em/1.5 "old_standard";
+  text-transform: uppercase; }
+
+.moreArticle__list {
+  font: 1.4em "raleway", "Helvetica", Arial, sans-serif; }
+
+.moreArticle__element--comment {
+  font-size: 1.1428571429em; }
+
+.moreArticle__element--comment::before {
+  content: "\e90b";
+  font: 1.1em "glyphs";
+  color: #C77083;
+  padding: 0 0.2em 0 1.666em; }
+
+.pagination__link {
+  font: 1.8em "raleway", "Helvetica", Arial, sans-serif;
+  color: #C77083;
+  text-decoration: underline;
+  padding-right: 1.8888em; }
+  .pagination__link:hover {
+    text-decoration: none; }
+
+.pagination__element {
+  font: 1.8em/2.3 "raleway", "Helvetica", Arial, sans-serif;
+  border-radius: 50%;
+  background-color: #C77083;
+  color: white;
+  text-align: center;
+  transition: .2s ease-in; }
+  .pagination__element:hover {
+    background-color: white;
+    color: #C77083;
+    cursor: pointer; }
+
+/* BLOGBEAUTY
+*
+* /sass/components/instagram.scss - design of the Instagram section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
 
 /*# sourceMappingURL=styles.css.map */
