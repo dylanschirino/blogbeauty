@@ -1,0 +1,29 @@
+/* BLOGBEAUTY
+*
+* /sass/object/search.scss - NON design of the Search section stylesheet
+*
+* coded by Dylan Schirino
+* started at 02/08/2016
+*/
+.moreArticle{
+  &__article{
+    &--search{
+      margin-left: 3.7em;
+    }
+  }
+  &__pagination{
+    &--search{
+      width:100%;
+      margin-left: 3.7em;
+      padding-bottom: 2.7em;
+    }
+  }
+}
+.search{
+  width: 62.3em;
+  &__keyword{
+    width: 16em;
+    height: 2.75em;
+    margin-left: 2.4em;
+  }
+}

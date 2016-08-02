@@ -522,6 +522,28 @@ a {
 
 /* BLOGBEAUTY
 *
+* /sass/object/search.scss - NON design of the Search section stylesheet
+*
+* coded by Dylan Schirino
+* started at 02/08/2016
+*/
+.moreArticle__article--search {
+  margin-left: 3.7em; }
+
+.moreArticle__pagination--search {
+  width: 100%;
+  margin-left: 3.7em;
+  padding-bottom: 2.7em; }
+
+.search {
+  width: 62.3em; }
+  .search__keyword {
+    width: 16em;
+    height: 2.75em;
+    margin-left: 2.4em; }
+
+/* BLOGBEAUTY
+*
 * /sass/object/header.scss - non design header stylesheet
 *
 * coded by Dylan Schirino
@@ -782,7 +804,7 @@ a {
   font: 1.8em "raleway", "Helvetica", Arial, sans-serif;
   color: #C77083;
   text-decoration: underline;
-  padding-right: 1.8888em; }
+  padding-right: 0.8888em; }
   .pagination__link:hover {
     text-decoration: none; }
 
@@ -1021,10 +1043,12 @@ a {
 .commentform__label {
   font: 1.6em/1.9 "raleway", "Helvetica", Arial, sans-serif;
   text-transform: uppercase;
-  color: #C77083; }
+  color: #C77083;
+  letter-spacing: 1px; }
 
 .commentform__input {
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  padding-left: 1em; }
 
 .commentform__submit {
   font: 1.6em/2.8 "old_standard";
@@ -1038,5 +1062,27 @@ a {
     cursor: pointer;
     background-color: white;
     color: black; }
+
+/* BLOGBEAUTY
+*
+* /sass/components/search.scss - design of the Search section stylesheet
+*
+* coded by Dylan Schirino
+* started at 02/08/2016
+*/
+.search {
+  background-color: white; }
+  .search__title {
+    font: 2.4em/3.6 "old_standard";
+    letter-spacing: 1.5px;
+    padding: 1em 0 0 1.5em; }
+  .search__keyword {
+    font-size: 1.6em;
+    line-height: 2.7em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #B2ABA1;
+    text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */

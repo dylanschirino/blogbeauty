@@ -77,9 +77,11 @@
     font: 1.6em/1.9 $raleway;
     text-transform: uppercase;
     color: $pink;
+    letter-spacing: 1px;
   }
   &__input{
     font-size: 1.6em;
+    padding-left: 1em;
   }
   &__submit{
     font:1.6em/2.8 $oldstandard;

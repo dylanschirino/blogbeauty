@@ -1,0 +1,25 @@
+/* BLOGBEAUTY
+*
+* /sass/components/search.scss - design of the Search section stylesheet
+*
+* coded by Dylan Schirino
+* started at 02/08/2016
+*/
+
+.search{
+  background-color: $white;
+  &__title{
+    font: 2.4em/3.6 $oldstandard;
+    letter-spacing: 1.5px;
+    padding: 1em 0 0 1.5em;
+  }
+  &__keyword{
+    font-size:1.6em;
+    line-height:2.7em;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: $searchWord;
+    text-align: center;
+  }
+}

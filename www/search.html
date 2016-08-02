@@ -14,118 +14,304 @@
 </head>
 <body id="haut">
   <header class="header">
+    <div class="header__banner">
+      <h1 aria-level="1" class="header__title">
+        ShowYourGlitters
+      </h1>
+      <p class="header__subtitle">
+        Blog beauté,&nbsp;Mode et Lifestyle
+      </p>
+    </div>
+    <nav class="header__menu">
+      <h2 aria-level="2" class="menu__title hidden">Navigation Principale</h2>
+      <div class="menu__container">
+        <a class="menu__link menu__link--active" href="index.html" title="Vers la page d'accueil">Accueil</a>
 
-    <h1 aria-level="1" class="header__title">
-      ShowYourGlitters
-    </h1>
-    <p class="header__subtitle">
-      Blog beauté,&nbsp;Mode et Lifestyle
-    </p>
+        <a class="menu__link" href="categories.html" title="Vers la page des catégories">Catégories</a>
 
-    <nav class="menu">
-      <h2 aria-level="2" class="menu__title">Navigation Principale</h2>
-      <a class="menu__link" href="index.html" title="Vers la page d'accueil">Accueil</a>
+        <a class="menu__link" href="contact.html" title="Vers la page de Contact">Contact</a>
 
-      <a class="menu__link" href="categories.html" title="Vers la page des catégories">Catégories</a>
+        <a class="menu__link" href="about.html" title="Vers la page à propos">À Propos</a>
 
-      <a class="menu__link" href="contact.html" title="Vers la page de Contact">Contact</a>
-
-      <a class="menu__link" href="about.html" title="Vers la page à propos">À Propos</a>
-
+        <form class="menu__form" action="#" method="post">
+          <input class="form__input" type="text" placeholder="Recherche" value="">
+          <input class="form__submit" type="submit" value="">
+        </form>
+      </div>
     </nav>
-    <form class="header__form" action="#" method="post">
-      <input class="form__input" type="text" placeholder="Recherche" value="">
-      <input class="form__input" type="submit" value="Envoyer">
-    </form>
   </header>
 
-  <aside class="aside">
-    <h2 aria-level="2" class="aside__title">
+
+  <div class="margin">
+
+    <aside class="aside">
+      <h2 aria-level="2" class="hidden">
         Information Complémentaire
-    </h2>
-    <section class="aside__section">
-      <h3 aria-level="3" class="aside__title">
-        Hello,&nbsp;it's me !
-      </h3>
-    <img class="aside__photo" src="img/photo.jpg" width="160" height="160" alt="Photo de ShowYourGlitters">
-    <p class="aside__text">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
-    </p>
-  </section>
-
-    <section class="aside__section">
-      <h3 aria-level="3" class="aside__title">
-        Je suis sociale !
-      </h3>
-      <ul class="aside__list">
-        <li class="aside__element">
-          <a class="aside__link aside__link--twitter" href="#" title="Accéder à mon twitter">Twitter</a>
-        </li>
-        <li class="aside__element">
-          <a class="aside__link aside__link--facebook" href="#" title="Accéder à mon">Facebook</a>
-        </li>
-        <li class="aside__element">
-          <a class="aside__link aside__link--insta" href="#" title="Accéder à mon Instagram">Instagram</a>
-        </li>
-        <li class="aside__element">
-          <a class="aside__link aside__link--pinterest" href="#" title="Accéder à mon Pinterest">Pinterest</a>
-        </li>
-        <li class="aside__element">
-          <a class="aside__link aside__link--hellocoton" href="#" title="Accéder à mon HelloCoton">HelloCoton</a>
-        </li>
-        <li class="aside__element">
-          <a class="aside__link aside__link--google" href="#" title="Accéder à mon Google +">Google +</a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="aside__section">
-      <h3 aria-level="3" class="aside__title">
-        Pour vous aider
-      </h3>
-      <p class="aside__text">
-        MakeUp, Maquillage,
-        Ongles, Nailart, blush, palettes,
-        SteamPod, blush, palettes,
-      </p>
-    </section>
-
-  </aside>
-  <main>
-    <section class="search">
-      <h2 aria-level="2" class="search__title">
-        Résultat de la recherche pour&nbsp;:&nbsp;
       </h2>
-      <p class="search__keyword">
-        Maquillage
-      </p>
-      <article class="moreArticle__article">
-        <img class="moreArticle__img" src="img/smallarticle.jpg">
-        <div class="moreArticle__container">
-          <span class="moreArticle__theme">
-            Maquillage
-          </span>
-          <p class="moreArticle__text">
-            Ma découverte de la marque Sleek Makeup date d’il y a quelques années avec un achat…
-          </p>
-          <a class="latest__button" href="#" title="Découvrir plus sur cette article">
-            Lire l'article
-          </a>
-        </div>
-        <h4 aria-level="4">Titre de l'article</h4>
-        <ul class="moreArticle__list">
-          <li class="moreArticle__element">
-            Le 2 Juillet 2016
+      <section class="aside__section">
+        <img src="img/Sticker.svg" class="aside__sticker" width="160" height="50" alt="Autocollant décoratif">
+        <h3 aria-level="3" class="aside__title">
+          Hello,&nbsp;it's me !
+        </h3>
+        <img class="aside__photo" src="img/photo.jpg" width="160" height="160" alt="Photo de ShowYourGlitters">
+        <p class="aside__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+        </p>
+      </section>
+
+      <section class="aside__section">
+        <h3 aria-level="3" class="aside__title">
+          Je suis sociale !
+        </h3>
+        <ul class="aside__list">
+          <li class="aside__element aside__element--left">
+            <a class="aside__link aside__link--twitter" href="#" title="Accéder à mon twitter">Twitter</a>
           </li>
-          <li class="moreArticle__element moreArticle__element--like">
-            21
+          <li class="aside__element aside__element--right">
+            <a class="aside__link aside__link--facebook" href="#" title="Accéder à mon">Facebook</a>
           </li>
-          <li class="moreArticle__element moreArticle__element--comment">
-            5
+          <li class="aside__element aside__element--left">
+            <a class="aside__link aside__link--insta" href="#" title="Accéder à mon Instagram">Instagram</a>
+          </li>
+          <li class="aside__element aside__element--right">
+            <a class="aside__link aside__link--pinterest" href="#" title="Accéder à mon Pinterest">Pinterest</a>
+          </li>
+          <li class="aside__element aside__element--left">
+            <a class="aside__link aside__link--hellocoton" href="#" title="Accéder à mon HelloCoton">HelloCoton</a>
+          </li>
+          <li class="aside__element aside__element--right">
+            <a class="aside__link aside__link--google" href="#" title="Accéder à mon Google +">Google +</a>
           </li>
         </ul>
-      </article>
-    </section>
+      </section>
+
+      <section class="aside__section">
+        <h3 aria-level="3" class="aside__title">
+          Pour vous aider
+        </h3>
+        <p class="aside__keyword">
+          MakeUp, Maquillage,
+          <span class="aside__pointout">Ongles</span>, Nailart, blush, palettes,
+          <span class="aside__bold">SteamPod</span>, blush, palettes,
+        </p>
+      </section>
+    </aside>
+    <main>
+      <section class="search article">
+        <h2 aria-level="2" class="search__title">
+          Résultat de la recherche pour&nbsp;:&nbsp;
+        </h2>
+        <p class="search__keyword">
+          Maquillage
+        </p>
+        <section class="moreArticle">
+
+          <h3 aria-level="3" class="moreArticle__title hidden">
+            Découvrez plus d'article
+          </h3>
+          <article class="moreArticle__article moreArticle__article--search">
+            <figure class="moreArticle__link">
+              <img class="moreArticle__img" src="img/smallarticle.jpg">
+            </figure>
+            <div class="moreArticle__container">
+              <span class="moreArticle__theme">
+                Maquillage
+              </span>
+              <p class="moreArticle__text">
+                Ma découverte de la marque Sleek Makeup date d’il y a quelques années avec un achat…
+              </p>
+              <a class="moreArticle__button latest__button" href="#" title="Découvrir plus sur cette article">
+                Lire l'article
+              </a>
+            </div>
+
+            <h4 aria-level="4" class="moreArticle__titleCards">Titre de l'article</h4>
+            <ul class="moreArticle__list">
+              <li class="moreArticle__element latest__element--time">
+                Le 2 Juillet 2016
+              </li>
+              <li class="moreArticle__element latest__element--like">
+                21
+              </li>
+              <li class="moreArticle__element moreArticle__element--comment">
+                5
+              </li>
+            </ul>
+          </article>
+
+          <article class="moreArticle__article moreArticle__article--search">
+            <figure class="moreArticle__link">
+              <img class="moreArticle__img" src="img/smallarticle.jpg">
+            </figure>
+            <div class="moreArticle__container">
+              <span class="moreArticle__theme">
+                Maquillage
+              </span>
+              <p class="moreArticle__text">
+                Ma découverte de la marque Sleek Makeup date d’il y a quelques années avec un achat…
+              </p>
+              <a class="moreArticle__button latest__button" href="#" title="Découvrir plus sur cette article">
+                Lire l'article
+              </a>
+            </div>
+
+            <h4 aria-level="4" class="moreArticle__titleCards">Titre de l'article</h4>
+            <ul class="moreArticle__list">
+              <li class="moreArticle__element latest__element--time">
+                Le 2 Juillet 2016
+              </li>
+              <li class="moreArticle__element latest__element--like">
+                21
+              </li>
+              <li class="moreArticle__element moreArticle__element--comment">
+                5
+              </li>
+            </ul>
+          </article>
+
+          <article class="moreArticle__article moreArticle__article--search">
+            <figure class="moreArticle__link">
+              <img class="moreArticle__img" src="img/smallarticle.jpg">
+            </figure>
+            <div class="moreArticle__container">
+              <span class="moreArticle__theme">
+                Maquillage
+              </span>
+              <p class="moreArticle__text">
+                Ma découverte de la marque Sleek Makeup date d’il y a quelques années avec un achat…
+              </p>
+              <a class="moreArticle__button latest__button" href="#" title="Découvrir plus sur cette article">
+                Lire l'article
+              </a>
+            </div>
+
+            <h4 aria-level="4" class="moreArticle__titleCards">Titre de l'article</h4>
+            <ul class="moreArticle__list">
+              <li class="moreArticle__element latest__element--time">
+                Le 2 Juillet 2016
+              </li>
+              <li class="moreArticle__element latest__element--like">
+                21
+              </li>
+              <li class="moreArticle__element moreArticle__element--comment">
+                5
+              </li>
+            </ul>
+          </article>
+
+          <article class="moreArticle__article moreArticle__article--search">
+            <figure class="moreArticle__link">
+              <img class="moreArticle__img" src="img/smallarticle.jpg">
+            </figure>
+            <div class="moreArticle__container">
+              <span class="moreArticle__theme">
+                Maquillage
+              </span>
+              <p class="moreArticle__text">
+                Ma découverte de la marque Sleek Makeup date d’il y a quelques années avec un achat…
+              </p>
+              <a class="moreArticle__button latest__button" href="#" title="Découvrir plus sur cette article">
+                Lire l'article
+              </a>
+            </div>
+
+            <h4 aria-level="4" class="moreArticle__titleCards">Titre de l'article</h4>
+            <ul class="moreArticle__list">
+              <li class="moreArticle__element latest__element--time">
+                Le 2 Juillet 2016
+              </li>
+              <li class="moreArticle__element latest__element--like">
+                21
+              </li>
+              <li class="moreArticle__element moreArticle__element--comment">
+                5
+              </li>
+            </ul>
+          </article>
+
+          <article class="moreArticle__article moreArticle__article--search">
+            <a href="#" class="moreArticle__link" title="Accéder à l'article">
+              <img class="moreArticle__img" src="img/smallarticle.jpg">
+            </a>
+            <div class="moreArticle__container">
+              <span class="moreArticle__theme">
+                Maquillage
+              </span>
+              <p class="moreArticle__text">
+                Ma découverte de la marque Sleek Makeup date d’il y a quelques années avec un achat…
+              </p>
+              <a class="moreArticle__button latest__button" href="#" title="Découvrir plus sur cette article">
+                Lire l'article
+              </a>
+            </div>
+
+
+            <h4 aria-level="4" class="moreArticle__titleCards">Titre de l'article</h4>
+            <ul class="moreArticle__list">
+              <li class="moreArticle__element latest__element--time">
+                Le 2 Juillet 2016
+              </li>
+              <li class="moreArticle__element latest__element--like">
+                21
+              </li>
+              <li class="moreArticle__element moreArticle__element--comment">
+                5
+              </li>
+            </ul>
+          </article>
+
+          <article class="moreArticle__article moreArticle__article--search">
+            <a href="#" class="moreArticle__link" title="Accéder à l'article">
+              <img class="moreArticle__img" src="img/smallarticle.jpg">
+            </a>
+            <div class="moreArticle__container">
+              <span class="moreArticle__theme">
+                Maquillage
+              </span>
+              <p class="moreArticle__text">
+                Ma découverte de la marque Sleek Makeup date d’il y a quelques années avec un achat…
+              </p>
+              <a class="moreArticle__button latest__button" href="#" title="Découvrir plus sur cette article">
+                Lire l'article
+              </a>
+            </div>
+            <h4 aria-level="4" class="moreArticle__titleCards">Titre de l'article</h4>
+            <ul class="moreArticle__list">
+              <li class="moreArticle__element latest__element--time">
+                Le 2 Juillet 2016
+              </li>
+              <li class="moreArticle__element latest__element--like">
+                21
+              </li>
+              <li class="moreArticle__element moreArticle__element--comment">
+                5
+              </li>
+            </ul>
+          </article>
+
+          <div class="moreArticle__pagination moreArticle__pagination--search">
+            <a class="pagination__link" href="#" title="Revenir a la page précédente">Précédent</a>
+            <ul class="pagination__list">
+              <li class="pagination__element">
+                1
+              </li>
+              <li class="pagination__element">
+                2
+              </li>
+              <li class="pagination__element">
+                3
+              </li>
+              <li class="pagination__element">
+                4
+              </li>
+              <li class="pagination__element">
+                5
+              </li>
+            </ul>
+            <a class="pagination__link" href="#" title="Aller à la page suivante">Suivant</a>
+          </div>
+      </section>
+    </div>
 
     <section class="instagram">
       <h3 class="instagram__title" aria-level="3">
@@ -136,42 +322,49 @@
   </main>
 
   <footer class="footer">
-    <section class="footer__plan">
-      <h3 class="plan__title">
-        Plan du site
-      </h3>
 
-      <ul class="plan__list">
-        <li class="plan__element">
-          <a class="plan__link" href="index.html" title="Accéder à la page d'accueil">Accueil</a>
-        </li>
-        <li class="plan__element">
-          <a class="plan__link" href="index.html" title="Accéder a la page des Catégories">Catégories</a>
-        </li>
-        <li class="plan__element">
-          <a class="plan__link" href="about.html" title="Accéder a la page À propos ">À propos</a>
-        </li>
-        <li class="plan__element">
-          <a class="plan__link" href="contact.html" title="Accéder a la page de Contact">Contact</a>
-        </li>
-      </ul>
-    </section>
+    <div class="margin">
+      <section class="footer__plan">
+        <h3 class="plan__title">
+          Plan du site
+        </h3>
 
-    <section class="footer__contact">
-      <h3 class="contact__title">
-        Me contacter
-      </h3>
-    <div class="contact__container">
-      <a class="contact__link contact__link--twitter" href="#" title="Accéder à mon twitter">Twitter</a>
+        <ul class="plan__list">
+          <li class="plan__element">
+            <a class="plan__link" href="index.html" title="Accéder à la page d'accueil">Accueil</a>
+          </li>
+          <li class="plan__element">
+            <a class="plan__link" href="index.html" title="Accéder a la page des Catégories">Catégories</a>
+          </li>
+          <li class="plan__element">
+            <a class="plan__link" href="about.html" title="Accéder a la page À propos ">À propos</a>
+          </li>
+          <li class="plan__element">
+            <a class="plan__link" href="contact.html" title="Accéder a la page de Contact">Contact</a>
+          </li>
+        </ul>
+      </section>
 
-      <a class="contact__link contact__link--facebook" href="#" title="Accéder à mon">Facebook</a>
+      <section class="footer__contact">
+        <div class="contact__container">
+          <h3 class="contact__title">
+            Me contacter
+          </h3>
+          <a class="contact__link contact__link--twitter" href="#" title="Accéder à mon twitter">Twitter</a>
 
-      <a class="contact__link contact__link--insta" href="#" title="Accéder à mon Instagram">Instagram</a>
+          <a class="contact__link contact__link--facebook" href="#" title="Accéder à mon">Facebook</a>
 
-      <a class="contact__link contact__link--mail" href="mailto:showyourglitters@gmail.com" title="M'envoyez un email avec votre gestionnaire de Mail">
+          <a class="contact__link contact__link--insta" href="#" title="Accéder à mon Instagram">Instagram</a>
+
+          <p class="contact__email">Mon email&nbsp;:&nbsp;
+            <a class="contact__link contact__link--mail" href="mailto:showyourglitters@gmail.com" title="M'envoyez un email avec votre gestionnaire de Mail">showyourglitters@gmail.com</a>
+          </p>
+
+        </div>
+        <a class="latest__button" href="#haut" title="Prendre l'ascenseur pour remonter en haut de la page">Haut de page</a>
+      </section>
+
     </div>
-    <a class="latest__button" href="#haut" title="Prendre l'ascenseur pour remonter en haut de la page">Haut de page</a>
-    </section>
   </footer>
 </body>
 </html>
