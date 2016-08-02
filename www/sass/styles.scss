@@ -29,7 +29,8 @@
 @import "object/footer";
 @import "object/contact";
 @import "object/about";
-
+@import "object/headArticle";
+@import "object/TextArticle";
 // 6. Components - Design des composants, morceaux d'UI
 @import "components/header";
 @import "components/aside";
@@ -39,3 +40,5 @@
 @import "components/footer";
 @import "components/contact";
 @import "components/about";
+@import "components/headArticle";
+@import "components/TextArticle";

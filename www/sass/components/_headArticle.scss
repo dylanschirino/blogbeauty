@@ -1,0 +1,27 @@
+/* BLOGBEAUTY
+*
+* /sass/components/headArticle.scss - design of the Head Article stylesheet
+*
+* coded by Dylan Schirino
+* started at 02/08/2016
+*/
+
+.headArticle{
+  background: url("../img/article.jpg") no-repeat fixed center;
+  background-size: cover;
+  &__cards{
+    background-color: #272A29;
+    opacity: 0.8;
+    color: $white;
+    padding-bottom: 1em;
+  }
+  &__title{
+    font: 2.4em/3 $oldstandard;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 0.5em;
+  }
+  &__keyword,&__timer{
+    text-align: center;
+  }
+}
