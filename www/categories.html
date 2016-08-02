@@ -174,23 +174,41 @@
   <main>
 
     <section class="text">
+      <h2 aria-level="2" class="text__title hidden">
+        Article
+      </h2>
+      <div class="text__containerDate">
+        <time class="text__date" datetime="2016-07-21">21 Juin 2016</time>
+      </div>
 
-      <time class="text__date" datetime="2016-07-21">21 Juin 2016</time>
-
-      <article class="text article">
+      <article class="text__article">
         <h3 aria-level="3" class="text__title">
           Description
         </h3>
+        <div class="text__share">
+          <ul class="share__list">
+            <li class="share__element share__element--twitter">
+              <a class="share__link share__link--twitter"href="#" title="Partager sur twitter"><span class="hidden">Twitter</span></a>
+            </li>
+            <li class="share__element share__element--facebook">
+              <a class="share__link share__link--facebook" href="#" title="Partager sur facebook"><span class="hidden">Facebook</span></a>
+            </li>
+            <li class="share__element share__element--hellocoton">
+              <a class="share__link share__link--hellocoton" href="#" title="Partager sur HelloCoton"><span class="hidden">HelloCoton</span></a>
+            </li>
+          </ul>
+        </div>
         <p class="text__content">
           Ma découverte de la marque Sleek Makeup date d’il y a quelques années avec un achat de pinceaux, mais à ce moment-là la marque n’était pas encore énormément connue en Belgique. Puis progressivement on en a entendu parler par-ci par-là et c’est arrivé à mes oreilles. Malheureusement les produits n’étaient pas fort accessibles en Belgique à part via des sites avec une livraison assez couteuse, puis un jour j’en ai trouvé dans un petit magasin à Liège, ensuite la marque a emménagé chez Di et ce fut un réel plaisir pour moi que d’aller y jeter des coups d’œil timides.
-
+        </p>
+        <p class="text__content">
           J’aime beaucoup cette marque parce que je trouve qu’elle propose des produits qui peuvent plaire à beaucoup de personnes, tant ils sont diversifiés et à un prix totalement abordable (on est dans les 5-10€ pour la plupart des produits).
 
           J’ai donc décidé un beau jour de tenter le coup avec une jolie palette composée de 12 fards, la majorité nudes mais quelques uns aussi plus voyants.
         </p>
       </article>
 
-      <article class="text">
+      <article class="text__article">
         <h3 aria-level="3" class="text__title">
           Packaging
         </h3>
@@ -237,52 +255,37 @@
       </section>
 
       <section class="commentform">
-        <h3 aria-level="3" class="commentform">
+        <h3 aria-level="3" class="commentform__title">
           Qu'en pensez-vous&nbsp;?
         </h3>
 
         <form class="commentform__container">
           <fieldset>
-            <legend class="commentform__legend">
+            <legend class="commentform__legend hidden">
               Donner votre avis
             </legend>
-
-            <label for="name" class="form__label">
+            <div class="commentform__left">
+            <label for="name" class="commentform__label">
               Nom&nbsp;:&nbsp;
             </label>
-            <input class="form__input" id="name" type="text" name="nom" value="" placeholder="Nom">
-
-            <label for="internet" class="form__label">
+            <input class="commentform__input" id="name" type="text" name="nom" value="" placeholder="Nom">
+          </div>
+            <div class="commentform__right">
+            <label for="internet" class="commentform__label">
               Site Internet&nbsp;:&nbsp;
             </label>
-            <input class="form__input" id="internet" type="text" name="internet" value="" placeholder="Site Internet">
-
-            <label for="message" class="form__label">
+            <input class="commentform__input" id="internet" type="text" name="internet" value="" placeholder="Site Internet">
+          </div>
+            <label for="message" class="commentform__label commentform__label--textarea">
               Message&nbsp;:&nbsp;
             </label>
-            <textarea class="form__input" id="message" name="message">
+            <textarea class="commentform__input commentform__input--textarea" id="message" name="message">
             </textarea>
-            <input class="form__submit" type="submit" value="Envoyer">
+            <input class="commentform__submit" type="submit" value="Commenter">
 
           </fieldset>
         </form>
       </section>
-
-      <div class="article__share">
-        <ul class="share__list">
-          <li class="share__element share__element--twitter">
-            <a class="share__link share__link--twitter"href="#" title="Partager sur twitter"><span class="hidden">Twitter</span></a>
-          </li>
-          <li class="share__element share__element--facebook">
-            <a class="share__link share__link--facebook" href="#" title="Partager sur facebook"><span class="hidden">Facebook</span></a>
-          </li>
-          <li class="share__element share__element--hellocoton">
-            <a class="share__link share__link--hellocoton" href="#" title="Partager sur HelloCoton"><span class="hidden">HelloCoton</span></a>
-          </li>
-        </ul>
-      </div>
-
-        <img class="article__decoration" src="img/deco.svg" alt="Accessoire de maquillage">
       </section>
     </div>
     <section class="moreArticle">

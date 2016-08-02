@@ -5,3 +5,72 @@
 * coded by Dylan Schirino
 * started at 02/08/2016
 */
+.text{
+  width: 58.7em;
+  margin:5em 0 0 20.8em;
+  position: relative;
+  &__date{
+    display: inline-block;
+    width: 2.7142857143em;
+  }
+  &__containerDate{
+    display: inline-block;
+    width: 8em;
+    height: 8em;
+    position: absolute;
+    left:-40px;
+    top: 41px;
+  }
+  &__article,.commentary,.commentform{
+    margin-left: 5.9em;
+  }
+  &__content{
+    width: 27.8125em;
+  }
+  &__share{
+    float: right;
+    position: relative;
+    left: 50px;
+  }
+  &__img{
+    margin-bottom: 2em;
+  }
+}
+
+.commentary{
+  margin-bottom: 6.3em;
+  &__container{
+    width: 42.4em;
+  }
+}
+
+.commentform{
+  width: 45.4em;
+  &::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  &__left{
+    float: left;
+  }
+  &__right{
+    float: right;
+  }
+  &__input{
+    display:block;
+    width: 12.25em;
+    height: 2.8125em;
+    margin:0.7em 0 2em 0;
+    &--textarea{
+      width: 99%;
+      min-height: 9.6875em;
+    }
+  }
+  &__submit{
+    float: right;
+    width: 10.625em;
+    height: 2.75em;
+    margin-bottom: 3.125em;
+  }
+}
