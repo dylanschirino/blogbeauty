@@ -15,7 +15,7 @@
     margin-top:1.9em;
   }
   &__menu{
-    height: 8.7em;
+    min-height: 8.7em;
   }
 }
 
@@ -45,7 +45,9 @@
   &__dropdown{
     position: absolute;
     width:15em;
-    margin-top: 2em;
+  }
+  &__hamburger{
+    display:none;
   }
 }
 
@@ -57,11 +59,53 @@
   }
   &__input{
     float:right;
-
+    position: relative;
   }
   &__submit{
+    width: 1.7em;
+    height: 1.7em;
     position: absolute;
     right:0px;
     top:0px;
+  }
+}
+
+@media screen and (max-width:666px) {
+  .menu{
+    &__link{
+      display: block;
+    }
+    &__container{
+      width: 100%;
+    }
+    &__sublink{
+      margin-left: 0;
+    }
+    &__drophover{
+      display: block;
+    }
+    &__dropdown{
+      display: block;
+      width: 100%;
+    }
+    &__form{
+      display: none;
+    }
+    &__burger{
+      display: none;
+      margin-top:2em;
+    }
+    &__hamburger{
+      display: none;
+    }
+    &__show{
+      width: 1em;
+      height: 1em;
+      display: block;
+      margin: auto;
+    }
+  }
+  .menu__hamburger:checked ~ .menu__burger{
+    display: block;
   }
 }

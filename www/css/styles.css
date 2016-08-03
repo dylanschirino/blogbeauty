@@ -128,7 +128,7 @@ a {
   margin-top: 1.9em; }
 
 .header__menu {
-  height: 8.7em; }
+  min-height: 8.7em; }
 
 .menu__link {
   display: inline-block; }
@@ -153,8 +153,10 @@ a {
 
 .menu__dropdown {
   position: absolute;
-  width: 15em;
-  margin-top: 2em; }
+  width: 15em; }
+
+.menu__hamburger {
+  display: none; }
 
 .form::after {
   content: "";
@@ -162,12 +164,42 @@ a {
   clear: both; }
 
 .form__input {
-  float: right; }
+  float: right;
+  position: relative; }
 
 .form__submit {
+  width: 1.7em;
+  height: 1.7em;
   position: absolute;
   right: 0px;
   top: 0px; }
+
+@media screen and (max-width: 666px) {
+  .menu__link {
+    display: block; }
+  .menu__container {
+    width: 100%; }
+  .menu__sublink {
+    margin-left: 0; }
+  .menu__drophover {
+    display: block; }
+  .menu__dropdown {
+    display: block;
+    width: 100%; }
+  .menu__form {
+    display: none; }
+  .menu__burger {
+    display: none;
+    margin-top: 2em; }
+  .menu__hamburger {
+    display: none; }
+  .menu__show {
+    width: 1em;
+    height: 1em;
+    display: block;
+    margin: auto; }
+  .menu__hamburger:checked ~ .menu__burger {
+    display: block; } }
 
 /* BLOGBEAUTY
 *
@@ -636,8 +668,6 @@ a {
   outline: none; }
 
 .form__submit {
-  width: 1.7em;
-  height: 1.7em;
   border: none;
   background: none;
   background: url("../img/search.svg") no-repeat;
@@ -648,6 +678,42 @@ a {
 
 .menu__drophover:focus .menu__dropdown, .menu__drophover:hover .menu__dropdown {
   opacity: 1; }
+
+@media screen and (max-width: 666px) {
+  .menu__link {
+    padding: 0.8em 0;
+    text-align: center;
+    background-color: #ECB7AC;
+    border: 1px solid white; }
+    .menu__link:hover {
+      background-color: #C77083;
+      color: white; }
+    .menu__link--categories {
+      text-decoration: underline;
+      display: none; }
+  .menu__dropdown {
+    position: static;
+    opacity: 1;
+    border: none;
+    padding: 0; }
+  .menu__element {
+    background-color: #ECB7AC;
+    border: 1px solid white;
+    text-align: center; }
+    .menu__element:hover {
+      background-color: #C77083; }
+  .menu__sublink {
+    color: black;
+    text-transform: uppercase; }
+    .menu__sublink:hover {
+      text-decoration: none;
+      color: white; }
+  .menu__show {
+    background: url("../img/menu.svg") no-repeat center center;
+    background-size: contain;
+    font-size: 5em;
+    cursor: pointer;
+    color: white; } }
 
 /* BLOGBEAUTY
 *

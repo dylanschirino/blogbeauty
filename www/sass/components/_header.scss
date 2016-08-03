@@ -100,8 +100,6 @@
     outline: none;
   }
   &__submit{
-    width: 1.7em;
-    height: 1.7em;
     border: none;
     background: none;
     background:url("../img/search.svg") no-repeat;
@@ -116,4 +114,52 @@
 .menu__drophover:focus .menu__dropdown,.menu__drophover:hover .menu__dropdown
 {
   opacity: 1;
+}
+
+@media screen and (max-width:666px) {
+.menu{
+  &__link{
+    padding: 0.8em 0;
+    text-align: center;
+    background-color: $lightPink;
+    border: 1px solid $white;
+    &:hover{
+      background-color: $pink;
+      color: $white;
+    }
+    &--categories{
+      text-decoration: underline;
+      display: none;
+    }
+  }
+  &__dropdown{
+    position: static;
+    opacity: 1;
+    border: none;
+    padding:0;
+  }
+  &__element{
+    background-color: $lightPink;
+    border: 1px solid $white;
+    text-align: center;
+    &:hover{
+      background-color: $pink;
+    }
+  }
+  &__sublink{
+    color: $black;
+    text-transform: uppercase;
+    &:hover{
+      text-decoration: none;
+      color: $white;
+    }
+  }
+  &__show{
+      background: url("../img/menu.svg")no-repeat center center;
+      background-size: contain;
+      font-size: 5em;
+      cursor: pointer;
+      color: $white;
+  }
+}
 }
