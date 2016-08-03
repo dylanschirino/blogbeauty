@@ -23,6 +23,9 @@
   &__link{
     display:inline-block;
   }
+  &__sublink{
+    margin-left: 2em;
+  }
   &__container{
     width: 65em;
     margin: auto;
@@ -35,6 +38,14 @@
   &__form{
     position: relative;
     margin-top: -1.7em;
+  }
+  &__drophover{
+    display: inline-block;
+  }
+  &__dropdown{
+    position: absolute;
+    width:15em;
+    margin-top: 2em;
   }
 }
 

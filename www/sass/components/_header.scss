@@ -49,6 +49,44 @@
   &__form{
     padding-left: 6.4em;
   }
+  &__dropdown{
+    opacity: 0;
+    transition: .2s ease-in-out;
+    background-color: $lightPink;
+    border: 4px solid $pink;
+    padding: 1em 0;
+  }
+  &__sublink{
+    font:1.4em/1.6 $raleway;
+    color: $white;
+    text-align: center;
+    &::before{
+      font: 1em $glyphs;
+      color: $black;
+      padding-right: 0.5em;
+    }
+    &--makeup::before{
+      content: "\e901";
+    }
+    &--nail::before{
+      content: "\e907";
+    }
+    &--hair::before{
+      content: "\e900";
+    }
+    &--mode::before{
+      content: "\e906";
+    }
+    &--lifestyle::before{
+      content: "\e905";
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__element{
+    padding: 0.5em 0;
+  }
 }
 
 .form{
@@ -73,4 +111,9 @@
       transform: rotate(60deg);
     }
   }
+}
+
+.menu__drophover:focus .menu__dropdown,.menu__drophover:hover .menu__dropdown
+{
+  opacity: 1;
 }
