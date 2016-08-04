@@ -60,3 +60,71 @@
     bottom:0;
   }
 }
+
+@media screen and (max-width:1131px){
+  .aside{
+    margin-right: 5em;
+  }
+}
+@media screen and (max-width:982px){
+  .aside{
+    float: none;
+    width: 90%;
+    margin:5em auto;
+    display: block;
+    &__title{
+      font-size: 3em;
+      text-align: center;
+    }
+    &__section{
+      display:inline-block;
+      width:32%;
+      float: left;
+    }
+    &__sticker{
+      display: none;
+    }
+    & svg{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width:700px) {
+  .aside{
+    &__section{
+      width: 50%;
+      &--last{
+        display: block;
+        width: 100%;
+        margin: auto;
+      }
+    }
+    &__list{
+      margin: auto;
+    }
+    &__element{
+      margin-left: 0.8em;
+    }
+  }
+}
+
+@media screen and (max-width:460px) {
+  .aside{
+    &__section{
+      display: block;
+      width: 100%;
+      margin: auto;
+    }
+    &__list{
+      width: 70%;
+      margin: auto;
+    }
+    &__element{
+      margin-left:1em;
+    }
+    &__keyword{
+      text-align: center;
+    }
+  }
+}

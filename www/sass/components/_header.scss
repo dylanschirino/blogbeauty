@@ -26,6 +26,17 @@
     background-color: $menuBckg;
   }
 }
+@media screen and (max-width:400px){
+  .header{
+    &__title{
+        font-size: 4em;
+    }
+    &__subtitle{
+      font-size: 2em;
+      margin-top: 3em;
+    }
+  }
+}
 
 .menu{
   &__link{
@@ -121,7 +132,7 @@
   &__link{
     padding: 0.8em 0;
     text-align: center;
-    background-color: $lightPink;
+    background-color: $menuBckg;
     border: 1px solid $white;
     &:hover{
       background-color: $pink;
@@ -139,7 +150,7 @@
     padding:0;
   }
   &__element{
-    background-color: $lightPink;
+    background-color: $menuBckg;
     border: 1px solid $white;
     text-align: center;
     &:hover{
