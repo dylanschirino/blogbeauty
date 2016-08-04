@@ -428,6 +428,44 @@ a {
   .pagination__element:last-child {
     margin-right: 1.8888em; }
 
+@media screen and (max-width: 863px) {
+  .moreArticle {
+    width: 90%;
+    margin: auto; } }
+
+@media screen and (max-width: 639px) {
+  .moreArticle {
+    width: 100%;
+    margin: auto; }
+    .moreArticle__pagination {
+      width: 100%;
+      text-align: center; } }
+
+@media screen and (max-width: 573px) {
+  .moreArticle {
+    width: 60%;
+    margin: auto; } }
+
+@media screen and (max-width: 507px) {
+  .moreArticle {
+    width: 70%;
+    margin: auto; } }
+
+@media screen and (max-width: 400px) {
+  .moreArticle {
+    width: 80%;
+    margin: auto; } }
+
+@media screen and (max-width: 360px) {
+  .moreArticle {
+    width: 90%;
+    margin: auto; } }
+
+@media screen and (max-width: 330px) {
+  .moreArticle {
+    width: 100%;
+    margin: auto; } }
+
 /* BLOGBEAUTY
 *
 * /sass/object/instagram.scss - NON design of the Instagram section stylesheet
@@ -1031,6 +1069,12 @@ a {
     background-color: white;
     color: #C77083;
     cursor: pointer; }
+
+@media screen and (max-width: 573px) {
+  .pagination__link, .pagination__element {
+    font-size: 1.4em; }
+  .pagination__list {
+    padding: 1em 0; } }
 
 /* BLOGBEAUTY
 *
