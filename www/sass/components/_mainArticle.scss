@@ -97,3 +97,23 @@
     color: $pink;
   }
 }
+
+@media screen and (max-width:978px){
+  .latest{
+    &__container{
+      padding-left: 0;
+    }
+    &__title{
+      text-align: center;
+      padding-top:2em;
+    }
+  }
+}
+
+@media screen and (max-width:435px){
+  .latest{
+    &__title{
+      font-size: 1.8em;
+    }
+  }
+}

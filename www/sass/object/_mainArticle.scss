@@ -44,14 +44,6 @@
   }
 }
 
-@media screen and (max-width:982px){
-  .latest{
-    &__container{
-      width: 100%;
-      display: block;
-    }
-  }
-}
 
 .imgcontainer__img{
   vertical-align: bottom;
@@ -66,5 +58,52 @@
 .sublist{
   &__element{
     display: inline-block;
+  }
+}
+
+/*************************************
+            MEDIAQUERIES
+*************************************/
+
+@media screen and (max-width:978px) {
+  .article{
+    width: 90%;
+    margin: auto;
+    &__share{
+      position: relative;
+      left: 0;
+    }
+    &__latest{
+      width: 100%;
+      margin: auto;
+    }
+  }
+  .latest{
+    &__container{
+      width: 100%;
+    }
+    &__list{
+      text-align: center;
+    }
+    &__text{
+      width: 90%;
+      margin:2em auto;
+    }
+    &__button{
+      margin: auto;
+    }
+  }
+  .imgcontainer{
+    &__img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width:720px){
+  .article{
+    &__decoration{
+      display: none;
+    }
   }
 }

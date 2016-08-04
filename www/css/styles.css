@@ -336,11 +336,6 @@ a {
   height: 2.5em;
   margin: 3.25em 8.7em 0 8.7em; }
 
-@media screen and (max-width: 982px) {
-  .latest__container {
-    width: 100%;
-    display: block; } }
-
 .imgcontainer__img {
   vertical-align: bottom; }
 
@@ -349,6 +344,36 @@ a {
 
 .sublist__element {
   display: inline-block; }
+
+/*************************************
+            MEDIAQUERIES
+*************************************/
+@media screen and (max-width: 978px) {
+  .article {
+    width: 90%;
+    margin: auto; }
+    .article__share {
+      position: relative;
+      left: 0; }
+    .article__latest {
+      width: 100%;
+      margin: auto; }
+  .latest__container {
+    width: 100%; }
+  .latest__list {
+    text-align: center; }
+  .latest__text {
+    width: 90%;
+    margin: 2em auto; }
+  .latest__button {
+    margin: auto; }
+  .imgcontainer__img {
+    width: 100%;
+    height: auto; } }
+
+@media screen and (max-width: 720px) {
+  .article__decoration {
+    display: none; } }
 
 /* BLOGBEAUTY
 *
@@ -919,6 +944,17 @@ a {
 
 .sublist__element {
   color: #C77083; }
+
+@media screen and (max-width: 978px) {
+  .latest__container {
+    padding-left: 0; }
+  .latest__title {
+    text-align: center;
+    padding-top: 2em; } }
+
+@media screen and (max-width: 435px) {
+  .latest__title {
+    font-size: 1.8em; } }
 
 /* BLOGBEAUTY
 *
