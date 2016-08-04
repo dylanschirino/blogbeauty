@@ -41,3 +41,60 @@
     margin-top: 2.1428571429em;
   }
 }
+
+@media screen and (max-width:720px) {
+    .footer{
+      &__plan{
+        display: block;
+        width: 75%;
+        margin: auto;
+      }
+      &__contact{
+        display: block;
+        float: none;
+      }
+    }
+    .plan{
+      &__title{
+        text-align: center;
+      }
+      &__list{
+        width: 90%;
+        margin: auto;
+      }
+      &__element{
+        display: inline-block;
+        text-align: center;
+      }
+    }
+
+    .contact{
+      &__title{
+        text-align: center;
+      }
+      &__link{
+        display: block;
+        text-align: center;
+        margin-bottom: 3em;
+        margin-right: 0;
+      }
+      &__email{
+        text-align:center
+      }
+      &__container{
+        width: 49%;
+        margin: 0 auto;
+      }
+    }
+}
+
+@media screen and (max-width:518px) {
+
+  .footer{
+    &__plan{
+      width: 100%;
+      margin: auto;
+    }
+  }
+
+}

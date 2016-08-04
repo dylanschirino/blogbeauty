@@ -7,7 +7,7 @@
 */
 
 .moreArticle{
-  width:91em;
+  max-width:91em;
   margin: auto;
   &__title{
     margin: 4em 0 2.04167em 1.2em;
@@ -93,27 +93,26 @@
 
 @media screen and (max-width:507px){
   .moreArticle{
-    width: 70%;
+    width: 60%;
     margin: auto;
   }
 }
 
 @media screen and (max-width:400px){
   .moreArticle{
-    width: 80%;
+    width: 70%;
     margin: auto;
+    &__article{
+      margin-left: 0;
+    }
   }
 }
 @media screen and (max-width:360px){
   .moreArticle{
-    width: 90%;
+    width: 80%;
     margin: auto;
-  }
-}
-
-@media screen and (max-width:330px){
-  .moreArticle{
-    width: 100%;
-    margin: auto;
+    &__article{
+      margin-left: 0;
+    }
   }
 }
