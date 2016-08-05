@@ -57,3 +57,54 @@
     margin-right:6.1em;
   }
 }
+
+@media screen and (max-width:962px) {
+  .contact{
+    width: 90%;
+    margin: auto;
+    &__explain{
+      width: 100%;
+    }
+  }
+
+  .formulaire{
+    &__container{
+      width: 90%;
+      margin: 2em auto;
+    }
+  }
+
+}
+
+@media screen and (max-width:707px) {
+
+  .formulaire{
+    &__left,&__right{
+      float: none;
+    }
+    &__right{
+      margin: 0;
+    }
+    &__input{
+      width: 100%;
+    }
+    &__submit{
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width:540px) {
+
+  .contact{
+    &__img{
+      display: block;
+      float: none;
+      margin: auto;
+    }
+    &__subtitle{
+      text-align: center;
+    }
+  }
+
+}

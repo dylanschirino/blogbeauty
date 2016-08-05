@@ -603,6 +603,34 @@ a {
   float: right;
   margin-right: 6.1em; }
 
+@media screen and (max-width: 962px) {
+  .contact {
+    width: 90%;
+    margin: auto; }
+    .contact__explain {
+      width: 100%; }
+  .formulaire__container {
+    width: 90%;
+    margin: 2em auto; } }
+
+@media screen and (max-width: 707px) {
+  .formulaire__left, .formulaire__right {
+    float: none; }
+  .formulaire__right {
+    margin: 0; }
+  .formulaire__input {
+    width: 100%; }
+  .formulaire__submit {
+    margin: 0; } }
+
+@media screen and (max-width: 540px) {
+  .contact__img {
+    display: block;
+    float: none;
+    margin: auto; }
+  .contact__subtitle {
+    text-align: center; } }
+
 /* BLOGBEAUTY
 *
 * /sass/object/about.scss - NON design of the About section stylesheet
