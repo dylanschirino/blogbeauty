@@ -23,3 +23,19 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width:445px) {
+  .search{
+    &__title{
+      line-height: 2em;
+    }
+  }
+}
+
+@media screen and (max-width:335px) {
+  .search{
+    &__title{
+    padding:1em;
+    }
+  }
+}
