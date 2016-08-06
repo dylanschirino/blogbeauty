@@ -718,6 +718,12 @@ a {
   .headArticle__timer {
     margin-left: 1.625em; }
 
+@media screen and (max-width: 1000px) {
+  .headArticle__cards {
+    position: static;
+    width: 100%;
+    margin: auto; } }
+
 /* BLOGBEAUTY
 *
 * /sass/object/TextArticle.scss - NON design of the Text Article stylesheet
@@ -778,6 +784,72 @@ a {
     width: 10.625em;
     height: 2.75em;
     margin-bottom: 3.125em; }
+
+/***********************************
+            MEDIAQUERIES
+***********************************/
+@media screen and (max-width: 1156px) {
+  .text {
+    margin-left: 8em; } }
+
+@media screen and (max-width: 978px) {
+  .text {
+    width: 80%;
+    margin: auto; }
+    .text__article, .text .commentary, .text .commentform {
+      margin-left: 0em; }
+    .text__title {
+      text-align: center; }
+    .text__content {
+      width: 80%;
+      margin: auto; }
+    .text__img {
+      display: block;
+      margin: auto;
+      margin-bottom: 6.3em; }
+  .commentary__title {
+    text-align: center; }
+  .commentary__container {
+    width: 80%;
+    margin: auto; }
+  .commentform {
+    width: 100%;
+    margin: auto; }
+    .commentform__title {
+      text-align: center; }
+    .commentform__left, .commentform__right {
+      float: none; }
+    .commentform__label {
+      display: block;
+      text-align: center;
+      margin-top: 2em; }
+    .commentform__input {
+      width: 80%;
+      margin: auto; }
+    .commentform__submit {
+      float: right;
+      margin: 2em 4.2em 2em 2em; } }
+
+@media screen and (max-width: 675px) {
+  .text__img {
+    min-width: 100%; } }
+
+@media screen and (max-width: 565px) {
+  .text__date {
+    display: block;
+    width: 100%; }
+  .text__share {
+    float: none;
+    position: static; }
+  .text__containerDate {
+    display: block;
+    position: static;
+    margin: auto; }
+  .share__list {
+    text-align: center;
+    margin-top: 1em; }
+  .share__element--inline {
+    display: inline-block; } }
 
 /* BLOGBEAUTY
 *
@@ -1360,7 +1432,7 @@ a {
 * started at 02/08/2016
 */
 .headArticle {
-  background: url("../img/article.jpg") no-repeat fixed center;
+  background: url("../img/article.jpg") no-repeat center fixed;
   background-size: cover; }
   .headArticle__cards {
     background-color: #272A29;
@@ -1461,6 +1533,29 @@ a {
     cursor: pointer;
     background-color: white;
     color: black; }
+
+@media screen and (max-width: 565px) {
+  .text__date {
+    padding: 1.5em 0;
+    font-size: 1.4em; }
+  .text__containerDate {
+    border-radius: 0%; }
+  .text__img {
+    width: 100%;
+    height: auto; } }
+
+@media screen and (max-width: 410px) {
+  .commentary__author {
+    text-align: center; }
+  .commentary__time {
+    padding: 1em 0;
+    display: block;
+    text-align: center; } }
+
+@media screen and (max-width: 360px) {
+  .commentary__container::before {
+    width: 90%;
+    margin: auto; } }
 
 /* BLOGBEAUTY
 *

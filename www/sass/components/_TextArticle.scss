@@ -98,3 +98,41 @@
     }
   }
 }
+
+@media screen and (max-width:565px) {
+  .text{
+    &__date{
+      padding: 1.5em 0;
+      font-size: 1.4em;
+    }
+    &__containerDate{
+      border-radius: 0%;
+    }
+    &__img{
+      width: 100%;
+      height:auto;
+    }
+  }
+}
+
+@media screen and (max-width:410px) {
+  .commentary{
+    &__author{
+      text-align: center;
+    }
+    &__time{
+      padding: 1em 0;
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width:360px) {
+  .commentary{
+    &__container::before{
+      width: 90%;
+      margin: auto;
+    }
+  }
+}

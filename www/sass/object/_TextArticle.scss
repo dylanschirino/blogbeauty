@@ -74,3 +74,106 @@
     margin-bottom: 3.125em;
   }
 }
+
+
+/***********************************
+            MEDIAQUERIES
+***********************************/
+
+@media screen and (max-width:1156px) {
+  .text{
+    margin-left: 8em;
+  }
+}
+
+@media screen and (max-width:978px) {
+  .text{
+    width: 80%;
+    margin: auto;
+    &__article,.commentary,.commentform{
+      margin-left: 0em;
+    }
+    &__title{
+      text-align: center;
+    }
+    &__content{
+      width: 80%;
+      margin: auto;
+    }
+    &__img{
+      display: block;
+      margin: auto;
+      margin-bottom: 6.3em;
+    }
+  }
+
+  .commentary{
+    &__title{
+      text-align: center;
+    }
+    &__container{
+      width: 80%;
+      margin: auto;
+    }
+  }
+  .commentform{
+    width: 100%;
+    margin: auto;
+    &__title{
+      text-align: center;
+    }
+    &__left,&__right{
+      float: none;
+    }
+    &__label{
+      display: block;
+      text-align: center;
+      margin-top: 2em;
+    }
+    &__input{
+      width: 80%;
+      margin: auto;
+    }
+    &__submit{
+      float: right;
+      margin: 2em 4.2em 2em 2em;
+    }
+  }
+}
+
+@media screen and (max-width:675px) {
+  .text{
+    &__img{
+      min-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width:565px) {
+  .text{
+    &__date{
+      display: block;
+      width: 100%;
+    }
+    &__share{
+      float: none;
+      position: static;
+    }
+    &__containerDate{
+      display: block;
+      position: static;
+      margin: auto;
+    }
+  }
+  .share{
+    &__list{
+    text-align: center;
+    margin-top:1em;
+    }
+    &__element{
+      &--inline{
+        display: inline-block;
+      }
+    }
+  }
+}

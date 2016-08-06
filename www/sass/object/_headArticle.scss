@@ -21,3 +21,15 @@
     margin-left: 1.625em;
   }
 }
+
+@media screen and (max-width:1000px) {
+
+  .headArticle{
+    &__cards{
+      position: static;
+      width: 100%;
+      margin: auto;
+    }
+  }
+
+}
