@@ -1,0 +1,94 @@
+/* BLOGBEAUTY
+*
+* /sass/object/about.scss - NON design of the About section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+
+.whoami{
+  &__title{
+    margin-left: 3em
+  }
+  &__img{
+    display: block;
+  }
+  &__svg{
+    display:inline-block;
+    margin-left: 11em;
+  }
+  &__imgContainer{
+    &::after{
+      content: "";
+      overflow: hidden;
+      clear: both;
+    }
+  }
+  &__img{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__col{
+    width: 104.8em;
+    margin:4em auto;
+    -moz-column-count:2;
+    column-count:2;
+    -moz-column-gap:2.5em;
+    column-gap: 2.5em;
+  }
+  &__signature{
+    display: block;
+    margin: 1.4722em 0;
+  }
+}
+
+@media screen and (max-width:1115px) {
+  .whoami{
+    &__svg{
+      display: block;
+      margin: auto;
+    }
+    &__img{
+      display: block;
+      margin: 2em auto;
+    }
+  }
+}
+
+@media screen and (max-width:1071px) {
+
+  .whoami{
+    &__col{
+      width: 90%;
+      margin: auto;
+    }
+  }
+
+}
+
+@media screen and (max-width:755px) {
+
+  .whoami{
+    &__svg{
+      max-width: 100%;
+      height: auto;
+    }
+    &__title{
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width:500px) {
+
+  .whoami{
+    &__col{
+      -moz-column-count:1;
+      -moz-column-gap:normal;
+      column-count: 1;
+      column-gap: normal;
+    }
+  }
+
+}

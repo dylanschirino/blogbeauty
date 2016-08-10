@@ -63,13 +63,13 @@
   &__dropdown{
     opacity: 0;
     transition: .2s ease-in-out;
-    background-color: $lightPink;
+    background-color: $white;
     border: 4px solid $pink;
     padding: 1em 0;
   }
   &__sublink{
     font:1.4em/1.6 $raleway;
-    color: $white;
+    color: $black;
     text-align: center;
     &::before{
       font: 1em $glyphs;

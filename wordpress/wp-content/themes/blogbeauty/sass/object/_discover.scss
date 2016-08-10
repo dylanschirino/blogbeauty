@@ -1,0 +1,118 @@
+/* BLOGBEAUTY
+*
+* /sass/Object/discover.scss - Non design of the Discover section stylesheet
+*
+* coded by Dylan Schirino
+* started at 29/07/2016
+*/
+
+.moreArticle{
+  max-width:91em;
+  margin: auto;
+  &__title{
+    margin: 4em 0 2.04167em 1.2em;
+  }
+  &__container{
+    width: 25.6em;
+    height: 20.2em;
+  }
+  &__article{
+    position: relative;
+    width: 25.6em;
+    height: 30em;
+    overflow: hidden;
+    display: inline-block;
+    margin:4.9em 0 0 3em;
+  }
+  &__container{
+    position: absolute;
+    top:0;
+    left:-256px;
+  }
+  &__theme{
+    display: block;
+    margin-top:1.111em;
+  }
+  &__text{
+    width:14em;
+    margin:0.8571428571em auto;
+  }
+  &__button{
+    margin: 0;
+    display: block;
+    margin:-0.5em auto;
+  }
+  &__element{
+    display: inline-block;
+  }
+  &__pagination{
+    width:60em;
+    margin:5em auto;
+  }
+}
+
+.pagination{
+  &__list{
+    display: inline-block;
+  }
+  &__element{
+    display: inline-block;
+    width: 2.5em;
+    height: 2.5em;
+    margin-left: 1.111em;
+    &:last-child{
+      margin-right:1.8888em;
+    }
+  }
+}
+
+@media screen and (max-width:863px){
+  .moreArticle{
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:639px){
+  .moreArticle{
+    width: 100%;
+    margin: auto;
+    &__pagination{
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width:573px){
+  .moreArticle{
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:507px){
+  .moreArticle{
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width:400px){
+  .moreArticle{
+    width: 70%;
+    margin: auto;
+    &__article{
+      margin-left: 0;
+    }
+  }
+}
+@media screen and (max-width:360px){
+  .moreArticle{
+    width: 80%;
+    margin: auto;
+    &__article{
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+/* BLOGBEAUTY
+*
+* /sass/components/discover.scss - design of the Discover section stylesheet
+*
+* coded by Dylan Schirino
+* started at 29/07/2016
+*/
+
+.moreArticle{
+  &__title{
+    font:2.4em $oldstandard;
+    text-transform: uppercase;
+  }
+  &__container{
+    background-color: $lightPink;
+    transition: all .35s ease-in;
+    display: inline-block;
+  }
+  &__article:hover > .moreArticle__container{
+    opacity: 0.9;
+    transform: translateX(256px);
+    display: block;
+  }
+  &__link{
+     display:block;
+     color: $black;
+  }
+  &__theme{
+    text-align: center;
+    font:1.8em/1.4em $oldstandard;
+    text-transform: uppercase;
+    color: $white;
+    &::before{
+      content:"\e901";
+      font: 1.4em $glyphs;
+      padding-right: 1em;
+
+    }
+  }
+  &__text{
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+  &__titleCards{
+    padding: 1.125em 0 0.875em 0;
+    font:1.6em/1.5 $oldstandard;
+    text-transform: uppercase;
+  }
+  &__list{
+    font: 1.4em $raleway;
+  }
+  &__element{
+    &--comment{
+      font-size: 1.1428571429em;
+    }
+    &--comment::before{
+      content:"\e90b";
+      font:1.1em $glyphs;
+      color:$pink;
+      padding:0 0.2em 0 1.666em;
+    }
+  }
+}
+
+.pagination{
+  &__link{
+    font: 1.8em $raleway;
+    color: $pink;
+    text-decoration: underline;
+    padding-right: 0.8888em;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &__element{
+    font: 1.8em/2.3 $raleway;
+    border-radius: 50%;
+    background-color: $pink;
+    color: $white;
+    text-align: center;
+    transition: .2s ease-in;
+    &:hover{
+      background-color: $white;
+      color: $pink;
+      cursor: pointer;
+    }
+  }
+}
+
+
+@media screen and (max-width:573px){
+  .pagination{
+    &__link,&__element{
+      font-size: 1.3em;
+    }
+    &__list{
+      padding: 1em 0;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+/* BLOGBEAUTY
+*
+* /sass/Object/mainArticle.scss - Non design of the Main Article stylesheet
+*
+* coded by Dylan Schirino
+* started at 29/07/2016
+*/
+.article{
+  width: 65em;
+  margin:5em 0 0 17em;
+  &__share{
+    position: relative;
+    left:-12px;
+    float: right;
+  }
+}
+
+@media screen and (max-width:1131px){
+  .article{
+    margin-left: 5em;
+  }
+}
+
+
+.latest{
+  &__container{
+    width: 53.1em;
+  }
+  &__element{
+    &--like,&--time{
+      display: inline-block;
+    }
+  }
+  &__text{
+    margin:2.1875em 4.5625em 2.1875em 0em;
+    width: 29.0625em;
+  }
+  &__button{
+    display: block;
+    width: 12.25em;
+    height: 2.5em;
+    margin:3.25em 8.7em 0 8.7em ;
+
+  }
+}
+
+
+.imgcontainer__img{
+  vertical-align: bottom;
+}
+
+.list{
+  &__sublist{
+    display: inline-block;
+  }
+}
+
+.sublist{
+  &__element{
+    display: inline-block;
+  }
+}
+
+/*************************************
+            MEDIAQUERIES
+*************************************/
+
+@media screen and (max-width:978px) {
+  .article{
+    width: 90%;
+    margin: auto;
+    &__share{
+      position: relative;
+      left: 0;
+    }
+    &__latest{
+      width: 100%;
+      margin: auto;
+    }
+  }
+  .latest{
+    &__container{
+      width: 100%;
+    }
+    &__list{
+      text-align: center;
+    }
+    &__text{
+      width: 90%;
+      margin:2em auto;
+    }
+    &__button{
+      margin: auto;
+    }
+  }
+  .imgcontainer{
+    &__img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+@media screen and (max-width:720px){
+  .article{
+    &__decoration{
+      display: none;
+    }
+  }
+}

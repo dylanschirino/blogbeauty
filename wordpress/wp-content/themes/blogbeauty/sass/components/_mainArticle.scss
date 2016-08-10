@@ -1,0 +1,119 @@
+/* BLOGBEAUTY
+*
+* /sass/components/mainArticle.scss - design of the Main Article stylesheet
+*
+* coded by Dylan Schirino
+* started at 29/07/2016
+*/
+
+.share{
+  &__element{
+    width: 4.9em;
+    height: 4.2em;
+    &--twitter{
+      background-color: $blueTwitter;
+    }
+    &--facebook{
+      background-color: $blueFacebook;
+    }
+    &--hellocoton{
+      background-color: $pinkCoton;
+    }
+  }
+  &__link{
+    display: block;
+    transition: .2s ease-in;
+    &:hover {
+      transform: rotateZ(-15deg);
+    }
+    &::before{
+      display: block;
+      text-align: center;
+      font-family: $glyphs;
+      font-size: 2em;
+      line-height: 2em;
+      color: $white;
+    }
+    &--twitter::before{
+      content:"\e90a";
+    }
+    &--facebook::before{
+      content:"\e902";
+    }
+    &--hellocoton::before{
+      content:"\e909";
+    }
+  }
+}
+
+.latest{
+  &__container{
+    background-color: $white;
+    padding-left: 5.7em;
+    padding-bottom: 3.5em;
+  }
+  &__title{
+    padding-top: 0.833em;
+    font: 2.4em/1.5 $oldstandard;
+    text-transform: uppercase;
+  }
+  &__list{
+    font:1.4em $raleway;
+  }
+  &__element{
+    padding-top: 1em;
+    &--time{
+      color: $pink;
+      padding-right: 2.4em;
+    }
+    &--like{
+      font-size: 1.1428571429em;
+      &::after{
+        content:"\e903";
+        font: 1em $glyphs;
+        color: $pink;
+      }
+    }
+  }
+  &__button{
+    text-align: center;
+    font: 1.6em $oldstandard;
+    line-height: 3em;
+    text-transform: uppercase;
+    background-color: $black;
+    border: 1px solid $black;
+    color: $white;
+    transition: .2s ease-in-out;
+    &:hover{
+      background-color: $white;
+      border: 1px inset $black;
+      color: $black;
+    }
+  }
+}
+
+.sublist{
+  &__element{
+    color: $pink;
+  }
+}
+
+@media screen and (max-width:978px){
+  .latest{
+    &__container{
+      padding-left: 0;
+    }
+    &__title{
+      text-align: center;
+      padding-top:2em;
+    }
+  }
+}
+
+@media screen and (max-width:435px){
+  .latest{
+    &__title{
+      font-size: 1.8em;
+    }
+  }
+}

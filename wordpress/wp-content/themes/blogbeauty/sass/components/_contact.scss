@@ -1,0 +1,47 @@
+/* BLOGBEAUTY
+*
+* /sass/components/contact.scss - design of the Contact section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.contact{
+  &__title,&__subtitle{
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  &__subtitle{
+    font:2.4em/3.6 $oldstandard;
+  }
+  &__explain{
+    color: $pink;
+  }
+}
+
+.formulaire{
+  &__label{
+    font: 1.6em/1.9 $raleway;
+    text-transform: uppercase;
+  }
+  &__input{
+    font-size: 1.6em;
+    background: none;
+    border:1px solid $inputColor;
+  }
+  &__submit{
+    background-color: $black;
+    font: 1.6em/2.7 $oldstandard;
+    border: 1px solid $black;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: .2s ease-in;
+    text-align: center;
+    &:hover{
+      background-color: $white;
+      border-color: $black;
+      color: $black;
+      cursor: pointer;
+    }
+  }
+}

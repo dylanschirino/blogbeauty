@@ -1,0 +1,35 @@
+/* BLOGBEAUTY
+*
+* /sass/object/headArticle.scss - NON design of the Head Article stylesheet
+*
+* coded by Dylan Schirino
+* started at 02/08/2016
+*/
+.headArticle{
+  min-height: 46.8em;
+  position: relative;
+  &__cards{
+    position: absolute;
+    bottom: 0;
+    left: 26em;
+    right: 26em;
+    width: 45em;
+    margin: auto;
+    height: 12em;
+  }
+  &__timer{
+    margin-left: 1.625em;
+  }
+}
+
+@media screen and (max-width:1000px) {
+
+  .headArticle{
+    &__cards{
+      position: static;
+      width: 100%;
+      margin: auto;
+    }
+  }
+
+}

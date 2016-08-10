@@ -1,0 +1,176 @@
+/* BLOGBEAUTY
+*
+* /sass/object/header.scss - non design header stylesheet
+*
+* coded by Dylan Schirino
+* started at 19/07/2016
+*/
+
+.header{
+  &__banner{
+    background: url("../img/banner.jpg") no-repeat center center;
+    background-size: cover;
+  }
+  &__title{
+    font-family: $pacifico;
+    font-size: 4.8em;
+    text-align: center;
+    padding-top: 1.29166em;
+  }
+  &__subtitle{
+    font-family:$oldstandard;
+    font-size: 2.4em;
+    color:$white;
+  }
+  &__menu{
+    background-color: $menuBckg;
+  }
+}
+@media screen and (max-width:400px){
+  .header{
+    &__title{
+        font-size: 4em;
+    }
+    &__subtitle{
+      font-size: 2em;
+      margin-top: 3em;
+    }
+  }
+}
+
+.menu{
+  &__link{
+    font-family: $raleway;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color:$lightDark;
+    padding-right:2.0625em;
+    transition: .2s ease-in-out;
+    &:hover{
+      color: $pink;
+    }
+    &--active{
+      font-weight: bold;
+      color: $pink;
+    }
+  }
+  &__container{
+    padding: 3.6em 0 3.2em 0;
+  }
+  &__form{
+    padding-left: 6.4em;
+  }
+  &__dropdown{
+    opacity: 0;
+    transition: .2s ease-in-out;
+    background-color: $lightPink;
+    border: 4px solid $pink;
+    padding: 1em 0;
+  }
+  &__sublink{
+    font:1.4em/1.6 $raleway;
+    color: $white;
+    text-align: center;
+    &::before{
+      font: 1em $glyphs;
+      color: $black;
+      padding-right: 0.5em;
+    }
+    &--makeup::before{
+      content: "\e901";
+    }
+    &--nail::before{
+      content: "\e907";
+    }
+    &--hair::before{
+      content: "\e900";
+    }
+    &--mode::before{
+      content: "\e906";
+    }
+    &--lifestyle::before{
+      content: "\e905";
+    }
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  &__element{
+    padding: 0.5em 0;
+  }
+}
+
+.form{
+  &__input{
+    border: none;
+    font:1.4em $raleway;
+    background: none;
+    color: black;
+    padding-bottom: 7px;
+    border-bottom: 1px solid $lightDark;
+    outline: none;
+  }
+  &__submit{
+    border: none;
+    background: none;
+    background:url("../img/search.svg") no-repeat;
+    transition: .2s ease-in-out;
+    &:hover{
+      cursor: pointer;
+      transform: rotate(60deg);
+    }
+  }
+}
+
+.menu__drophover:focus .menu__dropdown,.menu__drophover:hover .menu__dropdown
+{
+  opacity: 1;
+}
+
+@media screen and (max-width:666px) {
+.menu{
+  &__link{
+    padding: 0.8em 0;
+    text-align: center;
+    background-color: $menuBckg;
+    border: 1px solid $white;
+    &:hover{
+      background-color: $pink;
+      color: $white;
+    }
+    &--categories{
+      text-decoration: underline;
+      display: none;
+    }
+  }
+  &__dropdown{
+    position: static;
+    opacity: 1;
+    border: none;
+    padding:0;
+  }
+  &__element{
+    background-color: $menuBckg;
+    border: 1px solid $white;
+    text-align: center;
+    &:hover{
+      background-color: $pink;
+    }
+  }
+  &__sublink{
+    color: $black;
+    text-transform: uppercase;
+    &:hover{
+      text-decoration: none;
+      color: $white;
+    }
+  }
+  &__show{
+      background: url("../img/menu.svg")no-repeat center center;
+      background-size: contain;
+      font-size: 5em;
+      cursor: pointer;
+      color: $white;
+  }
+}
+}

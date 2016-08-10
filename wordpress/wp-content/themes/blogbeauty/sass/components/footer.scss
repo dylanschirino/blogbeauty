@@ -1,0 +1,111 @@
+/* BLOGBEAUTY
+*
+* /sass/components/footer.scss - Design of the Footer section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.footer{
+  background: url("../img/palette.svg")no-repeat center center;
+  background-color: $lightPink;
+  color: $white;
+  padding-bottom: 2.6em;
+  &__plan{
+      background: url("../img/gloss.svg") no-repeat 156px 130px;
+  }
+}
+
+.plan{
+  &__title{
+    font: 2.4em/3 $oldstandard;
+    padding-top: 2.1666em;
+  }
+  &__element{
+    font: 1.6em/2.4 $raleway;
+    &::before{
+      content: "\e903";
+      font: 1em $glyphs;
+      padding-right: 1.5em;
+    }
+  }
+  &__link{
+    color: $lightDark;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.contact{
+  &__title{
+    font: 2.4em/3 $oldstandard;
+    padding-top: 2.1666em;
+    text-transform: none;
+  }
+  &__link{
+    font:1.2em $raleway;
+    text-transform: uppercase;
+    color: $white;
+    transition: .2s ease-in-out;
+    &:hover{
+      color: $black;
+    }
+    &::before{
+      display: block;
+      font: 2.5em $glyphs;
+      padding-bottom: 0.64em;
+    }
+    &--twitter::before{
+      content: "\e90a";
+      text-align: center;
+    }
+    &--facebook::before{
+      content: "\e902";
+      text-align: center;
+    }
+    &--insta::before{
+      content: "\e904";
+      text-align: center;
+    }
+    &--mail{
+      text-transform:none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+  &__email{
+    font-size: 1.2em;
+    text-transform:none;
+  }
+}
+
+
+@media screen and (max-width:903px) {
+  .footer{
+    background: none;
+    background-color: $lightPink;
+    &__plan{
+     background: none;
+    }
+  }
+
+  .plan{
+    &__element{
+    &::before{
+      padding-right: 0;
+        padding-left: 1.8em;
+    }
+  }
+  }
+}
+@media screen and (max-width:500px) {
+
+  .contact{
+    &__title{
+      text-align: center;
+      line-height: 2em;
+    }
+  }
+
+}

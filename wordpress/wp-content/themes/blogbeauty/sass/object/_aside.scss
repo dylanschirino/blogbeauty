@@ -1,0 +1,130 @@
+/* BLOGBEAUTY
+*
+* /sass/object/aside.scss - non design Aside stylesheet
+*
+* coded by Dylan Schirino
+* started at 28/07/2016
+*/
+
+.aside{
+  width: 23.1em;
+  float: right;
+  margin-right: 8em;
+  position: relative;
+  &::after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+  &__title{
+    margin-top: 1.58333em;
+  }
+  &__sticker{
+    position: absolute;
+    top:-20px;
+    left: 35px;
+  }
+  &__text{
+    width: 11.7em;
+    margin: auto;
+  }
+  &__link{
+    display: block;
+    &::before{
+      width:58px;
+      height:58px;
+    }
+  }
+  &__list{
+    width: 20em;
+    &::after{
+      content:"";
+      display: block;
+      clear: both;
+    }
+  }
+  &__element{
+    margin-top: 2em;
+    margin-left:2.8em;
+    margin-bottom: 2.9em;
+    &--left{
+      float: left;
+    }
+    &--right{
+      float: right;
+    }
+  }
+  & svg{
+    position:absolute;
+    left:-113px;
+    bottom:0;
+  }
+}
+
+@media screen and (max-width:1131px){
+  .aside{
+    margin-right: 5em;
+  }
+}
+@media screen and (max-width:982px){
+  .aside{
+    float: none;
+    width: 90%;
+    margin:5em auto;
+    display: block;
+    &__title{
+      font-size: 3em;
+      text-align: center;
+    }
+    &__section{
+      display:inline-block;
+      width:32%;
+      float: left;
+    }
+    &__sticker{
+      display: none;
+    }
+    & svg{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width:700px) {
+  .aside{
+    &__section{
+      width: 50%;
+      &--last{
+        display: block;
+        width: 100%;
+        margin: auto;
+      }
+    }
+    &__list{
+      margin: auto;
+    }
+    &__element{
+      margin-left: 0.8em;
+    }
+  }
+}
+
+@media screen and (max-width:460px) {
+  .aside{
+    &__section{
+      display: block;
+      width: 100%;
+      margin: auto;
+    }
+    &__list{
+      width: 70%;
+      margin: auto;
+    }
+    &__element{
+      margin-left:1em;
+    }
+    &__keyword{
+      text-align: center;
+    }
+  }
+}

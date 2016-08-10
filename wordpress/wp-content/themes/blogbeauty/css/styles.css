@@ -1,0 +1,1600 @@
+/* BLOGBEAUTY
+ *
+ * /sass/styles.scss - Main stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 19/07/2016
+ */
+@font-face {
+  font-family: 'pacifico';
+  src: url("../fonts/pacifico/pacifico-webfont.woff2") format("woff2"), url("../fonts/pacifico/pacifico-webfont.woff") format("woff"), url("../fonts/pacifico/pacifico.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'old_standard';
+  src: url("../fonts/OldStandard/oldstandard-regular-webfont.woff2") format("woff2"), url("../fonts/OldStandard/oldstandard-regular-webfont.woff") format("woff"), url("../fonts/OldStandard/oldstandard.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway';
+  src: url("../fonts/raleway/raleway-regular-webfont.woff2") format("woff2"), url("../fonts/raleway/raleway-regular-webfont.woff") format("woff"), url("../fonts/raleway/raleway.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'raleway-light';
+  src: url("../fonts/raleway/Raleway-Light.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'glyphs';
+  src: url("../fonts/glyphs/icomoon.eot?v65uyt");
+  src: url("../fonts/glyphs/icomoon.eot?v65uyt#iefix") format("embedded-opentype"), url("../fonts/glyphs/icomoon.ttf?v65uyt") format("truetype"), url("../fonts/glyphs/icomoon.woff?v65uyt") format("woff"), url("../fonts/glyphs/icomoon.svg?v65uyt#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*Fin du reset de meyer*/
+/* BLOGBEAUTY
+ *
+ * /sass/base/root.scss - ROOT stylesheet
+ *
+ * coded by Dylan Schirino
+ * started at 19/07/2016
+ */
+body {
+  font-size: 62.5%;
+  background-color: #F6F6F6; }
+
+p {
+  font-family: "raleway", "Helvetica", Arial, sans-serif;
+  font-size: 1.6em;
+  line-height: 1.6em; }
+
+a {
+  text-decoration: none; }
+
+.margin {
+  max-width: 126.5em;
+  margin: auto; }
+
+/* BLOGBEAUTY
+*
+* /sass/object/header.scss - non design header stylesheet
+*
+* coded by Dylan Schirino
+* started at 19/07/2016
+*/
+.header__banner {
+  height: 24em; }
+
+.header__subtitle {
+  text-align: center;
+  margin-top: 1.9em; }
+
+.header__menu {
+  min-height: 8.7em; }
+
+@media screen and (max-width: 1160px) {
+  .header__subtitle {
+    margin-top: 1.7em; } }
+
+.menu__link {
+  display: inline-block; }
+
+.menu__sublink {
+  margin-left: 2em; }
+
+.menu__container {
+  width: 65em;
+  margin: auto; }
+  .menu__container::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.menu__form {
+  position: relative;
+  margin-top: -1.7em; }
+
+.menu__drophover {
+  display: inline-block; }
+
+.menu__dropdown {
+  position: absolute;
+  width: 15em; }
+
+.menu__hamburger {
+  display: none; }
+
+.form::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.form__input {
+  float: right;
+  position: relative; }
+
+.form__submit {
+  width: 1.7em;
+  height: 1.7em;
+  position: absolute;
+  right: 0px;
+  top: 0px; }
+
+@media screen and (max-width: 666px) {
+  .menu__link {
+    display: block; }
+  .menu__container {
+    width: 100%; }
+  .menu__sublink {
+    margin-left: 0; }
+  .menu__drophover {
+    display: block; }
+  .menu__dropdown {
+    display: block;
+    width: 100%; }
+  .menu__form {
+    display: none; }
+  .menu__burger {
+    display: none;
+    margin-top: 2em; }
+  .menu__hamburger {
+    display: none; }
+  .menu__show {
+    width: 1em;
+    height: 1em;
+    display: block;
+    margin: auto; }
+  .menu__hamburger:checked ~ .menu__burger {
+    display: block; } }
+
+/* BLOGBEAUTY
+*
+* /sass/object/aside.scss - non design Aside stylesheet
+*
+* coded by Dylan Schirino
+* started at 28/07/2016
+*/
+.aside {
+  width: 23.1em;
+  float: right;
+  margin-right: 8em;
+  position: relative; }
+  .aside::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .aside__title {
+    margin-top: 1.58333em; }
+  .aside__sticker {
+    position: absolute;
+    top: -20px;
+    left: 35px; }
+  .aside__text {
+    width: 11.7em;
+    margin: auto; }
+  .aside__link {
+    display: block; }
+    .aside__link::before {
+      width: 58px;
+      height: 58px; }
+  .aside__list {
+    width: 20em; }
+    .aside__list::after {
+      content: "";
+      display: block;
+      clear: both; }
+  .aside__element {
+    margin-top: 2em;
+    margin-left: 2.8em;
+    margin-bottom: 2.9em; }
+    .aside__element--left {
+      float: left; }
+    .aside__element--right {
+      float: right; }
+  .aside svg {
+    position: absolute;
+    left: -113px;
+    bottom: 0; }
+
+@media screen and (max-width: 1131px) {
+  .aside {
+    margin-right: 5em; } }
+
+@media screen and (max-width: 982px) {
+  .aside {
+    float: none;
+    width: 90%;
+    margin: 5em auto;
+    display: block; }
+    .aside__title {
+      font-size: 3em;
+      text-align: center; }
+    .aside__section {
+      display: inline-block;
+      width: 32%;
+      float: left; }
+    .aside__sticker {
+      display: none; }
+    .aside svg {
+      display: none; } }
+
+@media screen and (max-width: 700px) {
+  .aside__section {
+    width: 50%; }
+    .aside__section--last {
+      display: block;
+      width: 100%;
+      margin: auto; }
+  .aside__list {
+    margin: auto; }
+  .aside__element {
+    margin-left: 0.8em; } }
+
+@media screen and (max-width: 460px) {
+  .aside__section {
+    display: block;
+    width: 100%;
+    margin: auto; }
+  .aside__list {
+    width: 70%;
+    margin: auto; }
+  .aside__element {
+    margin-left: 1em; }
+  .aside__keyword {
+    text-align: center; } }
+
+/* BLOGBEAUTY
+*
+* /sass/Object/mainArticle.scss - Non design of the Main Article stylesheet
+*
+* coded by Dylan Schirino
+* started at 29/07/2016
+*/
+.article {
+  width: 65em;
+  margin: 5em 0 0 17em; }
+  .article__share {
+    position: relative;
+    left: -12px;
+    float: right; }
+
+@media screen and (max-width: 1131px) {
+  .article {
+    margin-left: 5em; } }
+
+.latest__container {
+  width: 53.1em; }
+
+.latest__element--like, .latest__element--time {
+  display: inline-block; }
+
+.latest__text {
+  margin: 2.1875em 4.5625em 2.1875em 0em;
+  width: 29.0625em; }
+
+.latest__button {
+  display: block;
+  width: 12.25em;
+  height: 2.5em;
+  margin: 3.25em 8.7em 0 8.7em; }
+
+.imgcontainer__img {
+  vertical-align: bottom; }
+
+.list__sublist {
+  display: inline-block; }
+
+.sublist__element {
+  display: inline-block; }
+
+/*************************************
+            MEDIAQUERIES
+*************************************/
+@media screen and (max-width: 978px) {
+  .article {
+    width: 90%;
+    margin: auto; }
+    .article__share {
+      position: relative;
+      left: 0; }
+    .article__latest {
+      width: 100%;
+      margin: auto; }
+  .latest__container {
+    width: 100%; }
+  .latest__list {
+    text-align: center; }
+  .latest__text {
+    width: 90%;
+    margin: 2em auto; }
+  .latest__button {
+    margin: auto; }
+  .imgcontainer__img {
+    width: 100%;
+    height: auto; } }
+
+@media screen and (max-width: 720px) {
+  .article__decoration {
+    display: none; } }
+
+/* BLOGBEAUTY
+*
+* /sass/Object/discover.scss - Non design of the Discover section stylesheet
+*
+* coded by Dylan Schirino
+* started at 29/07/2016
+*/
+.moreArticle {
+  max-width: 91em;
+  margin: auto; }
+  .moreArticle__title {
+    margin: 4em 0 2.04167em 1.2em; }
+  .moreArticle__container {
+    width: 25.6em;
+    height: 20.2em; }
+  .moreArticle__article {
+    position: relative;
+    width: 25.6em;
+    height: 30em;
+    overflow: hidden;
+    display: inline-block;
+    margin: 4.9em 0 0 3em; }
+  .moreArticle__container {
+    position: absolute;
+    top: 0;
+    left: -256px; }
+  .moreArticle__theme {
+    display: block;
+    margin-top: 1.111em; }
+  .moreArticle__text {
+    width: 14em;
+    margin: 0.8571428571em auto; }
+  .moreArticle__button {
+    margin: 0;
+    display: block;
+    margin: -0.5em auto; }
+  .moreArticle__element {
+    display: inline-block; }
+  .moreArticle__pagination {
+    width: 60em;
+    margin: 5em auto; }
+
+.pagination__list {
+  display: inline-block; }
+
+.pagination__element {
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: 1.111em; }
+  .pagination__element:last-child {
+    margin-right: 1.8888em; }
+
+@media screen and (max-width: 863px) {
+  .moreArticle {
+    width: 90%;
+    margin: auto; } }
+
+@media screen and (max-width: 639px) {
+  .moreArticle {
+    width: 100%;
+    margin: auto; }
+    .moreArticle__pagination {
+      width: 100%;
+      text-align: center; } }
+
+@media screen and (max-width: 573px) {
+  .moreArticle {
+    width: 60%;
+    margin: auto; } }
+
+@media screen and (max-width: 507px) {
+  .moreArticle {
+    width: 60%;
+    margin: auto; } }
+
+@media screen and (max-width: 400px) {
+  .moreArticle {
+    width: 70%;
+    margin: auto; }
+    .moreArticle__article {
+      margin-left: 0; } }
+
+@media screen and (max-width: 360px) {
+  .moreArticle {
+    width: 80%;
+    margin: auto; }
+    .moreArticle__article {
+      margin-left: 0; } }
+
+/* BLOGBEAUTY
+*
+* /sass/object/instagram.scss - NON design of the Instagram section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.instagram {
+  height: 32em;
+  margin-bottom: 3.8em; }
+  .instagram__title {
+    margin-left: 8.6em; }
+
+.slides li {
+  display: inline-block; }
+
+.slides img {
+  width: 25.3em;
+  height: 23em; }
+
+.jr-insta-wrap {
+  display: none; }
+
+@media screen and (max-width: 820px) {
+  .instagram__title {
+    margin: 0;
+    text-align: center; } }
+
+/* BLOGBEAUTY
+*
+* /sass/object/footer.scss - NON design of the Footer section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.footer::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.footer__plan {
+  margin-left: 11em;
+  display: inline-block;
+  width: 19em; }
+
+.footer__contact {
+  float: right; }
+
+.plan__gloss {
+  display: inline-block;
+  float: right; }
+
+.contact__container {
+  margin-left: 10em; }
+
+.contact__link {
+  margin-right: 2.667em;
+  display: inline-block; }
+
+.contact__email {
+  margin-top: 2.1428571429em; }
+
+@media screen and (max-width: 720px) {
+  .footer__plan {
+    display: block;
+    width: 75%;
+    margin: auto; }
+  .footer__contact {
+    display: block;
+    float: none; }
+  .plan__title {
+    text-align: center; }
+  .plan__list {
+    width: 90%;
+    margin: auto; }
+  .plan__element {
+    display: inline-block;
+    text-align: center; }
+  .contact__title {
+    text-align: center; }
+  .contact__link {
+    display: block;
+    text-align: center;
+    margin-bottom: 3em;
+    margin-right: 0; }
+  .contact__email {
+    text-align: center; }
+  .contact__container {
+    width: 49%;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 518px) {
+  .footer__plan {
+    width: 100%;
+    margin: auto; } }
+
+/* BLOGBEAUTY
+*
+* /sass/object/contact.scss - design of the Contact section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.contact {
+  width: 58.9em;
+  margin: 5em 0 0 16.8em; }
+  .contact::after {
+    content: "";
+    overflow: hidden;
+    clear: both; }
+  .contact__img {
+    float: left;
+    margin-right: 8.1em; }
+  .contact__explain {
+    width: 40em; }
+
+.formulaire::after {
+  content: "";
+  overflow: hidden;
+  clear: both; }
+
+.formulaire__container {
+  width: 92.7em;
+  margin: 3.8em auto; }
+
+.formulaire__input {
+  display: block;
+  width: 15em;
+  height: 2.8125em;
+  margin-bottom: 1.6875em; }
+  .formulaire__input--textarea {
+    width: 20.625em;
+    min-height: 16em;
+    margin-right: 6.1em; }
+
+.formulaire__left {
+  float: left; }
+
+.formulaire__right {
+  float: right;
+  margin-left: -10em; }
+
+.formulaire__submit {
+  width: 9.5em;
+  height: 2.75em;
+  float: right;
+  margin-right: 6.1em; }
+
+@media screen and (max-width: 962px) {
+  .contact {
+    width: 90%;
+    margin: auto; }
+    .contact__explain {
+      width: 100%; }
+  .formulaire__container {
+    width: 90%;
+    margin: 2em auto; } }
+
+@media screen and (max-width: 707px) {
+  .formulaire__left, .formulaire__right {
+    float: none; }
+  .formulaire__right {
+    margin: 0; }
+  .formulaire__input {
+    width: 100%; }
+  .formulaire__submit {
+    margin: 0; } }
+
+@media screen and (max-width: 540px) {
+  .contact__img {
+    display: block;
+    float: none;
+    margin: auto; }
+  .contact__subtitle {
+    text-align: center; } }
+
+/* BLOGBEAUTY
+*
+* /sass/object/about.scss - NON design of the About section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.whoami__title {
+  margin-left: 3em; }
+
+.whoami__img {
+  display: block; }
+
+.whoami__svg {
+  display: inline-block;
+  margin-left: 11em; }
+
+.whoami__imgContainer::after {
+  content: "";
+  overflow: hidden;
+  clear: both; }
+
+.whoami__img {
+  display: inline-block;
+  vertical-align: middle; }
+
+.whoami__col {
+  width: 104.8em;
+  margin: 4em auto;
+  -moz-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 2.5em;
+  column-gap: 2.5em; }
+
+.whoami__signature {
+  display: block;
+  margin: 1.4722em 0; }
+
+@media screen and (max-width: 1115px) {
+  .whoami__svg {
+    display: block;
+    margin: auto; }
+  .whoami__img {
+    display: block;
+    margin: 2em auto; } }
+
+@media screen and (max-width: 1071px) {
+  .whoami__col {
+    width: 90%;
+    margin: auto; } }
+
+@media screen and (max-width: 755px) {
+  .whoami__svg {
+    max-width: 100%;
+    height: auto; }
+  .whoami__title {
+    margin: 0;
+    text-align: center; } }
+
+@media screen and (max-width: 500px) {
+  .whoami__col {
+    -moz-column-count: 1;
+    -moz-column-gap: normal;
+    column-count: 1;
+    column-gap: normal; } }
+
+/* BLOGBEAUTY
+*
+* /sass/object/headArticle.scss - NON design of the Head Article stylesheet
+*
+* coded by Dylan Schirino
+* started at 02/08/2016
+*/
+.headArticle {
+  min-height: 46.8em;
+  position: relative; }
+  .headArticle__cards {
+    position: absolute;
+    bottom: 0;
+    left: 26em;
+    right: 26em;
+    width: 45em;
+    margin: auto;
+    height: 12em; }
+  .headArticle__timer {
+    margin-left: 1.625em; }
+
+@media screen and (max-width: 1000px) {
+  .headArticle__cards {
+    position: static;
+    width: 100%;
+    margin: auto; } }
+
+/* BLOGBEAUTY
+*
+* /sass/object/TextArticle.scss - NON design of the Text Article stylesheet
+*
+* coded by Dylan Schirino
+* started at 02/08/2016
+*/
+.text {
+  width: 58.7em;
+  margin: 5em 0 0 20.8em;
+  position: relative; }
+  .text__date {
+    display: inline-block;
+    width: 2.7142857143em; }
+  .text__containerDate {
+    display: inline-block;
+    width: 8em;
+    height: 8em;
+    position: absolute;
+    left: -40px;
+    top: 41px; }
+  .text__article, .text .commentary, .text .commentform {
+    margin-left: 5.9em; }
+  .text__content {
+    width: 27.8125em; }
+  .text__share {
+    float: right;
+    position: relative;
+    left: 50px; }
+  .text__img {
+    margin-bottom: 2em; }
+
+.commentary {
+  margin-bottom: 6.3em; }
+  .commentary__container {
+    width: 42.4em; }
+
+.commentform {
+  width: 45.4em; }
+  .commentform::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .commentform__left {
+    float: left; }
+  .commentform__right {
+    float: right; }
+  .commentform__input {
+    display: block;
+    width: 12.25em;
+    height: 2.8125em;
+    margin: 0.7em 0 2em 0; }
+    .commentform__input--textarea {
+      width: 99%;
+      min-height: 9.6875em; }
+  .commentform__submit {
+    float: right;
+    width: 10.625em;
+    height: 2.75em;
+    margin-bottom: 3.125em; }
+
+/***********************************
+            MEDIAQUERIES
+***********************************/
+@media screen and (max-width: 1156px) {
+  .text {
+    margin-left: 8em; } }
+
+@media screen and (max-width: 978px) {
+  .text {
+    width: 80%;
+    margin: auto; }
+    .text__article, .text .commentary, .text .commentform {
+      margin-left: 0em; }
+    .text__title {
+      text-align: center; }
+    .text__content {
+      width: 80%;
+      margin: auto; }
+    .text__img {
+      display: block;
+      margin: auto;
+      margin-bottom: 6.3em; }
+  .commentary__title {
+    text-align: center; }
+  .commentary__container {
+    width: 80%;
+    margin: auto; }
+  .commentform {
+    width: 100%;
+    margin: auto; }
+    .commentform__title {
+      text-align: center; }
+    .commentform__left, .commentform__right {
+      float: none; }
+    .commentform__label {
+      display: block;
+      text-align: center;
+      margin-top: 2em; }
+    .commentform__input {
+      width: 80%;
+      margin: auto; }
+    .commentform__submit {
+      float: right;
+      margin: 2em 4.2em 2em 2em; } }
+
+@media screen and (max-width: 675px) {
+  .text__img {
+    min-width: 100%; } }
+
+@media screen and (max-width: 565px) {
+  .text__date {
+    display: block;
+    width: 100%; }
+  .text__share {
+    float: none;
+    position: static; }
+  .text__containerDate {
+    display: block;
+    position: static;
+    margin: auto; }
+  .share__list {
+    text-align: center;
+    margin-top: 1em; }
+  .share__element--inline {
+    display: inline-block; } }
+
+/* BLOGBEAUTY
+*
+* /sass/object/search.scss - NON design of the Search section stylesheet
+*
+* coded by Dylan Schirino
+* started at 02/08/2016
+*/
+.moreArticle__article--search {
+  margin-left: 3.7em; }
+
+.moreArticle__pagination--search {
+  width: 100%;
+  margin-left: 3.7em;
+  padding-bottom: 2.7em; }
+
+.search {
+  width: 62.3em; }
+  .search__keyword {
+    width: 16em;
+    height: 2.75em;
+    margin-left: 2.4em; }
+
+@media screen and (max-width: 970px) {
+  .search {
+    width: 90%;
+    margin: auto; }
+    .search__title {
+      text-align: center;
+      margin: 0; }
+    .search__keyword {
+      margin: 0 auto; }
+  .moreArticle--search {
+    text-align: center; }
+  .moreArticle__article--search {
+    margin-left: 0; } }
+
+@media screen and (max-width: 826px) {
+  .moreArticle__pagination--search {
+    margin: 0;
+    font-size: 0.8em; } }
+
+@media screen and (max-width: 335px) {
+  .search__title {
+    padding: 0; }
+  .moreArticle__article--search {
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto; }
+  .moreArticle__element--comment {
+    padding-top: 1em; } }
+
+/* BLOGBEAUTY
+*
+* /sass/object/header.scss - non design header stylesheet
+*
+* coded by Dylan Schirino
+* started at 19/07/2016
+*/
+.header__banner {
+  background: url("../img/banner.jpg") no-repeat center center;
+  background-size: cover; }
+
+.header__title {
+  font-family: "pacifico";
+  font-size: 4.8em;
+  text-align: center;
+  padding-top: 1.29166em; }
+
+.header__subtitle {
+  font-family: "old_standard";
+  font-size: 2.4em;
+  color: white; }
+
+.header__menu {
+  background-color: #F3ECEB; }
+
+@media screen and (max-width: 400px) {
+  .header__title {
+    font-size: 4em; }
+  .header__subtitle {
+    font-size: 2em;
+    margin-top: 3em; } }
+
+.menu__link {
+  font-family: "raleway", "Helvetica", Arial, sans-serif;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  color: #333333;
+  padding-right: 2.0625em;
+  transition: .2s ease-in-out; }
+  .menu__link:hover {
+    color: #C77083; }
+  .menu__link--active {
+    font-weight: bold;
+    color: #C77083; }
+
+.menu__container {
+  padding: 3.6em 0 3.2em 0; }
+
+.menu__form {
+  padding-left: 6.4em; }
+
+.menu__dropdown {
+  opacity: 0;
+  transition: .2s ease-in-out;
+  background-color: #ECB7AC;
+  border: 4px solid #C77083;
+  padding: 1em 0; }
+
+.menu__sublink {
+  font: 1.4em/1.6 "raleway", "Helvetica", Arial, sans-serif;
+  color: white;
+  text-align: center; }
+  .menu__sublink::before {
+    font: 1em "glyphs";
+    color: black;
+    padding-right: 0.5em; }
+  .menu__sublink--makeup::before {
+    content: "\e901"; }
+  .menu__sublink--nail::before {
+    content: "\e907"; }
+  .menu__sublink--hair::before {
+    content: "\e900"; }
+  .menu__sublink--mode::before {
+    content: "\e906"; }
+  .menu__sublink--lifestyle::before {
+    content: "\e905"; }
+  .menu__sublink:hover {
+    text-decoration: underline; }
+
+.menu__element {
+  padding: 0.5em 0; }
+
+.form__input {
+  border: none;
+  font: 1.4em "raleway", "Helvetica", Arial, sans-serif;
+  background: none;
+  color: black;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #333333;
+  outline: none; }
+
+.form__submit {
+  border: none;
+  background: none;
+  background: url("../img/search.svg") no-repeat;
+  transition: .2s ease-in-out; }
+  .form__submit:hover {
+    cursor: pointer;
+    transform: rotate(60deg); }
+
+.menu__drophover:focus .menu__dropdown, .menu__drophover:hover .menu__dropdown {
+  opacity: 1; }
+
+@media screen and (max-width: 666px) {
+  .menu__link {
+    padding: 0.8em 0;
+    text-align: center;
+    background-color: #F3ECEB;
+    border: 1px solid white; }
+    .menu__link:hover {
+      background-color: #C77083;
+      color: white; }
+    .menu__link--categories {
+      text-decoration: underline;
+      display: none; }
+  .menu__dropdown {
+    position: static;
+    opacity: 1;
+    border: none;
+    padding: 0; }
+  .menu__element {
+    background-color: #F3ECEB;
+    border: 1px solid white;
+    text-align: center; }
+    .menu__element:hover {
+      background-color: #C77083; }
+  .menu__sublink {
+    color: black;
+    text-transform: uppercase; }
+    .menu__sublink:hover {
+      text-decoration: none;
+      color: white; }
+  .menu__show {
+    background: url("../img/menu.svg") no-repeat center center;
+    background-size: contain;
+    font-size: 5em;
+    cursor: pointer;
+    color: white; } }
+
+/* BLOGBEAUTY
+*
+* /sass/components/aside.scss - design Aside stylesheet
+*
+* coded by Dylan Schirino
+* started at 28/07/2016
+*/
+.aside {
+  background-color: white;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); }
+  .aside__title {
+    font: 2.4em "old_standard";
+    text-align: center; }
+  .aside__photo {
+    display: block;
+    margin: 1em auto; }
+  .aside__text {
+    font-size: 1.4em;
+    padding-top: 0.6em; }
+  .aside__element {
+    text-align: center; }
+    .aside__element:hover .aside__link::before {
+      background-color: #ECB7AC;
+      color: white;
+      cursor: pointer; }
+  .aside__link {
+    font-size: 1.4em;
+    font-family: "raleway", "Helvetica", Arial, sans-serif;
+    font-weight: lighter;
+    color: #ECB7AC; }
+    .aside__link::before {
+      display: block;
+      font-family: "glyphs";
+      font-size: 1.7em;
+      text-align: center;
+      margin-bottom: 0.5882352941em;
+      line-height: 2.4em;
+      border-radius: 50%;
+      border: 1px solid #ECB7AC; }
+    .aside__link--twitter::before {
+      content: "\e90a"; }
+    .aside__link--insta::before {
+      content: "\e904"; }
+    .aside__link--hellocoton::before {
+      content: "\e909"; }
+    .aside__link--facebook::before {
+      content: "\e902"; }
+    .aside__link--pinterest::before {
+      content: "\e908"; }
+  .aside__keyword {
+    font-size: 1.6em;
+    line-height: 2.0625em;
+    padding: 0 2.0625em 1.625em 1.99em; }
+  .aside__pointout {
+    font-size: 1.5em;
+    /*24px*/ }
+  .aside__bold {
+    font-weight: bolder;
+    color: #C77083; }
+
+/* BLOGBEAUTY
+*
+* /sass/components/mainArticle.scss - design of the Main Article stylesheet
+*
+* coded by Dylan Schirino
+* started at 29/07/2016
+*/
+.share__element {
+  width: 4.9em;
+  height: 4.2em; }
+  .share__element--twitter {
+    background-color: #4099FF; }
+  .share__element--facebook {
+    background-color: #3D5B93; }
+  .share__element--hellocoton {
+    background-color: #D30D66; }
+
+.share__link {
+  display: block;
+  transition: .2s ease-in; }
+  .share__link:hover {
+    transform: rotateZ(-15deg); }
+  .share__link::before {
+    display: block;
+    text-align: center;
+    font-family: "glyphs";
+    font-size: 2em;
+    line-height: 2em;
+    color: white; }
+  .share__link--twitter::before {
+    content: "\e90a"; }
+  .share__link--facebook::before {
+    content: "\e902"; }
+  .share__link--hellocoton::before {
+    content: "\e909"; }
+
+.latest__container {
+  background-color: white;
+  padding-left: 5.7em;
+  padding-bottom: 3.5em; }
+
+.latest__title {
+  padding-top: 0.833em;
+  font: 2.4em/1.5 "old_standard";
+  text-transform: uppercase; }
+
+.latest__list {
+  font: 1.4em "raleway", "Helvetica", Arial, sans-serif; }
+
+.latest__element {
+  padding-top: 1em; }
+  .latest__element--time {
+    color: #C77083;
+    padding-right: 2.4em; }
+  .latest__element--like {
+    font-size: 1.1428571429em; }
+    .latest__element--like::after {
+      content: "\e903";
+      font: 1em "glyphs";
+      color: #C77083; }
+
+.latest__button {
+  text-align: center;
+  font: 1.6em "old_standard";
+  line-height: 3em;
+  text-transform: uppercase;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  transition: .2s ease-in-out; }
+  .latest__button:hover {
+    background-color: white;
+    border: 1px inset black;
+    color: black; }
+
+.sublist__element {
+  color: #C77083; }
+
+@media screen and (max-width: 978px) {
+  .latest__container {
+    padding-left: 0; }
+  .latest__title {
+    text-align: center;
+    padding-top: 2em; } }
+
+@media screen and (max-width: 435px) {
+  .latest__title {
+    font-size: 1.8em; } }
+
+/* BLOGBEAUTY
+*
+* /sass/components/discover.scss - design of the Discover section stylesheet
+*
+* coded by Dylan Schirino
+* started at 29/07/2016
+*/
+.moreArticle__title {
+  font: 2.4em "old_standard";
+  text-transform: uppercase; }
+
+.moreArticle__container {
+  background-color: #ECB7AC;
+  transition: all .35s ease-in;
+  display: inline-block; }
+
+.moreArticle__article:hover > .moreArticle__container {
+  opacity: 0.9;
+  transform: translateX(256px);
+  display: block; }
+
+.moreArticle__link {
+  display: block;
+  color: black; }
+
+.moreArticle__theme {
+  text-align: center;
+  font: 1.8em/1.4em "old_standard";
+  text-transform: uppercase;
+  color: white; }
+  .moreArticle__theme::before {
+    content: "\e901";
+    font: 1.4em "glyphs";
+    padding-right: 1em; }
+
+.moreArticle__text {
+  font-size: 1.4em;
+  line-height: 1.4em; }
+
+.moreArticle__titleCards {
+  padding: 1.125em 0 0.875em 0;
+  font: 1.6em/1.5 "old_standard";
+  text-transform: uppercase; }
+
+.moreArticle__list {
+  font: 1.4em "raleway", "Helvetica", Arial, sans-serif; }
+
+.moreArticle__element--comment {
+  font-size: 1.1428571429em; }
+
+.moreArticle__element--comment::before {
+  content: "\e90b";
+  font: 1.1em "glyphs";
+  color: #C77083;
+  padding: 0 0.2em 0 1.666em; }
+
+.pagination__link {
+  font: 1.8em "raleway", "Helvetica", Arial, sans-serif;
+  color: #C77083;
+  text-decoration: underline;
+  padding-right: 0.8888em; }
+  .pagination__link:hover {
+    text-decoration: none; }
+
+.pagination__element {
+  font: 1.8em/2.3 "raleway", "Helvetica", Arial, sans-serif;
+  border-radius: 50%;
+  background-color: #C77083;
+  color: white;
+  text-align: center;
+  transition: .2s ease-in; }
+  .pagination__element:hover {
+    background-color: white;
+    color: #C77083;
+    cursor: pointer; }
+
+@media screen and (max-width: 573px) {
+  .pagination__link, .pagination__element {
+    font-size: 1.3em; }
+  .pagination__list {
+    padding: 1em 0; } }
+
+/* BLOGBEAUTY
+*
+* /sass/components/instagram.scss - design of the Instagram section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.instagram__title {
+  font: 2.4em "old_standard";
+  text-transform: uppercase;
+  padding: 2em 0; }
+
+/* BLOGBEAUTY
+*
+* /sass/components/footer.scss - Design of the Footer section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.footer {
+  background: url("../img/palette.svg") no-repeat center center;
+  background-color: #ECB7AC;
+  color: white;
+  padding-bottom: 2.6em; }
+  .footer__plan {
+    background: url("../img/gloss.svg") no-repeat 156px 130px; }
+
+.plan__title {
+  font: 2.4em/3 "old_standard";
+  padding-top: 2.1666em; }
+
+.plan__element {
+  font: 1.6em/2.4 "raleway", "Helvetica", Arial, sans-serif; }
+  .plan__element::before {
+    content: "\e903";
+    font: 1em "glyphs";
+    padding-right: 1.5em; }
+
+.plan__link {
+  color: #333333; }
+  .plan__link:hover {
+    text-decoration: underline; }
+
+.contact__title {
+  font: 2.4em/3 "old_standard";
+  padding-top: 2.1666em;
+  text-transform: none; }
+
+.contact__link {
+  font: 1.2em "raleway", "Helvetica", Arial, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  transition: .2s ease-in-out; }
+  .contact__link:hover {
+    color: black; }
+  .contact__link::before {
+    display: block;
+    font: 2.5em "glyphs";
+    padding-bottom: 0.64em; }
+  .contact__link--twitter::before {
+    content: "\e90a";
+    text-align: center; }
+  .contact__link--facebook::before {
+    content: "\e902";
+    text-align: center; }
+  .contact__link--insta::before {
+    content: "\e904";
+    text-align: center; }
+  .contact__link--mail {
+    text-transform: none; }
+    .contact__link--mail:hover {
+      text-decoration: underline; }
+
+.contact__email {
+  font-size: 1.2em;
+  text-transform: none; }
+
+@media screen and (max-width: 903px) {
+  .footer {
+    background: none;
+    background-color: #ECB7AC; }
+    .footer__plan {
+      background: none; }
+  .plan__element::before {
+    padding-right: 0;
+    padding-left: 1.8em; } }
+
+@media screen and (max-width: 500px) {
+  .contact__title {
+    text-align: center;
+    line-height: 2em; } }
+
+/* BLOGBEAUTY
+*
+* /sass/components/contact.scss - design of the Contact section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.contact__title, .contact__subtitle {
+  text-transform: uppercase;
+  letter-spacing: 1.5px; }
+
+.contact__subtitle {
+  font: 2.4em/3.6 "old_standard"; }
+
+.contact__explain {
+  color: #C77083; }
+
+.formulaire__label {
+  font: 1.6em/1.9 "raleway", "Helvetica", Arial, sans-serif;
+  text-transform: uppercase; }
+
+.formulaire__input {
+  font-size: 1.6em;
+  background: none;
+  border: 1px solid #C3BAB2; }
+
+.formulaire__submit {
+  background-color: black;
+  font: 1.6em/2.7 "old_standard";
+  border: 1px solid black;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: .2s ease-in;
+  text-align: center; }
+  .formulaire__submit:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
+    cursor: pointer; }
+
+/* BLOGBEAUTY
+*
+* /sass/components/about.scss - design of the About section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.whoami__title {
+  font: 3.6em/5.3 "old_standard";
+  text-transform: uppercase;
+  letter-spacing: 2.25px; }
+
+.whoami__signature {
+  text-align: center;
+  font: 3.6em "pacifico"; }
+
+.whoami__img {
+  border-radius: 50%; }
+
+/* BLOGBEAUTY
+*
+* /sass/components/headArticle.scss - design of the Head Article stylesheet
+*
+* coded by Dylan Schirino
+* started at 02/08/2016
+*/
+.headArticle {
+  background: url("../img/article.jpg") no-repeat center fixed;
+  background-size: cover; }
+  .headArticle__cards {
+    background-color: #272A29;
+    opacity: 0.8;
+    color: white;
+    padding-bottom: 1em; }
+  .headArticle__title {
+    font: 2.4em/3 "old_standard";
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 0.5em; }
+  .headArticle__keyword, .headArticle__timer {
+    text-align: center; }
+
+/* BLOGBEAUTY
+*
+* /sass/components/TextArticle.scss - design of the Text Article stylesheet
+*
+* coded by Dylan Schirino
+* started at 02/08/2016
+*/
+.text {
+  background-color: white; }
+  .text__date {
+    padding-top: 0.3em;
+    font: 1.4em/1.8 "old_standard";
+    text-align: center;
+    text-transform: uppercase;
+    color: white; }
+  .text__containerDate {
+    border-radius: 50%;
+    background-color: #ECB7AC;
+    text-align: center; }
+  .text__title {
+    font: 1.8em/2.6 "old_standard";
+    color: #C77083;
+    text-transform: uppercase;
+    padding-top: 2.1111em; }
+  .text__content {
+    padding-bottom: 2.375em; }
+
+.commentary__title {
+  font: 1.8em/2.6 "old_standard";
+  letter-spacing: 1.13px;
+  text-transform: uppercase;
+  padding-bottom: 1em; }
+
+.commentary__container::before {
+  width: 25em;
+  margin: auto;
+  content: "";
+  display: block;
+  height: 1px;
+  background: #ECB7AC; }
+
+.commentary__author {
+  font-size: 1.4em;
+  padding-top: 1.4285714286em;
+  color: #C77083;
+  font-weight: bold; }
+
+.commentary__time {
+  padding-left: 4.2857142857em;
+  display: inline-block;
+  text-align: center;
+  color: #ECB7AC;
+  font-weight: lighter;
+  font-style: italic; }
+
+.commentary__text {
+  padding: 1.25em 0; }
+
+.commentform__title {
+  font: 1.8em/2.6 "old_standard";
+  letter-spacing: 1.13px;
+  text-transform: uppercase;
+  padding-bottom: 1em; }
+
+.commentform__label {
+  font: 1.6em/1.9 "raleway", "Helvetica", Arial, sans-serif;
+  text-transform: uppercase;
+  color: #C77083;
+  letter-spacing: 1px; }
+
+.commentform__input {
+  font-size: 1.6em;
+  padding-left: 1em; }
+
+.commentform__submit {
+  font: 1.6em/2.8 "old_standard";
+  text-transform: uppercase;
+  border: 1px solid black;
+  background-color: black;
+  letter-spacing: 1px;
+  transition: .2s ease-in;
+  color: white; }
+  .commentform__submit:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black; }
+
+@media screen and (max-width: 565px) {
+  .text__date {
+    padding: 1.5em 0;
+    font-size: 1.4em; }
+  .text__containerDate {
+    border-radius: 0%; }
+  .text__img {
+    width: 100%;
+    height: auto; } }
+
+@media screen and (max-width: 410px) {
+  .commentary__author {
+    text-align: center; }
+  .commentary__time {
+    padding: 1em 0;
+    display: block;
+    text-align: center; } }
+
+@media screen and (max-width: 360px) {
+  .commentary__container::before {
+    width: 90%;
+    margin: auto; } }
+
+/* BLOGBEAUTY
+*
+* /sass/components/search.scss - design of the Search section stylesheet
+*
+* coded by Dylan Schirino
+* started at 02/08/2016
+*/
+.search {
+  background-color: white; }
+  .search__title {
+    font: 2.4em/3.6 "old_standard";
+    letter-spacing: 1.5px;
+    padding: 1em 0 0 1.5em; }
+  .search__keyword {
+    font-size: 1.6em;
+    line-height: 2.7em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #B2ABA1;
+    text-align: center; }
+
+@media screen and (max-width: 445px) {
+  .search__title {
+    line-height: 2em; } }
+
+@media screen and (max-width: 335px) {
+  .search__title {
+    padding: 1em; } }
+/*# sourceMappingURL=styles.css.map */

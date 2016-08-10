@@ -1,0 +1,21 @@
+/* BLOGBEAUTY
+*
+* /sass/components/about.scss - design of the About section stylesheet
+*
+* coded by Dylan Schirino
+* started at 01/08/2016
+*/
+.whoami{
+  &__title{
+    font: 3.6em/5.3 $oldstandard;
+    text-transform: uppercase;
+    letter-spacing: 2.25px;
+  }
+  &__signature{
+    text-align: center;
+    font: 3.6em $pacifico;
+  }
+  &__img{
+      border-radius: 50%;
+  }
+}
