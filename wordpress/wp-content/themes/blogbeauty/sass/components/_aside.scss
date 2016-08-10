@@ -60,16 +60,19 @@
     }
   }
   &__keyword{
-    font-size: 1.6em;
-    line-height: 2.0625em;
     padding: 0 2.0625em 1.625em 1.99em;
   }
-  &__pointout{
-    font-size: 1.5em;/*24px*/
+}
+.aside__keyword a {
+  color: $lightDark;
+  &:hover{
+    text-decoration: underline;
   }
-  &__bold{
-    font-weight: bolder;
-    color: $pink;
-  }
-
+}
+.aside__keyword .tag-link-position-1{
+  font-size: 32px !important;
+}
+.aside__keyword .tag-link-position-7{
+  color: $pink;
+  font-weight: bolder;
 }

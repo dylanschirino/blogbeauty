@@ -25,7 +25,7 @@
     left: 35px;
   }
   &__text{
-    width: 11.7em;
+    width: 13.7em;
     margin: auto;
   }
   &__link{
@@ -54,7 +54,7 @@
       float: right;
     }
   }
-  & svg{
+  & svg:last-child{
     position:absolute;
     left:-113px;
     bottom:0;

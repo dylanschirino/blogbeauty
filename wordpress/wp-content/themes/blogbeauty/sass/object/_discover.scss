@@ -8,7 +8,8 @@
 
 .moreArticle{
   max-width:91em;
-  margin: auto;
+  margin:auto;
+  margin-top:12em; 
   &__title{
     margin: 4em 0 2.04167em 1.2em;
   }
@@ -45,26 +46,20 @@
   &__element{
     display: inline-block;
   }
-  &__pagination{
+}
+.wp-pagenavi{
     width:60em;
     margin:5em auto;
   }
-}
-
-.pagination{
-  &__list{
-    display: inline-block;
-  }
-  &__element{
+.page,.current{
     display: inline-block;
     width: 2.5em;
     height: 2.5em;
     margin-left: 1.111em;
-    &:last-child{
-      margin-right:1.8888em;
-    }
   }
-}
+  .nextpostslink{
+      margin-left:1.8888em;
+  }
 
 @media screen and (max-width:863px){
   .moreArticle{
@@ -77,10 +72,10 @@
   .moreArticle{
     width: 100%;
     margin: auto;
-    &__pagination{
-      width: 100%;
-      text-align: center;
-    }
+  }
+  .wp-pagenavi{
+    width: 100%;
+    text-align: center;
   }
 }
 

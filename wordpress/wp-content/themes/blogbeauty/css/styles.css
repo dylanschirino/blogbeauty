@@ -228,7 +228,7 @@ a {
     top: -20px;
     left: 35px; }
   .aside__text {
-    width: 11.7em;
+    width: 13.7em;
     margin: auto; }
   .aside__link {
     display: block; }
@@ -249,7 +249,7 @@ a {
       float: left; }
     .aside__element--right {
       float: right; }
-  .aside svg {
+  .aside svg:last-child {
     position: absolute;
     left: -113px;
     bottom: 0; }
@@ -323,12 +323,12 @@ a {
 .latest__container {
   width: 53.1em; }
 
-.latest__element--like, .latest__element--time {
-  display: inline-block; }
-
 .latest__text {
   margin: 2.1875em 4.5625em 2.1875em 0em;
   width: 29.0625em; }
+
+.latest__element--like, .latest__element--time {
+  display: inline-block; }
 
 .latest__button {
   display: block;
@@ -360,14 +360,14 @@ a {
       margin: auto; }
   .latest__container {
     width: 100%; }
-  .latest__list {
-    text-align: center; }
   .latest__text {
     width: 90%;
     margin: 2em auto; }
+  .latest__list {
+    text-align: center; }
   .latest__button {
     margin: auto; }
-  .imgcontainer__img {
+  .latest__imgcontainer img {
     width: 100%;
     height: auto; } }
 
@@ -384,7 +384,8 @@ a {
 */
 .moreArticle {
   max-width: 91em;
-  margin: auto; }
+  margin: auto;
+  margin-top: 12em; }
   .moreArticle__title {
     margin: 4em 0 2.04167em 1.2em; }
   .moreArticle__container {
@@ -413,20 +414,19 @@ a {
     margin: -0.5em auto; }
   .moreArticle__element {
     display: inline-block; }
-  .moreArticle__pagination {
-    width: 60em;
-    margin: 5em auto; }
 
-.pagination__list {
-  display: inline-block; }
+.wp-pagenavi {
+  width: 60em;
+  margin: 5em auto; }
 
-.pagination__element {
+.page, .current {
   display: inline-block;
   width: 2.5em;
   height: 2.5em;
   margin-left: 1.111em; }
-  .pagination__element:last-child {
-    margin-right: 1.8888em; }
+
+.nextpostslink {
+  margin-left: 1.8888em; }
 
 @media screen and (max-width: 863px) {
   .moreArticle {
@@ -437,9 +437,9 @@ a {
   .moreArticle {
     width: 100%;
     margin: auto; }
-    .moreArticle__pagination {
-      width: 100%;
-      text-align: center; } }
+  .wp-pagenavi {
+    width: 100%;
+    text-align: center; } }
 
 @media screen and (max-width: 573px) {
   .moreArticle {
@@ -1102,15 +1102,19 @@ a {
     .aside__link--pinterest::before {
       content: "\e908"; }
   .aside__keyword {
-    font-size: 1.6em;
-    line-height: 2.0625em;
     padding: 0 2.0625em 1.625em 1.99em; }
-  .aside__pointout {
-    font-size: 1.5em;
-    /*24px*/ }
-  .aside__bold {
-    font-weight: bolder;
-    color: #C77083; }
+
+.aside__keyword a {
+  color: #333333; }
+  .aside__keyword a:hover {
+    text-decoration: underline; }
+
+.aside__keyword .tag-link-position-1 {
+  font-size: 32px !important; }
+
+.aside__keyword .tag-link-position-7 {
+  color: #C77083;
+  font-weight: bolder; }
 
 /* BLOGBEAUTY
 *
@@ -1163,6 +1167,10 @@ a {
 
 .latest__element {
   padding-top: 1em; }
+  .latest__element a {
+    color: #C77083; }
+    .latest__element a:hover {
+      text-decoration: underline; }
   .latest__element--time {
     color: #C77083;
     padding-right: 2.4em; }
@@ -1232,9 +1240,18 @@ a {
   text-transform: uppercase;
   color: white; }
   .moreArticle__theme::before {
-    content: "\e901";
     font: 1.4em "glyphs";
-    padding-right: 1em; }
+    padding-right: 0.5em; }
+  .moreArticle__theme--Ongles::before {
+    content: "\e907"; }
+  .moreArticle__theme--LifeStyle::before {
+    content: "\e905"; }
+  .moreArticle__theme--Maquillages::before {
+    content: "\e901"; }
+  .moreArticle__theme--Coiffure::before {
+    content: "\e900"; }
+  .moreArticle__theme--Mode::before {
+    content: "\e906"; }
 
 .moreArticle__text {
   font-size: 1.4em;
@@ -1257,31 +1274,34 @@ a {
   color: #C77083;
   padding: 0 0.2em 0 1.666em; }
 
-.pagination__link {
+.nextpostslink, .previouspostslink {
   font: 1.8em "raleway", "Helvetica", Arial, sans-serif;
   color: #C77083;
   text-decoration: underline;
   padding-right: 0.8888em; }
-  .pagination__link:hover {
+  .nextpostslink:hover, .previouspostslink:hover {
+    cursor: pointer;
     text-decoration: none; }
 
-.pagination__element {
+.page, .current {
   font: 1.8em/2.3 "raleway", "Helvetica", Arial, sans-serif;
   border-radius: 50%;
   background-color: #C77083;
   color: white;
   text-align: center;
   transition: .2s ease-in; }
-  .pagination__element:hover {
+  .page:hover, .current:hover {
     background-color: white;
     color: #C77083;
     cursor: pointer; }
 
+.current {
+  background-color: white;
+  color: #C77083; }
+
 @media screen and (max-width: 573px) {
-  .pagination__link, .pagination__element {
-    font-size: 1.3em; }
-  .pagination__list {
-    padding: 1em 0; } }
+  .page, .nextpostslink, .previouspostslink {
+    font-size: 1.3em; } }
 
 /* BLOGBEAUTY
 *
@@ -1597,4 +1617,5 @@ a {
 @media screen and (max-width: 335px) {
   .search__title {
     padding: 1em; } }
+
 /*# sourceMappingURL=styles.css.map */

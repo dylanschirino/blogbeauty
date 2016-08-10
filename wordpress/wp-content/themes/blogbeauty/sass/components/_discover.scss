@@ -22,8 +22,8 @@
     display: block;
   }
   &__link{
-     display:block;
-     color: $black;
+    display:block;
+    color: $black;
   }
   &__theme{
     text-align: center;
@@ -31,10 +31,23 @@
     text-transform: uppercase;
     color: $white;
     &::before{
-      content:"\e901";
       font: 1.4em $glyphs;
-      padding-right: 1em;
-
+      padding-right:0.5em;
+    }
+    &--Ongles::before{
+      content:"\e907";
+    }
+    &--LifeStyle::before{
+      content:"\e905";
+    }
+    &--Maquillages::before{
+      content:"\e901";
+    }
+    &--Coiffure::before{
+      content:"\e900";
+    }
+    &--Mode::before{
+      content:"\e906";
     }
   }
   &__text{
@@ -61,40 +74,37 @@
     }
   }
 }
-
-.pagination{
-  &__link{
-    font: 1.8em $raleway;
+.nextpostslink,.previouspostslink{
+  font: 1.8em $raleway;
+  color: $pink;
+  text-decoration: underline;
+  padding-right: 0.8888em;
+  &:hover{
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+.page,.current{
+  font: 1.8em/2.3 $raleway;
+  border-radius: 50%;
+  background-color: $pink;
+  color: $white;
+  text-align: center;
+  transition: .2s ease-in;
+  &:hover{
+    background-color: $white;
     color: $pink;
-    text-decoration: underline;
-    padding-right: 0.8888em;
-    &:hover{
-      text-decoration: none;
-    }
+    cursor: pointer;
   }
-  &__element{
-    font: 1.8em/2.3 $raleway;
-    border-radius: 50%;
-    background-color: $pink;
-    color: $white;
-    text-align: center;
-    transition: .2s ease-in;
-    &:hover{
-      background-color: $white;
-      color: $pink;
-      cursor: pointer;
-    }
-  }
+}
+.current{
+  background-color: $white;
+  color: $pink;
 }
 
 
 @media screen and (max-width:573px){
-  .pagination{
-    &__link,&__element{
-      font-size: 1.3em;
-    }
-    &__list{
-      padding: 1em 0;
-    }
+  .page,.nextpostslink,.previouspostslink{
+    font-size: 1.3em;
   }
 }

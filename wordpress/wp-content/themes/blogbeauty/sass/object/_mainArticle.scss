@@ -26,14 +26,14 @@
   &__container{
     width: 53.1em;
   }
+  &__text{
+    margin:2.1875em 4.5625em 2.1875em 0em;
+    width: 29.0625em;
+  }
   &__element{
     &--like,&--time{
       display: inline-block;
     }
-  }
-  &__text{
-    margin:2.1875em 4.5625em 2.1875em 0em;
-    width: 29.0625em;
   }
   &__button{
     display: block;
@@ -82,21 +82,21 @@
     &__container{
       width: 100%;
     }
-    &__list{
-      text-align: center;
-    }
     &__text{
       width: 90%;
       margin:2em auto;
     }
+    &__list{
+      text-align: center;
+    }
     &__button{
       margin: auto;
     }
-  }
-  .imgcontainer{
-    &__img{
-      width: 100%;
-      height: auto;
+    &__imgcontainer{
+      & img{
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }
