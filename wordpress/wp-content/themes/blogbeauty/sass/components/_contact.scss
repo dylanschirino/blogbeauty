@@ -17,16 +17,18 @@
     color: $pink;
   }
 }
-
 .formulaire{
   &__label{
-    font: 1.6em/1.9 $raleway;
+    font: 1em/1.9 $raleway;
     text-transform: uppercase;
   }
-  &__input{
-    font-size: 1.6em;
+  &__container{
+    & input:not(.formulaire__submit), & textarea {
+    font-size: 1em;
     background: none;
     border:1px solid $inputColor;
+    padding-left: 1em;
+  }
   }
   &__submit{
     background-color: $black;

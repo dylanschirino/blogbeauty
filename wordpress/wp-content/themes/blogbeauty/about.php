@@ -105,5 +105,12 @@ get_header();
   </span>
 </section>
 </div>
+  <section class="instagram">
+    <h3 class="instagram__title" aria-level="3">
+      J'instagram tout ce qui bouge
+    </h3>
+    <?php echo do_shortcode('[jr_instagram id="2"]');?>
+  </section>
 
+</main>
 <?php get_footer();?>
