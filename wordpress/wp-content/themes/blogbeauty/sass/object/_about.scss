@@ -24,7 +24,7 @@
       clear: both;
     }
   }
-  &__img{
+  & img{
     display: inline-block;
     vertical-align: middle;
   }
@@ -48,7 +48,7 @@
       display: block;
       margin: auto;
     }
-    &__img{
+    & img{
       display: block;
       margin: 2em auto;
     }

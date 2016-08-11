@@ -21,23 +21,23 @@ if(is_page()){
     <label for="show-menu" class="menu__show"><span class="hidden">Menu</span></label>
     <input type="checkbox" id="show-menu" class="menu__hamburger" role="button">
     <div class="menu__burger">
-    <a class="menu__link menu__link--active" href="index.html" title="Vers la page d'accueil">Accueil</a>
+    <a class="menu__link menu__link--active" href="<?php the_permalink();?>" title="Vers la page d'accueil">Accueil</a>
     <div class="menu__drophover">
-    <a class="menu__link menu__link--categories" href="categories.html" title="Vers la page des catégories">
+    <a class="menu__link menu__link--categories" href="<?php the_permalink('39');?>" title="Vers la page des catégories">
       Catégories
     </a>
     <ul class="menu__dropdown">
-      <li class="menu__element"><a href="#" class="menu__sublink menu__sublink--makeup" title="Vers la catégorie Maquillage">Maquillages</a></li>
-      <li class="menu__element"><a href="#" class="menu__sublink menu__sublink--nail" title="Vers la catégorie Ongles">Ongles</a></li>
-      <li class="menu__element"><a href="#" class="menu__sublink menu__sublink--hair" title="Vers la catégorie Coiffure">Coiffure</a></li>
-      <li class="menu__element"><a href="#" class="menu__sublink menu__sublink--mode" title="Vers la catégorie Mode">Mode</a></li>
-      <li class="menu__element"><a href="#" class="menu__sublink menu__sublink--lifestyle" title="Vers la catégorie Lifestyle">Lifestyle</a></li>
+      <li class="menu__element"><a href="<?php echo get_category_link('1'); ?>" class="menu__sublink menu__sublink--makeup" title="Vers la catégorie Maquillage">Maquillages</a></li>
+      <li class="menu__element"><a href="<?php echo get_category_link('2'); ?>" class="menu__sublink menu__sublink--nail" title="Vers la catégorie Ongles">Ongles</a></li>
+      <li class="menu__element"><a href="<?php echo get_category_link('3'); ?>" class="menu__sublink menu__sublink--hair" title="Vers la catégorie Coiffure">Coiffure</a></li>
+      <li class="menu__element"><a href="<?php echo get_category_link('4'); ?>" class="menu__sublink menu__sublink--mode" title="Vers la catégorie Mode">Mode</a></li>
+      <li class="menu__element"><a href="<?php echo get_category_link('5'); ?>" class="menu__sublink menu__sublink--lifestyle" title="Vers la catégorie Lifestyle">Lifestyle</a></li>
     </ul>
   </div>
 
-    <a class="menu__link" href="contact.html" title="Vers la page de Contact">Contact</a>
+    <a class="menu__link" href="<?php the_permalink('51');?>" title="Vers la page de Contact">Contact</a>
 
-    <a class="menu__link" href="about.html" title="Vers la page à propos">À Propos</a>
+    <a class="menu__link" href="<?php the_permalink('48');?>" title="Vers la page à propos">À Propos</a>
   </div>
     <form class="menu__form" action="#" method="post">
       <input class="form__input" type="text" placeholder="Recherche" value="">

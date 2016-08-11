@@ -1,6 +1,7 @@
 <?php
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'thumb-bigimage', 588,342, true );
+add_image_size( 'thumb-aboutimage', 250,250, true );
 /*
 *  Register nav menus
 */

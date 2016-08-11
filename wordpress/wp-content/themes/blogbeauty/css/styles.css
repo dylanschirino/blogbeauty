@@ -663,7 +663,7 @@ a {
   overflow: hidden;
   clear: both; }
 
-.whoami__img {
+.whoami img {
   display: inline-block;
   vertical-align: middle; }
 
@@ -683,7 +683,7 @@ a {
   .whoami__svg {
     display: block;
     margin: auto; }
-  .whoami__img {
+  .whoami img {
     display: block;
     margin: 2em auto; } }
 
@@ -1452,7 +1452,7 @@ a {
   text-align: center;
   font: 3.6em "pacifico"; }
 
-.whoami__img {
+.whoami img {
   border-radius: 50%; }
 
 /* BLOGBEAUTY
