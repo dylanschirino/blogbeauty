@@ -741,14 +741,15 @@ a {
     top: 41px; }
   .text__article, .text .commentary, .text .commentform {
     margin-left: 5.9em; }
-  .text__content {
+  .text p {
     width: 27.8125em; }
   .text__share {
     float: right;
     position: relative;
     left: 50px; }
-  .text__img {
-    margin-bottom: 2em; }
+  .text img {
+    width: 30em;
+    height: auto; }
 
 .commentary {
   margin-bottom: 6.3em; }
@@ -792,15 +793,14 @@ a {
     margin: auto; }
     .text__article, .text .commentary, .text .commentform {
       margin-left: 0em; }
-    .text__title {
+    .text h3 {
       text-align: center; }
-    .text__content {
+    .text p {
       width: 80%;
       margin: auto; }
-    .text__img {
+    .text img {
       display: block;
-      margin: auto;
-      margin-bottom: 6.3em; }
+      margin: auto; }
   .commentary__title {
     text-align: center; }
   .commentary__container {
@@ -825,8 +825,10 @@ a {
       margin: 2em 4.2em 2em 2em; } }
 
 @media screen and (max-width: 675px) {
-  .text__img {
-    min-width: 100%; } }
+  .text__article img {
+    width: 100%;
+    height: auto;
+    display: block; } }
 
 @media screen and (max-width: 565px) {
   .text__date {
@@ -1450,21 +1452,26 @@ a {
 * coded by Dylan Schirino
 * started at 02/08/2016
 */
-.headArticle {
-  background: url("../img/article.jpg") no-repeat center fixed;
-  background-size: cover; }
-  .headArticle__cards {
-    background-color: #272A29;
-    opacity: 0.8;
-    color: white;
-    padding-bottom: 1em; }
-  .headArticle__title {
-    font: 2.4em/3 "old_standard";
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 0.5em; }
-  .headArticle__keyword, .headArticle__timer {
-    text-align: center; }
+.headArticle__cards {
+  background-color: #272A29;
+  opacity: 0.8;
+  color: white;
+  padding-bottom: 1em; }
+
+.headArticle__title {
+  font: 2.4em/3 "old_standard";
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 0.5em; }
+
+.headArticle__keyword a {
+  color: white;
+  text-decoration: underline; }
+  .headArticle__keyword a:hover {
+    text-decoration: none; }
+
+.headArticle__keyword, .headArticle__timer {
+  text-align: center; }
 
 /* BLOGBEAUTY
 *
@@ -1485,12 +1492,12 @@ a {
     border-radius: 50%;
     background-color: #ECB7AC;
     text-align: center; }
-  .text__title {
+  .text h3 {
     font: 1.8em/2.6 "old_standard";
     color: #C77083;
     text-transform: uppercase;
     padding-top: 2.1111em; }
-  .text__content {
+  .text p {
     padding-bottom: 2.375em; }
 
 .commentary__title {
@@ -1540,15 +1547,15 @@ a {
   font-size: 1.6em;
   padding-left: 1em; }
 
-.commentform__submit {
-  font: 1.6em/2.8 "old_standard";
+.commentform [type="submit"] {
+  font: 1em/2.8 "old_standard";
   text-transform: uppercase;
   border: 1px solid black;
   background-color: black;
   letter-spacing: 1px;
   transition: .2s ease-in;
   color: white; }
-  .commentform__submit:hover {
+  .commentform [type="submit"]:hover {
     cursor: pointer;
     background-color: white;
     color: black; }
@@ -1559,7 +1566,7 @@ a {
     font-size: 1.4em; }
   .text__containerDate {
     border-radius: 0%; }
-  .text__img {
+  .text__article img {
     width: 100%;
     height: auto; } }
 

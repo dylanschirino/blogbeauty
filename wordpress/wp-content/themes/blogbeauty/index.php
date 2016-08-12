@@ -155,7 +155,7 @@ if(is_page()){
           </li>
         </ul>
       <p class="latest__text">
-      <?php echo substr(get_the_content(), 0,500).'...'; ?>
+      <?php echo substr(get_field('resume'), 0,500).'...'; ?>
     </p>
 
         <a class="latest__button" href=" <?php the_permalink(); ?> " title="Découvrir plus sur cette article">
@@ -266,7 +266,7 @@ if(is_page()){
         <?php echo ($categorie[0]->name);?>
       </span>
       <p class="moreArticle__text">
-        <?php echo substr(get_the_excerpt(), 0,90).'...'; ?>
+        <?php echo substr(get_field('resume'), 0,90).'...'; ?>
       </p>
       <a class="moreArticle__button latest__button" href="<?php the_permalink();?>" title="Découvrir plus sur cette article">
         Lire l'article

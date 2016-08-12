@@ -58,7 +58,7 @@ get_header();
                 <?php echo ($categorie[0]->name);?>
               </span>
               <p class="moreArticle__text">
-                <?php echo substr(get_the_excerpt(), 0,90).'...'; ?>
+                <?php echo substr(the_field('resume'), 0,90).'...'; ?>
               </p>
               <a class="moreArticle__button latest__button" href="<?php the_permalink();?>" title="Découvrir plus sur cette article">
                 Lire l'article

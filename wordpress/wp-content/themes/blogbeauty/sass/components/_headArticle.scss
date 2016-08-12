@@ -7,8 +7,6 @@
 */
 
 .headArticle{
-  background: url("../img/article.jpg") no-repeat center fixed;
-  background-size: cover;
   &__cards{
     background-color: #272A29;
     opacity: 0.8;
@@ -20,6 +18,15 @@
     text-transform: uppercase;
     text-align: center;
     padding-top: 0.5em;
+  }
+  &__keyword{
+    & a {
+      color: $white;
+      text-decoration: underline;
+      &:hover{
+        text-decoration: none;
+      }
+    }
   }
   &__keyword,&__timer{
     text-align: center;

@@ -24,7 +24,7 @@
   &__article,.commentary,.commentform{
     margin-left: 5.9em;
   }
-  &__content{
+  & p{
     width: 27.8125em;
   }
   &__share{
@@ -32,8 +32,9 @@
     position: relative;
     left: 50px;
   }
-  &__img{
-    margin-bottom: 2em;
+  & img{
+    width:30em;
+    height: auto;
   }
 }
 
@@ -93,17 +94,16 @@
     &__article,.commentary,.commentform{
       margin-left: 0em;
     }
-    &__title{
+    & h3{
       text-align: center;
     }
-    &__content{
+    & p{
       width: 80%;
       margin: auto;
     }
-    &__img{
+    & img{
       display: block;
       margin: auto;
-      margin-bottom: 6.3em;
     }
   }
 
@@ -142,11 +142,11 @@
 }
 
 @media screen and (max-width:675px) {
-  .text{
-    &__img{
-      min-width: 100%;
+  .text__article img{
+      width: 100%;
+      height: auto;
+      display: block;
     }
-  }
 }
 
 @media screen and (max-width:565px) {
