@@ -9,6 +9,8 @@
   &__article{
     &--search{
       margin-left: 3.7em;
+      min-height: 20em;
+      margin-top: -6em
     }
   }
   &__pagination{
@@ -21,6 +23,7 @@
 }
 .search{
   width: 62.3em;
+  margin: 7em auto;
   &__keyword{
     width: 16em;
     height: 2.75em;

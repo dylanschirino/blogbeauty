@@ -1,18 +1,7 @@
-<?php
-/*
-Template Name: HomePage
+<?php /*
+      Template Name: Single Article
 */
 get_header();
-
-/*WP query global pour charger les 2 derniers post*/
-if(is_page()){
-  query_posts([
-    'posts_per_page' =>1,
-    'orderby' => 'date',
-    'order' => 'ASC',
-    'post_type' => 'post'
-  ]);
-}
 ?>
 
 <nav class="header__menu">
@@ -21,9 +10,9 @@ if(is_page()){
     <label for="show-menu" class="menu__show"><span class="hidden">Menu</span></label>
     <input type="checkbox" id="show-menu" class="menu__hamburger" role="button">
     <div class="menu__burger">
-    <a class="menu__link menu__link--active" href="<?php the_permalink();?>" title="Vers la page d'accueil">Accueil</a>
+    <a class="menu__link" href="<?php the_permalink('6');?>" title="Vers la page d'accueil">Accueil</a>
     <div class="menu__drophover">
-    <a class="menu__link menu__link--categories" href="<?php the_permalink('39');?>" title="Vers la page des catégories">
+    <a class="menu__link menu__link--active menu__link--categories" href="<?php the_permalink('39');?>" title="Vers la page des catégories">
       Catégories
     </a>
     <ul class="menu__dropdown">
@@ -45,6 +34,19 @@ if(is_page()){
 </nav>
 </header>
 
+<section class="headArticle">
+<div class="headArticle__cards">
+  <h2 aria-level="2" class="headArticle__title">
+    <?php echo the_title();?>
+  </h2>
+  <p class="headArticle__keyword">
+    <?php echo the_category(',');?>
+    <span class="headArticle__timer">
+      Lecture&nbsp;:&nbsp;5min
+    </span>
+  </p>
+</div>
+</section>
 
 <div class="margin">
   <?php get_sidebar();?>

@@ -853,7 +853,9 @@ a {
 * started at 02/08/2016
 */
 .moreArticle__article--search {
-  margin-left: 3.7em; }
+  margin-left: 3.7em;
+  min-height: 20em;
+  margin-top: -6em; }
 
 .moreArticle__pagination--search {
   width: 100%;
@@ -861,7 +863,8 @@ a {
   padding-bottom: 2.7em; }
 
 .search {
-  width: 62.3em; }
+  width: 62.3em;
+  margin: 7em auto; }
   .search__keyword {
     width: 16em;
     height: 2.75em;
