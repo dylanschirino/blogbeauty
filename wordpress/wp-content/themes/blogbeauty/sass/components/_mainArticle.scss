@@ -16,8 +16,8 @@
     &--facebook{
       background-color: $blueFacebook;
     }
-    &--hellocoton{
-      background-color: $pinkCoton;
+    &--pinterest{
+      background-color: $redPinterest;
     }
   }
   &__link{
@@ -40,8 +40,8 @@
     &--facebook::before{
       content:"\e902";
     }
-    &--hellocoton::before{
-      content:"\e909";
+    &--pinterest::before{
+      content:"\e908";
     }
   }
 }

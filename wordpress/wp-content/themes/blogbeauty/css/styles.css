@@ -904,6 +904,21 @@ a {
 
 /* BLOGBEAUTY
 *
+* /sass/object/categorie.scss - NON design of the Categorie section stylesheet
+*
+* coded by Dylan Schirino
+* started at 12/08/2016
+*/
+.categorie {
+  width: 62em;
+  margin-top: 7em; }
+  .categorie__decoration {
+    display: block;
+    margin: auto;
+    margin-bottom: 10em; }
+
+/* BLOGBEAUTY
+*
 * /sass/object/header.scss - non design header stylesheet
 *
 * coded by Dylan Schirino
@@ -1119,8 +1134,8 @@ a {
     background-color: #4099FF; }
   .share__element--facebook {
     background-color: #3D5B93; }
-  .share__element--hellocoton {
-    background-color: #D30D66; }
+  .share__element--pinterest {
+    background-color: #BD081C; }
 
 .share__link {
   display: block;
@@ -1138,8 +1153,8 @@ a {
     content: "\e90a"; }
   .share__link--facebook::before {
     content: "\e902"; }
-  .share__link--hellocoton::before {
-    content: "\e909"; }
+  .share__link--pinterest::before {
+    content: "\e908"; }
 
 .latest__container {
   background-color: white;
@@ -1612,5 +1627,15 @@ a {
 @media screen and (max-width: 335px) {
   .search__title {
     padding: 1em; } }
+
+/* BLOGBEAUTY
+*
+* /sass/components/categorie.scss -  design of the Categorie section stylesheet
+*
+* coded by Dylan Schirino
+* started at 12/08/2016
+*/
+.categorie {
+  background-color: white; }
 
 /*# sourceMappingURL=styles.css.map */

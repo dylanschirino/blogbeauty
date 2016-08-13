@@ -121,17 +121,7 @@ if(is_page()){
         <?php echo wp_get_attachment_image( $image_article['id'], $article__imagesize );?>
       </figure>
       <div class="article__share">
-        <ul class="share__list">
-          <li class="share__element share__element--twitter">
-            <a class="share__link share__link--twitter"href="#" title="Partager sur twitter"><span class="hidden">Twitter</span></a>
-          </li>
-          <li class="share__element share__element--facebook">
-            <a class="share__link share__link--facebook" href="#" title="Partager sur facebook"><span class="hidden">Facebook</span></a>
-          </li>
-          <li class="share__element share__element--hellocoton">
-            <a class="share__link share__link--hellocoton" href="#" title="Partager sur HelloCoton"><span class="hidden">HelloCoton</span></a>
-          </li>
-        </ul>
+        <?php echo share_button($content);?>
       </div>
       <div class="latest__container">
 
@@ -151,7 +141,7 @@ if(is_page()){
             <?php echo the_field('article__date');?>
           </li>
           <li class="latest__element latest__element--like">
-            21
+            <?php echo do_shortcode('[dot_recommends]');?>
           </li>
         </ul>
       <p class="latest__text">
@@ -279,7 +269,7 @@ if(is_page()){
         <?php echo the_field('article__date');?>
       </li>
       <li class="moreArticle__element latest__element--like">
-        21
+        <?php echo do_shortcode('[dot_recommends]');?>
       </li>
       <li class="moreArticle__element moreArticle__element--comment">
         5

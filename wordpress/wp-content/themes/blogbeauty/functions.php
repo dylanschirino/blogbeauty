@@ -59,3 +59,36 @@ function b_get_menu_items( $location )
            'class_submit'=>'commentform__submit',
            'label_submit'=>'Commenter'
   );
+
+
+
+  function share_button($content) {
+       global $post;
+
+        $share_URL = get_permalink();
+        $share_title = str_replace( ' ', '%20', get_the_title());
+        $share_thumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+        $share_excerpt = strip_tags(get_the_content());
+
+        $twitterURL = 'https://twitter.com/intent/tweet?text='.$share_title.'&amp;url='.$share_URL.'&amp;via=showyourglitters';
+        $facebookURL = 'https://www.facebook.com/sharer/sharer.php?u='.$share_URL;
+        $googleURL = 'https://plus.google.com/share?url='.$share_URL;
+        $pinterestURL = 'https://pinterest.com/pin/create/button/?url='.$share_URL.'&amp;media='.$share_thumbnail[0].'&amp;description='.$share_excerpt;
+        $linkedinURL = 'https://www.linkedin.com/shareArticle?mini=true&url='.$share_URL.'/&title='.$share_title.'&summary=&source=';
+
+        $content .= '<!-- Facebook Share Button -->
+        <ul class="share__list">
+        <li class="share__element share__element--facebook">
+        <a class="share__link share__link--facebook" href="'.$facebookURL.'" title="Partager sur facebook"><span class="hidden">Facebook</span></a>
+        </li>
+        <!-- Twitter Share Button -->
+        <li class="share__element share__element--twitter">
+        <a class="share__link share__link--twitter" href="'.$twitterURL.'" title="Partager sur facebook"><span class="hidden">Twitter</span></a>
+        </li>
+        <!-- Google+ Share Button -->
+        <li class="share__element share__element--pinterest">
+        <a class="share__link share__link--pinterest" href="'.$pinterestURL.'" title="Partager sur Pinterest"><span class="hidden">Pinterest</span></a>
+        </li>
+        </ul>';
+    return $content;
+}

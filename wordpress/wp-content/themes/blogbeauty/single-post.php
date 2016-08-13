@@ -71,17 +71,7 @@ get_header();
 
       <article class="text__article">
         <div class="text__share text__share--categories">
-          <ul class="share__list">
-            <li class="share__element share__element--twitter share__element--inline">
-              <a class="share__link share__link--twitter"href="#" title="Partager sur twitter"><span class="hidden">Twitter</span></a>
-            </li>
-            <li class="share__element share__element--facebook share__element--inline">
-              <a class="share__link share__link--facebook" href="#" title="Partager sur facebook"><span class="hidden">Facebook</span></a>
-            </li>
-            <li class="share__element share__element--hellocoton share__element--inline">
-              <a class="share__link share__link--hellocoton" href="#" title="Partager sur HelloCoton"><span class="hidden">HelloCoton</span></a>
-            </li>
-          </ul>
+          <?php echo share_button($content);?>
         </div>
         <?php the_content();?>
       </article>
