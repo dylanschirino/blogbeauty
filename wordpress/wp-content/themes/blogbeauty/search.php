@@ -42,7 +42,7 @@ get_header();
         <p class="search__keyword">
           <?php the_search_query(); ?>
         </p>
-        <section class="moreArticle moreArticle--search">
+        <section class="moreArticleSearch moreArticle--search">
 
           <h3 aria-level="3" class="moreArticle__title hidden">
             Découvrez plus d'article

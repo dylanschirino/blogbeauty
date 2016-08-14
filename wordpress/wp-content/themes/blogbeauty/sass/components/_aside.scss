@@ -58,6 +58,9 @@
     &--pinterest::before{
       content:"\e908";
     }
+    &--google::before{
+      content:"\e90c";
+    }
   }
   &__keyword{
     padding: 0 2.0625em 1.625em 1.99em;

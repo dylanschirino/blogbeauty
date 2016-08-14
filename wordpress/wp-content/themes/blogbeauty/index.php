@@ -234,7 +234,7 @@ if(is_page()){
 <section class="moreArticle">
   <?php if(is_page()){
     query_posts([
-      'posts_per_page' =>2,
+      'posts_per_page' =>3,
       'orderby' => 'date',
       'order' => 'DESC',
       'post_type' => 'post',

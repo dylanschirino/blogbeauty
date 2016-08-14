@@ -6,8 +6,8 @@
 * started at 02/08/2016
 */
 .text{
-  width: 58.7em;
-  margin:5em 0 0 20.8em;
+  width: 63em;
+  margin:5em 0 0 15em;
   position: relative;
   &__date{
     display: inline-block;
@@ -25,7 +25,7 @@
     margin-left: 5.9em;
   }
   & p{
-    width: 27.8125em;
+    width: 32em;
   }
   &__share{
     float: right;
@@ -86,9 +86,15 @@
     margin-left: 8em;
   }
 }
+@media screen and (max-width:1056px) {
+  .text{
+    margin-left: 4em;
+  }
 
+}
 @media screen and (max-width:978px) {
   .text{
+    margin: 0;
     width: 80%;
     margin: auto;
     &__article,.commentary,.commentform{

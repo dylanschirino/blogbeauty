@@ -52,6 +52,7 @@
   &__dropdown{
     position: absolute;
     width:15em;
+    z-index: 111;
   }
   &__hamburger{
     display:none;

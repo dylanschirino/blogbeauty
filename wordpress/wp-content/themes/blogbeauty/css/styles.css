@@ -31,8 +31,8 @@
 
 @font-face {
   font-family: 'glyphs';
-  src: url("../fonts/glyphs/icomoon.eot?v65uyt");
-  src: url("../fonts/glyphs/icomoon.eot?v65uyt#iefix") format("embedded-opentype"), url("../fonts/glyphs/icomoon.ttf?v65uyt") format("truetype"), url("../fonts/glyphs/icomoon.woff?v65uyt") format("woff"), url("../fonts/glyphs/icomoon.svg?v65uyt#icomoon") format("svg");
+  src: url("../fonts/glyphs/icomoon.eot?59f2m2");
+  src: url("../fonts/glyphs/icomoon.eot?59f2m2#iefix") format("embedded-opentype"), url("../fonts/glyphs/icomoon.ttf?59f2m2") format("truetype"), url("../fonts/glyphs/icomoon.woff?59f2m2") format("woff"), url("../fonts/glyphs/icomoon.svg?59f2m2#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -157,7 +157,8 @@ a {
 
 .menu__dropdown {
   position: absolute;
-  width: 15em; }
+  width: 15em;
+  z-index: 111; }
 
 .menu__hamburger {
   display: none; }
@@ -472,21 +473,26 @@ a {
 * coded by Dylan Schirino
 * started at 01/08/2016
 */
-.instagram {
-  height: 32em;
-  margin-bottom: 3.8em; }
-  .instagram__title {
-    margin-left: 8.6em; }
+.instagram__title {
+  margin-left: 8.6em; }
 
 .slides li {
-  display: inline-block; }
+  display: inline-block;
+  width: 20%;
+  height: auto; }
 
 .slides img {
-  width: 25.3em;
-  height: 23em; }
+  max-width: 25em;
+  height: 22.4em; }
 
 .jr-insta-wrap {
   display: none; }
+
+@media screen and (max-width: 1142px) {
+  .slides li {
+    width: 15%; }
+  .slides img {
+    width: 30em; } }
 
 @media screen and (max-width: 820px) {
   .instagram__title {
@@ -726,8 +732,8 @@ a {
 * started at 02/08/2016
 */
 .text {
-  width: 58.7em;
-  margin: 5em 0 0 20.8em;
+  width: 63em;
+  margin: 5em 0 0 15em;
   position: relative; }
   .text__date {
     display: inline-block;
@@ -742,7 +748,7 @@ a {
   .text__article, .text .commentary, .text .commentform {
     margin-left: 5.9em; }
   .text p {
-    width: 27.8125em; }
+    width: 32em; }
   .text__share {
     float: right;
     position: relative;
@@ -787,8 +793,13 @@ a {
   .text {
     margin-left: 8em; } }
 
+@media screen and (max-width: 1056px) {
+  .text {
+    margin-left: 4em; } }
+
 @media screen and (max-width: 978px) {
   .text {
+    margin: 0;
     width: 80%;
     margin: auto; }
     .text__article, .text .commentary, .text .commentform {
@@ -854,12 +865,12 @@ a {
 * coded by Dylan Schirino
 * started at 02/08/2016
 */
-.moreArticle__article--search {
+.moreArticleSearch__article--search {
   margin-left: 3.7em;
   min-height: 20em;
-  margin-top: -6em; }
+  margin-top: 3em; }
 
-.moreArticle__pagination--search {
+.moreArticleSearch__pagination--search {
   width: 100%;
   margin-left: 3.7em;
   padding-bottom: 2.7em; }
@@ -894,12 +905,12 @@ a {
 @media screen and (max-width: 335px) {
   .search__title {
     padding: 0; }
-  .moreArticle__article--search {
+  .moreArticleSearch__article--search {
     width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto; }
-  .moreArticle__element--comment {
+  .moreArticleSearch__element--comment {
     padding-top: 1em; } }
 
 /* BLOGBEAUTY
@@ -971,13 +982,13 @@ a {
 .menu__dropdown {
   opacity: 0;
   transition: .2s ease-in-out;
-  background-color: #ECB7AC;
+  background-color: white;
   border: 4px solid #C77083;
   padding: 1em 0; }
 
 .menu__sublink {
   font: 1.4em/1.6 "raleway", "Helvetica", Arial, sans-serif;
-  color: white;
+  color: black;
   text-align: center; }
   .menu__sublink::before {
     font: 1em "glyphs";
@@ -1105,6 +1116,8 @@ a {
       content: "\e902"; }
     .aside__link--pinterest::before {
       content: "\e908"; }
+    .aside__link--google::before {
+      content: "\e90c"; }
   .aside__keyword {
     padding: 0 2.0625em 1.625em 1.99em; }
 
