@@ -1,0 +1,33 @@
+/* BLOGBEAUTY
+*
+* /sass/components/404.scss - design of the 404 section stylesheet
+*
+* coded by Dylan Schirino
+* started at 14/08/2016
+*/
+.error404{
+  margin-left: 5em;
+  &__title{
+    text-transform: uppercase;
+    font:3em $oldstandard;
+    padding: 1em 0;
+  }
+  &__description{
+    font-size: 1.6em;
+    line-height: 1.8em;
+  }
+  &__return{
+    font-size: 1.4em;
+    line-height: 2em;
+  }
+  &__link{
+    display: block;
+    font-size: 2em;
+    padding-top:0.4em;
+    text-transform: uppercase;
+    color:$pink;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
