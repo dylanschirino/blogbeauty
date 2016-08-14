@@ -74,6 +74,7 @@ get_header();
           <?php echo share_button($content);?>
         </div>
         <?php the_content();?>
+        <img src ="<?php bloginfo('template_directory');?>/img/signature.svg" class="text__signature" alt="ShowYourGlitters" width="220" height="auto">
       </article>
 
 

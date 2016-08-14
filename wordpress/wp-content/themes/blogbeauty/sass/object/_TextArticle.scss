@@ -21,6 +21,11 @@
     left:-40px;
     top: 41px;
   }
+  &__signature{
+    display: block;
+    margin: auto;
+    margin-right: 7em;
+  }
   &__article,.commentary,.commentform{
     margin-left: 5.9em;
   }
@@ -32,7 +37,7 @@
     position: relative;
     left: 50px;
   }
-  & img{
+  & img:first-child{
     width:30em;
     height: auto;
   }
@@ -148,7 +153,7 @@
 }
 
 @media screen and (max-width:675px) {
-  .text__article img{
+  .text__article img:first-child{
       width: 100%;
       height: auto;
       display: block;

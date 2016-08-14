@@ -745,6 +745,10 @@ a {
     position: absolute;
     left: -40px;
     top: 41px; }
+  .text__signature {
+    display: block;
+    margin: auto;
+    margin-right: 7em; }
   .text__article, .text .commentary, .text .commentform {
     margin-left: 5.9em; }
   .text p {
@@ -753,7 +757,7 @@ a {
     float: right;
     position: relative;
     left: 50px; }
-  .text img {
+  .text img:first-child {
     width: 30em;
     height: auto; }
 
@@ -836,7 +840,7 @@ a {
       margin: 2em 4.2em 2em 2em; } }
 
 @media screen and (max-width: 675px) {
-  .text__article img {
+  .text__article img:first-child {
     width: 100%;
     height: auto;
     display: block; } }
@@ -1594,7 +1598,7 @@ a {
     font-size: 1.4em; }
   .text__containerDate {
     border-radius: 0%; }
-  .text__article img {
+  .text__article img:first-child {
     width: 100%;
     height: auto; } }
 
