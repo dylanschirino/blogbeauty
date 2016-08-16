@@ -1436,7 +1436,7 @@ a {
   color: #C77083; }
 
 .formulaire__label {
-  font: 1em/1.9 "raleway", "Helvetica", Arial, sans-serif;
+  font: 1.6em/1.9 "raleway", "Helvetica", Arial, sans-serif;
   text-transform: uppercase; }
 
 .formulaire__container input:not(.formulaire__submit), .formulaire__container textarea {

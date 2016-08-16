@@ -1,14 +1,44 @@
 <?php /*
       Template Name: Single Article
-*/
-get_header();
-?>
+*/;?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <meta charset="utf-8">
+  <meta name="description" content="Blog Beauté de ShowYourGlitters">
+  <meta name="author" content="ShowYourGlitters">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri().'/css/styles.css';?>">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri().'img/favicon.png';?>">
+  <title><?php bloginfo();?>-<?php the_title();?></title>
+
+  <?php $image_bckg = get_field('background_image');          $bckg__imagesize='thumb-backgroundimage';?>
+  <style>
+  .headArticle{
+    background: url("<?php echo wp_get_attachment_image_url( $image_bckg['id'], $bckg__imagesize );?>") no-repeat center fixed;
+    background-size: cover;
+  }
+  </style>
+</head>
+<body id="haut">
+  <header class="header">
+    <div class="header__banner">
+      <h1 aria-level="1" class="header__title">
+        <?php echo bloginfo('name');?>
+      </h1>
+      <p class="header__subtitle">
+        <?php echo bloginfo('description');?>
+      </p>
+    </div>
 
 <nav class="header__menu">
   <h2 aria-level="2" class="menu__title hidden">Navigation Principale</h2>
   <div class="menu__container">
     <label for="show-menu" class="menu__show"><span class="hidden">Menu</span></label>
-    <input type="checkbox" id="show-menu" class="menu__hamburger" role="button">
+    <input type="checkbox" id="show-menu" class="menu__hamburger">
     <div class="menu__burger">
     <a class="menu__link" href="<?php the_permalink('6');?>" title="Vers la page d'accueil">Accueil</a>
     <div class="menu__drophover">
@@ -35,13 +65,6 @@ get_header();
 </header>
 <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
 <section class="headArticle">
-  <?php $image_bckg = get_field('background_image');          $bckg__imagesize='thumb-backgroundimage';?>
-  <style>
-  .headArticle{
-    background: url("<?php echo wp_get_attachment_image_url( $image_bckg['id'], $bckg__imagesize );?>") no-repeat center fixed;
-    background-size: cover;
-  }
-  </style>
 <div class="headArticle__cards">
   <h2 aria-level="2" class="headArticle__title">
     <?php echo the_title();?>
@@ -66,7 +89,7 @@ get_header();
         <?php echo the_title();?>
       </h2>
       <div class="text__containerDate">
-        <time class="text__date" datetime="<?php the_field('article__date');?>"><?php the_field('article__date');?></time>
+        <time class="text__date"><?php the_field('article__date');?></time>
       </div>
 
       <article class="text__article">
@@ -74,7 +97,7 @@ get_header();
           <?php echo share_button($content);?>
         </div>
         <?php the_content();?>
-        <img src ="<?php bloginfo('template_directory');?>/img/signature.svg" class="text__signature" alt="ShowYourGlitters" width="220" height="auto">
+        <img src ="<?php bloginfo('template_directory');?>/img/signature.svg" class="text__signature" alt="ShowYourGlitters" width="220" height="66">
       </article>
 
 
@@ -103,7 +126,6 @@ get_header();
       </section>
       </section>
 
-</div>
 <?php wp_reset_query() ;?>
 <section class="moreArticle">
   <?php query_posts([
@@ -157,5 +179,6 @@ get_header();
 </section>
 
 </main>
+</div>
 
 <?php get_footer();?>

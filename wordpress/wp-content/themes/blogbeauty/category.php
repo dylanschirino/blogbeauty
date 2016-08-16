@@ -42,7 +42,7 @@ $categorie = get_the_category();
       <h2 aria-level="2" class="search__title">
         Catégorie&nbsp;:&nbsp; <?php echo ($categorie[0]->name);?>
       </h2>
-      <section class="moreArticle moreArticle--search">
+      <section class="moreArticleSearch moreArticle--search">
 
         <h3 aria-level="3" class="moreArticle__title hidden">
           Les articles correspondant
@@ -57,7 +57,7 @@ $categorie = get_the_category();
               <?php echo ($categorie[0]->name);?>
             </span>
             <p class="moreArticle__text">
-              <?php echo substr(get_field('resume'), 0,90).'...'; ?>
+              <?php echo substr(get_field('resume'), 0,90).'...';?>
             </p>
             <a class="moreArticle__button latest__button" href="<?php the_permalink();?>" title="Découvrir plus sur cette article">
               Lire l'article
@@ -83,7 +83,7 @@ $categorie = get_the_category();
             <?php  wp_pagenavi();?>
         </div>
     </section>
-</div>
+    </section>
 <svg class="categorie__decoration" width="652" height="162" viewBox="0 0 652 162" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <path id="a" d="M0 0h671.28v599H0z"/>
@@ -154,7 +154,6 @@ $categorie = get_the_category();
     </g>
   </g>
 </svg>
-
 <section class="instagram">
   <h3 class="instagram__title" aria-level="3">
     J'instagram tout ce qui bouge
@@ -162,4 +161,5 @@ $categorie = get_the_category();
   <?php echo do_shortcode('[jr_instagram id="2"]');?>
 </section>
 </main>
+</div>
 <?php get_footer();?>

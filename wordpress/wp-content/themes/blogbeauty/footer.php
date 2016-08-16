@@ -1,8 +1,6 @@
 <?php
 $aside = get_option("easy_page_options");
  ?>
-
-
 <footer class="footer">
 
   <div class="margin">

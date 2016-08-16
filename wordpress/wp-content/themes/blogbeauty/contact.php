@@ -26,10 +26,7 @@ get_header();
 
   <a class="menu__link" href="<?php the_permalink('48');?>" title="Vers la page à propos">À Propos</a>
 
-  <form class="menu__form" action="#" method="post">
-    <input class="form__input" type="text" placeholder="Recherche" value="">
-    <input class="form__submit" type="submit" value="">
-  </form>
+  <?php get_search_form(); ?>
 </div>
 </nav>
 </header>
@@ -97,17 +94,10 @@ get_header();
           Formulaire de Contact
         </h2>
 
-        <form class="formulaire__container" action="#" method="post">
-          <fieldset>
-            <legend class="formulaire__legend hidden">
-              Contact
-            </legend>
+        <div class="formulaire__container">
               <?php echo do_shortcode( '[contact-form-7 id="61" title="Contact"]' ); ?>
-
-          </fieldset>
-        </form>
+        </div>
       </section>
-  </div>
   <section class="instagram">
     <h3 class="instagram__title" aria-level="3">
       J'instagram tout ce qui bouge
@@ -116,4 +106,5 @@ get_header();
   </section>
 
 </main>
+  </div>
 <?php get_footer();?>

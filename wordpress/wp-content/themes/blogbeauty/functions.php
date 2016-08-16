@@ -3,6 +3,8 @@ add_theme_support( 'post-thumbnails' );
 add_image_size( 'thumb-bigimage', 588,342, true );
 add_image_size( 'thumb-aboutimage', 250,250, true );
 add_image_size( 'thumb-backgroundimage', 1020,468, true );
+
+define('WPCF7_AUTOP', false);
 /*
 *  Register nav menus
 */
@@ -55,7 +57,7 @@ function b_get_menu_items( $location )
           '<input id="internet" class="commentform__input" name="internet" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . ' /></div>',
           ) ),
           'comment_field' =>'<label for="message" class="commentform__label">' . __( 'Message' ) . '</label>' .
-           '<textarea id="comment" class="commentform__input commentform__input--textarea" name="comment" cols="45" rows="8" aria-required="true"></textarea>',
+           '<textarea id="message" class="commentform__input commentform__input--textarea" name="comment" cols="45" rows="8" aria-required="true"></textarea>',
            'class_submit'=>'commentform__submit',
            'label_submit'=>'Commenter'
   );
