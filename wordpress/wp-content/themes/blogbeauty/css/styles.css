@@ -1035,6 +1035,10 @@ a {
   opacity: 1; }
 
 @media screen and (max-width: 666px) {
+  .header__menu {
+    min-height: 1em; }
+  .menu__container {
+    padding: 1em 0; }
   .menu__link {
     padding: 0.8em 0;
     text-align: center;
@@ -1067,8 +1071,7 @@ a {
     background: url("../img/menu.svg") no-repeat center center;
     background-size: contain;
     font-size: 5em;
-    cursor: pointer;
-    color: white; } }
+    cursor: pointer; } }
 
 /* BLOGBEAUTY
 *

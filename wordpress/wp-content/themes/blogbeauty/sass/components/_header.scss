@@ -128,7 +128,15 @@
 }
 
 @media screen and (max-width:666px) {
+  .header{
+    &__menu{
+      min-height: 1em;
+    }
+  }
 .menu{
+  &__container{
+    padding: 1em 0;
+  }
   &__link{
     padding: 0.8em 0;
     text-align: center;
@@ -170,7 +178,6 @@
       background-size: contain;
       font-size: 5em;
       cursor: pointer;
-      color: $white;
   }
 }
 }
