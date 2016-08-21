@@ -73,9 +73,9 @@ function b_get_menu_items( $location )
         $share_excerpt = strip_tags(get_the_content());
 
         $twitterURL = 'https://twitter.com/intent/tweet?text='.$share_title.'&amp;url='.$share_URL.'&amp;via=showyourglitters';
-        $facebookURL = 'https://www.facebook.com/sharer/sharer.php?u='.$share_URL;
+        $facebookURL = 'https://www.facebook.com/sharer/sharer.php?url='.$share_URL;
         $googleURL = 'https://plus.google.com/share?url='.$share_URL;
-        $pinterestURL = 'https://pinterest.com/pin/create/button/?url='.$share_URL.'&amp;media='.$share_thumbnail[0].'&amp;description='.$share_excerpt;
+        $pinterestURL='https://pinterest.com/pin/create/button/?url='.$share_URL.'&media='.$share_thumbnail[0];
         $linkedinURL = 'https://www.linkedin.com/shareArticle?mini=true&url='.$share_URL.'/&title='.$share_title.'&summary=&source=';
 
         $content .= '<!-- Facebook Share Button -->
@@ -85,7 +85,7 @@ function b_get_menu_items( $location )
         </li>
         <!-- Twitter Share Button -->
         <li class="share__element share__element--twitter">
-        <a class="share__link share__link--twitter" href="'.$twitterURL.'" title="Partager sur facebook"><span class="hidden">Twitter</span></a>
+        <a class="share__link share__link--twitter" href="'.$twitterURL.'" title="Partager sur twitter"><span class="hidden">Twitter</span></a>
         </li>
         <!-- Google+ Share Button -->
         <li class="share__element share__element--pinterest">

@@ -37,7 +37,7 @@ get_header();
   <h2 aria-level="2" class="whoami__title">
       <?php echo the_field('about_title');?>
   </h2>
-    <div class="whoami__imgContainer">
+    <div class="whoami__imgContainer" id="apparition">
       <svg class="whoami__svg" width="739" height="94" viewBox="0 0 739 94" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs>
         <path id="a" d="M0 .002h225.555V94H0"/>

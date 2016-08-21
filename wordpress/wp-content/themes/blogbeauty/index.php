@@ -1,9 +1,32 @@
 <?php
 /*
 Template Name: HomePage
-*/
-get_header();
-
+*/;?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <meta charset="utf-8">
+  <meta name="description" content="Blog Beauté de ShowYourGlitters">
+  <meta name="author" content="ShowYourGlitters">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri().'/css/styles.css';?>">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri().'img/favicon.png';?>">
+  <title><?php bloginfo();?>-<?php the_title();?></title>
+</head>
+<body id="haut">
+  <header class="header">
+    <div class="header__banner">
+      <h1 aria-level="1" class="header__title" id="deplacement">
+        <?php echo bloginfo('name');?>
+      </h1>
+      <p class="header__subtitle">
+        <?php echo bloginfo('description');?>
+      </p>
+    </div>
+    <?php
 /*WP query global pour charger les 2 derniers post*/
 if(is_page()){
   query_posts([
@@ -48,6 +71,7 @@ if(is_page()){
 
 <div class="margin">
   <?php get_sidebar();?>
+  <div class="apparition">
   <svg width="114px" height="74px" viewBox="0 0 114 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <defs>
       <rect id="path-1" x="0" y="0" width="671.280765" height="599"></rect>
@@ -108,6 +132,7 @@ if(is_page()){
       </g>
     </g>
   </svg>
+</div>
 </aside>
 <main id="content">
   <section class="article">
@@ -118,7 +143,9 @@ if(is_page()){
     <article class="article__latest">
       <figure class="latest__imgcontainer">
         <?php $image_article = get_field('article__image');            $article__imagesize='thumb-bigimage';?>
+        <a href="<?php the_permalink(); ?>" title="Accéder à la fiche de l'article">
         <?php echo wp_get_attachment_image( $image_article['id'], $article__imagesize );?>
+      </a>
       </figure>
       <div class="article__share">
         <?php echo share_button($content);?>
@@ -156,7 +183,7 @@ if(is_page()){
     <?php endwhile; endif;?>
 
     <?php wp_reset_query();?>
-
+    <div class="apparition">
     <svg class="article__decoration" width="652" height="162" viewBox="0 0 652 162" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs>
         <path id="a" d="M0 0h671.28v599H0z"/>
@@ -227,6 +254,7 @@ if(is_page()){
         </g>
       </g>
     </svg>
+  </div>
   </section>
 
 <section class="moreArticle">
