@@ -121,7 +121,12 @@
       margin: auto;
     }
     &__element{
-      margin-left:1em;
+      float: none;
+    }
+    &__link{
+      &::before{
+        margin: auto; 
+      }
     }
     &__keyword{
       text-align: center;

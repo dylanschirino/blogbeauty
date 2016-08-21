@@ -298,7 +298,9 @@ a {
     width: 70%;
     margin: auto; }
   .aside__element {
-    margin-left: 1em; }
+    float: none; }
+  .aside__link::before {
+    margin: auto; }
   .aside__keyword {
     text-align: center; } }
 
@@ -596,11 +598,11 @@ a {
   margin: 3.8em auto; }
   .formulaire__container input:not(.formulaire__submit) {
     display: block;
-    width: 80%;
+    width: 65%;
     height: 2.8125em;
     margin-bottom: 1.6875em; }
   .formulaire__container textarea {
-    width: 80%;
+    width: 65%;
     min-height: 16em; }
 
 .formulaire__submit {
@@ -1440,7 +1442,7 @@ a {
   text-transform: uppercase; }
 
 .formulaire__container input:not(.formulaire__submit), .formulaire__container textarea {
-  font-size: 1em;
+  font-size: 1.6em;
   background: none;
   border: 1px solid #C3BAB2;
   padding-left: 1em; }
