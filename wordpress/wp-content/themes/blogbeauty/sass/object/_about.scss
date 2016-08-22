@@ -24,7 +24,7 @@
       clear: both;
     }
   }
-  & img{
+  & img:not(.whoami__signature){
     display: inline-block;
     vertical-align: middle;
   }
@@ -38,7 +38,7 @@
   }
   &__signature{
     display: block;
-    margin: 1.4722em 0;
+    margin: 1.4722em auto;
   }
 }
 

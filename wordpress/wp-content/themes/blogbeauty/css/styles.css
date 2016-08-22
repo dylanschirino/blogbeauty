@@ -654,7 +654,7 @@ a {
   overflow: hidden;
   clear: both; }
 
-.whoami img {
+.whoami img:not(.whoami__signature) {
   display: inline-block;
   vertical-align: middle; }
 
@@ -668,7 +668,7 @@ a {
 
 .whoami__signature {
   display: block;
-  margin: 1.4722em 0; }
+  margin: 1.4722em auto; }
 
 @media screen and (max-width: 1115px) {
   .whoami__svg {
@@ -1478,7 +1478,7 @@ a {
   text-align: center;
   font: 3.6em "pacifico"; }
 
-.whoami img {
+.whoami img:not(.whoami__signature) {
   border-radius: 50%; }
 
 /* BLOGBEAUTY

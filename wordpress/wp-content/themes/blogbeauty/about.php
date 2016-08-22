@@ -87,9 +87,7 @@ get_header();
   </p>
 </div>
 
-  <span class="whoami__signature">
-    ShowYourGlitters
-  </span>
+  <img src ="<?php bloginfo('template_directory');?>/img/signature.svg" class="whoami__signature" alt="ShowYourGlitters" width="220" height="66">
 </section>
 </div>
   <section class="instagram">

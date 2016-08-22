@@ -15,7 +15,7 @@
     text-align: center;
     font: 3.6em $pacifico;
   }
-  & img{
+  & img:not(.whoami__signature){
       border-radius: 50%;
   }
 }
