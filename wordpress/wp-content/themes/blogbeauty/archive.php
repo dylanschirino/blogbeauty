@@ -4,7 +4,7 @@
   <?php $paged = intval(get_query_var('paged')); if($paged == 0) { $paged = 1; } query_posts("showposts=4&cat=-9&paged=$paged"); ?>
 
   <h3 aria-level="3" class="moreArticle__title">
-    Découvrez plus d'article
+    <?php echo the_field('more_title');?>
   </h3>
   <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
   <article class="moreArticle__article">
@@ -30,10 +30,10 @@
         <?php echo the_field('article__date');?>
       </li>
       <li class="moreArticle__element latest__element--like">
-        21
+        <?php echo do_shortcode('[dot_recommends]');?>
       </li>
       <li class="moreArticle__element moreArticle__element--comment">
-        5
+        <?php comments_number('0', '1', '%'); ?>
       </li>
     </ul>
   </article>

@@ -135,7 +135,7 @@
     'post_type' => 'post'
   ]);?>
   <h3 aria-level="3" class="moreArticle__title">
-    Des articles qui peuvent vous interessez
+    <?php echo the_field('more_title');?>
   </h3>
   <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
   <article class="moreArticle__article">

@@ -269,7 +269,7 @@ if(is_page()){
   };
   ?>
   <h3 aria-level="3" class="moreArticle__title">
-    Découvrez plus d'article
+    <?php echo the_field('more_title');?>
   </h3>
   <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
   <article class="moreArticle__article">
@@ -298,7 +298,7 @@ if(is_page()){
         <?php echo do_shortcode('[dot_recommends]');?>
       </li>
       <li class="moreArticle__element moreArticle__element--comment">
-        5
+        <?php comments_number('0', '1', '%'); ?>
       </li>
     </ul>
   </article>
