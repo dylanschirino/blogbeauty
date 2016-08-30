@@ -46,6 +46,7 @@ $aside = get_option("easy_page_options");
 
 </div>
 </footer>
+<script src="<?php echo get_template_directory_uri().'/scripts/jquery-2.2.1.min.js';?>"></script>
 <script src="<?php echo get_template_directory_uri().'/scripts/scrollreveal.min.js';?>"></script>
 <script>
 window.sr = ScrollReveal();

@@ -312,7 +312,7 @@ if(is_page()){
   <h3 class="instagram__title" aria-level="3">
     J'instagram tout ce qui bouge
   </h3>
-  <?php echo do_shortcode('[jr_instagram id="2"]');?>
+  <?php echo do_shortcode('[alpine-phototile-for-instagram id=623 user="showyourglitters" src="user_recent" imgl="instagram" style="wall" row="6" size="M" num="6" align="center" max="100"]');?>
 </section>
 </main>
 </div>
