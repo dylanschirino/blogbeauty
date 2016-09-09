@@ -6,39 +6,15 @@
 * started at 01/08/2016
 */
 .instagram{
-  // height: 32em;
-  // margin-bottom: 3.8em;
   &__title{
     margin-left: 8.6em;
   }
 }
-.AlpinePhotoTiles_container_class{
-  margin: auto;
-}
-.AlpinePhotoTiles-link{
-  float: left;
-  width:100%;
-}
-.AlpinePhotoTiles-tile{
-  display: inline-block;
-  margin:0 !important;
-}
-.AlpinePhotoTiles-image-div{
-  position: static;
-  display: block;
-  background-size: contain !important;
-
-}
-.AlpinePhotoTiles-image-div-container{
-  width: 16% !important;
-  height: 100% !important;
-  max-height: 100% !important;
-  left:0 !important;
-}
-
-
 @media screen and (max-width:820px) {
   .instagram{
-    display: none;
+    &__title{
+      margin: 0;
+      text-align: center;
+    }
   }
 }

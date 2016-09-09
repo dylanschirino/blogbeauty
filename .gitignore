@@ -6,3 +6,13 @@ wordpress/wp-admin/
 wordpress/wp-content/themes/blogbeauty/node_modules/
 
 wordpress online/
+
+.DS_Store
+
+
+wordpress/wp-content/themes/blogbeauty/css/node_modules/
+
+
+wordpress/wp-content/themes/blogbeauty/node_modules/
+
+wordpress/wp-content/themes/blogbeauty/node_modules/.*

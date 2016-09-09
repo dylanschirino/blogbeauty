@@ -9,3 +9,9 @@
     position: absolute;
     width: 1px;
 }
+
+@media screen and (max-width:666px) {
+  .sidebar__off{
+    display: none;
+  }
+}

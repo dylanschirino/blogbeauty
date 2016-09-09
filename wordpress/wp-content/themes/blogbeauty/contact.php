@@ -102,7 +102,7 @@ get_header();
     <h3 class="instagram__title" aria-level="3">
       J'instagram tout ce qui bouge
     </h3>
-      <?php echo do_shortcode('[alpine-phototile-for-instagram id=623 user="showyourglitters" src="user_recent" imgl="instagram" style="wall" row="6" size="M" num="6" align="center" max="100"]');?>
+    <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/60f1ff59c6745cc78c90529f8265a05b.html" class="instagram__slider" id="lightwidget_60f1ff59c6" name="lightwidget_60f1ff59c6"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
   </section>
 
 </main>

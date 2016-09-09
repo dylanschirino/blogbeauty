@@ -70,6 +70,7 @@ if(is_page()){
 
 
 <div class="margin">
+  <div class="sidebar__off">
   <?php get_sidebar();?>
   <div class="apparition">
   <svg width="114px" height="74px" viewBox="0 0 114 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -134,6 +135,7 @@ if(is_page()){
   </svg>
 </div>
 </aside>
+</div>
 <main id="content">
   <section class="article">
     <h2 aria-level="2" class="article__title hidden">
@@ -312,7 +314,7 @@ if(is_page()){
   <h3 class="instagram__title" aria-level="3">
     J'instagram tout ce qui bouge
   </h3>
-  <?php echo do_shortcode('[alpine-phototile-for-instagram id=623 user="showyourglitters" src="user_recent" imgl="instagram" style="wall" row="6" size="M" num="6" align="center" max="100"]');?>
+  <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/60f1ff59c6745cc78c90529f8265a05b.html" class="instagram__slider" id="lightwidget_60f1ff59c6" name="lightwidget_60f1ff59c6"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
 </section>
 </main>
 </div>
